@@ -5,6 +5,12 @@ title: PolySQL Syntax
 
 This page describes the SQL dialect recognized by Polypheny-DB's default SQL parser in a [BNF](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form)-like form.
 
+{::nomarkdown}
+<svg width="400" height=300>
+    <circle cx="150" cy="100" r="10" fill="blue"/>
+</svg>
+{:/}
+
 {% highlight sql %}
 statement:
       insert
