@@ -6,300 +6,58 @@ title: PolySQL Syntax
 This page describes the SQL dialect recognized by Polypheny-DB's default SQL parser in a [BNF](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form)-like form.
 
 {::nomarkdown}
-html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-      <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-      <meta name="generator" content="Railroad Diagram Generator 1.63" />
-      <style type="text/css">
-    ::-moz-selection
-    {
-      color: #FFFCF0;
-      background: #0F0C00;
-    }
-    ::selection
-    {
-      color: #FFFCF0;
-      background: #0F0C00;
-    }
-    .ebnf a, .grammar a
-    {
-      text-decoration: none;
-    }
-    .ebnf a:hover, .grammar a:hover
-    {
-      color: #050400;
-      text-decoration: underline;
-    }
-    .signature
-    {
-      color: #806600;
-      font-size: 11px;
-      text-align: right;
-    }
-    body
-    {
-      font: normal 12px Verdana, sans-serif;
-      color: #0F0C00;
-      background: #FFFCF0;
-    }
-    a:link, a:visited
-    {
-      color: #0F0C00;
-    }
-    a:link.signature, a:visited.signature
-    {
-      color: #806600;
-    }
-    a.button, #tabs li a
-    {
-      padding: 0.25em 0.5em;
-      border: 1px solid #806600;
-      background: #F1E8C6;
-      color: #806600;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a.button:hover, #tabs li a:hover
-    {
-      color: #050400;
-      background: #FFF6D1;
-      border-color: #050400;
-    }
-    #tabs
-    {
-      padding: 3px 10px;
-      margin-left: 0;
-      margin-top: 58px;
-      border-bottom: 1px solid #0F0C00;
-    }
-    #tabs li
-    {
-      list-style: none;
-      margin-left: 5px;
-      display: inline;
-    }
-    #tabs li a
-    {
-      border-bottom: 1px solid #0F0C00;
-    }
-    #tabs li a.active
-    {
-      color: #0F0C00;
-      background: #FFFCF0;
-      border-color: #0F0C00;
-      border-bottom: 1px solid #FFFCF0;
-      outline: none;
-    }
-    #divs div
-    {
-      display: none;
-      overflow:auto;
-    }
-    #divs div.active
-    {
-      display: block;
-    }
-    #text
-    {
-      border-color: #806600;
-      background: #FFFEFA;
-      color: #050400;
-    }
-    .small
-    {
-      vertical-align: top;
-      text-align: right;
-      font-size: 9px;
-      font-weight: normal;
-      line-height: 120%;
-    }
-    td.small
-    {
-      padding-top: 0px;
-    }
-    .hidden
-    {
-      visibility: hidden;
-    }
-    td:hover .hidden
-    {
-      visibility: visible;
-    }
-    div.download
-    {
-      display: none;
-      background: #FFFCF0;
-      position: absolute;
-      right: 34px;
-      top: 94px;
-      padding: 10px;
-      border: 1px dotted #0F0C00;
-    }
-    #divs div.ebnf, .ebnf code
-    {
-      display: block;
-      padding: 10px;
-      background: #FFF6D1;
-      width: 992px;
-    }
-    #divs div.grammar
-    {
-      display: block;
-      padding-left: 16px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      background: #FFF6D1;
-    }
-    pre
-    {
-      margin: 0px;
-    }
-    .ebnf div
-    {
-      padding-left: 13ch;
-      text-indent: -13ch;
-    }
-    .ebnf code, .grammar code, textarea, pre
-    {
-      font:12px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
-    }
-    tr.option-line td:first-child
-    {
-      text-align: right
-    }
-    tr.option-text td
-    {
-      padding-bottom: 10px
-    }
-    table.palette
-    {
-      border-top: 1px solid #050400;
-      border-right: 1px solid #050400;
-      margin-bottom: 4px
-    }
-    td.palette
-    {
-      border-bottom: 1px solid #050400;
-      border-left: 1px solid #050400;
-    }
-    a.palette
-    {
-      padding: 2px 3px 2px 10px;
-      text-decoration: none;
-    }
-    .palette
-    {
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -o-user-select: none;
-      -ms-user-select: none;
-    }
-  </style><svg xmlns="http://www.w3.org/2000/svg">
-         <defs>
-            <style type="text/css">
-    @namespace "http://www.w3.org/2000/svg";
-    .line                 {fill: none; stroke: #332900; stroke-width: 1;}
-    .bold-line            {stroke: #141000; shape-rendering: crispEdges; stroke-width: 2;}
-    .thin-line            {stroke: #1F1800; shape-rendering: crispEdges}
-    .filled               {fill: #332900; stroke: none;}
-    text.terminal         {font-family: Verdana, Sans-serif;
-                            font-size: 12px;
-                            fill: #141000;
-                            font-weight: bold;
-                          }
-    text.nonterminal      {font-family: Verdana, Sans-serif;
-                            font-size: 12px;
-                            fill: #1A1400;
-                            font-weight: normal;
-                          }
-    text.regexp           {font-family: Verdana, Sans-serif;
-                            font-size: 12px;
-                            fill: #1F1800;
-                            font-weight: normal;
-                          }
-    rect, circle, polygon {fill: #332900; stroke: #332900;}
-    rect.terminal         {fill: #FFDB4D; stroke: #332900; stroke-width: 1;}
-    rect.nonterminal      {fill: #FFEC9E; stroke: #332900; stroke-width: 1;}
-    rect.text             {fill: none; stroke: none;}
-    polygon.regexp        {fill: #FFF4C7; stroke: #332900; stroke-width: 1;}
-  </style>
-         </defs></svg></head>
-   <body>
-      <xhtml:p xmlns:xhtml="http://www.w3.org/1999/xhtml" style="font-size: 14px; font-weight:bold"><xhtml:a name="insert">insert:</xhtml:a></xhtml:p><svg xmlns="http://www.w3.org/2000/svg" width="633" height="69">
-         <defs>
-            <style type="text/css">
-    @namespace "http://www.w3.org/2000/svg";
-    .line                 {fill: none; stroke: #332900; stroke-width: 1;}
-    .bold-line            {stroke: #141000; shape-rendering: crispEdges; stroke-width: 2;}
-    .thin-line            {stroke: #1F1800; shape-rendering: crispEdges}
-    .filled               {fill: #332900; stroke: none;}
-    text.terminal         {font-family: Verdana, Sans-serif;
-                            font-size: 12px;
-                            fill: #141000;
-                            font-weight: bold;
-                          }
-    text.nonterminal      {font-family: Verdana, Sans-serif;
-                            font-size: 12px;
-                            fill: #1A1400;
-                            font-weight: normal;
-                          }
-    text.regexp           {font-family: Verdana, Sans-serif;
-                            font-size: 12px;
-                            fill: #1F1800;
-                            font-weight: normal;
-                          }
-    rect, circle, polygon {fill: #332900; stroke: #332900;}
-    rect.terminal         {fill: #FFDB4D; stroke: #332900; stroke-width: 1;}
-    rect.nonterminal      {fill: #FFEC9E; stroke: #332900; stroke-width: 1;}
-    rect.text             {fill: none; stroke: none;}
-    polygon.regexp        {fill: #FFF4C7; stroke: #332900; stroke-width: 1;}
-  </style>
-         </defs>
-         <polygon points="9 33 1 29 1 37"/>
-         <polygon points="17 33 9 29 9 37"/><a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#INSERT" xlink:title="INSERT">
-            <rect x="31" y="19" width="64" height="32"/>
-            <rect x="29" y="17" width="64" height="32" class="nonterminal"/>
-            <text class="nonterminal" x="39" y="37">INSERT</text></a><a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#INTO" xlink:title="INTO">
-            <rect x="115" y="19" width="50" height="32"/>
-            <rect x="113" y="17" width="50" height="32" class="nonterminal"/>
-            <text class="nonterminal" x="123" y="37">INTO</text></a><a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tableName" xlink:title="tableName">
-            <rect x="185" y="19" width="88" height="32"/>
-            <rect x="183" y="17" width="88" height="32" class="nonterminal"/>
-            <text class="nonterminal" x="193" y="37">tableName</text></a><rect x="313" y="19" width="26" height="32" rx="10"/>
-         <rect x="311" y="17" width="26" height="32" class="terminal" rx="10"/>
-         <text class="terminal" x="321" y="37">(</text><a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#column" xlink:title="column">
-            <rect x="379" y="19" width="64" height="32"/>
-            <rect x="377" y="17" width="64" height="32" class="nonterminal"/>
-            <text class="nonterminal" x="387" y="37">column</text></a><rect x="483" y="19" width="26" height="32" rx="10"/>
-         <rect x="481" y="17" width="26" height="32" class="terminal" rx="10"/>
-         <text class="terminal" x="491" y="37">)</text><a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#query" xlink:title="query">
-            <rect x="549" y="19" width="56" height="32"/>
-            <rect x="547" y="17" width="56" height="32" class="nonterminal"/>
-            <text class="nonterminal" x="557" y="37">query</text></a><svg:path xmlns:svg="http://www.w3.org/2000/svg" class="line" d="m17 33 h2 m0 0 h10 m64 0 h10 m0 0 h10 m50 0 h10 m0 0 h10 m88 0 h10 m20 0 h10 m26 0 h10 m20 0 h10 m64 0 h10 m-104 0 l20 0 m-1 0 q-9 0 -9 -10 l0 -12 q0 -10 10 -10 m84 32 l20 0 m-20 0 q10 0 10 -10 l0 -12 q0 -10 -10 -10 m-84 0 h10 m0 0 h74 m20 32 h10 m26 0 h10 m-236 0 h20 m216 0 h20 m-256 0 q10 0 10 10 m236 0 q0 -10 10 -10 m-246 10 v14 m236 0 v-14 m-236 14 q0 10 10 10 m216 0 q10 0 10 -10 m-226 10 h10 m0 0 h206 m20 -34 h10 m56 0 h10 m3 0 h-3"/>
-         <polygon points="623 33 631 29 631 37"/>
-         <polygon points="623 33 615 29 615 37"/></svg><xhtml:p xmlns:xhtml="http://www.w3.org/1999/xhtml">no references</xhtml:p><xhtml:br xmlns:xhtml="http://www.w3.org/1999/xhtml" /><xhtml:hr xmlns:xhtml="http://www.w3.org/1999/xhtml" />
-      <xhtml:p xmlns:xhtml="http://www.w3.org/1999/xhtml">
-         <xhtml:table border="0" class="signature">
-            <xhtml:tr>
-               <xhtml:td style="width: 100%"> </xhtml:td>
-               <xhtml:td valign="top">
-                  <xhtml:nobr class="signature">... generated by <xhtml:a name="Railroad-Diagram-Generator" class="signature" title="https://bottlecaps.de/rr/ui" href="https://bottlecaps.de/rr/ui" target="_blank">RR - Railroad Diagram Generator</xhtml:a></xhtml:nobr>
-               </xhtml:td>
-               <xhtml:td><xhtml:a name="Railroad-Diagram-Generator" title="https://bottlecaps.de/rr/ui" href="https://bottlecaps.de/rr/ui" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                        <g transform="scale(0.178)">
-                           <circle cx="45" cy="45" r="45" style="stroke:none; fill:#FFCC00"/>
-                           <circle cx="45" cy="45" r="42" style="stroke:#332900; stroke-width:2px; fill:#FFCC00"/>
-                           <line x1="15" y1="15" x2="75" y2="75" stroke="#332900" style="stroke-width:9px;"/>
-                           <line x1="15" y1="75" x2="75" y2="15" stroke="#332900" style="stroke-width:9px;"/>
-                           <text x="7" y="54" style="font-size:26px; font-family:Arial, Sans-serif; font-weight:bold; fill: #332900">R</text>
-                           <text x="64" y="54" style="font-size:26px; font-family:Arial, Sans-serif; font-weight:bold; fill: #332900">R</text>
-                        </g></svg></xhtml:a></xhtml:td>
-            </xhtml:tr>
-         </xhtml:table>
-      </xhtml:p>
-   </body>
-</html>
+<svg class="railroad-diagram" width="281" height="152" viewBox="0 0 281 152">
+<g transform="translate(.5 .5)">
+<g>
+<path d="M20 21v20m10 -20v20m-10 -10h20"></path>
+</g>
+<path d="M40 31h10"></path>
+<g class="comment ">
+<path d="M50 31h0"></path>
+<path d="M123 31h0"></path>
+<text x="86.5" y="36" class="comment">statement</text>
+</g>
+<path d="M123 31h10"></path>
+<g>
+<path d="M133 31h0"></path>
+<path d="M241 31h0"></path>
+<path d="M133 31h20"></path>
+<g class="non-terminal ">
+<path d="M153 31h0"></path>
+<path d="M221 31h0"></path>
+<rect x="153" y="20" width="68" height="22"></rect>
+<text x="187" y="35">insert</text>
+</g>
+<path d="M221 31h20"></path>
+<path d="M133 31a10 10 0 0 1 10 10v10a10 10 0 0 0 10 10"></path>
+<g class="non-terminal ">
+<path d="M153 61h0"></path>
+<path d="M221 61h0"></path>
+<rect x="153" y="50" width="68" height="22"></rect>
+<text x="187" y="65">update</text>
+</g>
+<path d="M221 61a10 10 0 0 0 10 -10v-10a10 10 0 0 1 10 -10"></path>
+<path d="M133 31a10 10 0 0 1 10 10v40a10 10 0 0 0 10 10"></path>
+<g class="non-terminal ">
+<path d="M153 91h0"></path>
+<path d="M221 91h0"></path>
+<rect x="153" y="80" width="68" height="22"></rect>
+<text x="187" y="95">delete</text>
+</g>
+<path d="M221 91a10 10 0 0 0 10 -10v-40a10 10 0 0 1 10 -10"></path>
+<path d="M133 31a10 10 0 0 1 10 10v70a10 10 0 0 0 10 10"></path>
+<g class="non-terminal ">
+<path d="M153 121h4"></path>
+<path d="M217 121h4"></path>
+<rect x="157" y="110" width="60" height="22"></rect>
+<text x="187" y="125">query</text>
+</g>
+<path d="M221 121a10 10 0 0 0 10 -10v-70a10 10 0 0 1 10 -10"></path>
+</g>
+<path d="M 241 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+</g>
+</svg>
+
 {:/}
 
 {% highlight sql %}
