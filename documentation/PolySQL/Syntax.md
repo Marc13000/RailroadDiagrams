@@ -284,9 +284,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
    </body>
 </html>
 
-{:/}
---->
-
 <html>
   <head>
     <script src="jquery.js"></script>
@@ -302,16 +299,19 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
   </body>
 </html>
 
+{:/}
+--->
+
 ![image](../../assets/RD's/insert.png)
 
 {% highlight sql %}
-<BNF start>
+<!--- BNF start --->
 statement:
       insert
   |   update
   |   delete
   |   query
-<BNF end>
+<!--- BNF end --->
 
 insert:
       INSERT INTO tableName
