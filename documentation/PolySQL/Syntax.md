@@ -6,7 +6,7 @@ title: PolySQL Syntax
 This page describes the SQL dialect recognized by Polypheny-DB's default SQL parser in a [BNF](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form)-like form.
 
 {::nomarkdown}
-<svg class="railroad-diagram" width="281" height="152" viewBox="0 0 281 152">
+<!-- <svg class="railroad-diagram" width="281" height="152" viewBox="0 0 281 152">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
@@ -56,16 +56,20 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 </g>
 <path d="M 241 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
-</svg>
+</svg> -->
 
 {:/}
 
+![image](/assets/RD's/insert.png)
+
 {% highlight sql %}
+"BNF start"
 statement:
       insert
   |   update
   |   delete
   |   query
+"BNF end"
 
 insert:
       INSERT INTO tableName
