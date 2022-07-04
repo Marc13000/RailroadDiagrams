@@ -1,5 +1,8 @@
 const fs = require('fs');
 const readLine = require('readline');
+import rr from "./railroad.js";
+const d = rr.Diagram("foo", rr.Choice(0, "bar", "baz"));
+console.log(d);
 
 fs.readdir('../documentation/PolySQL/', (err, files) => {
     if (err) {
