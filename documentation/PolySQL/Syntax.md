@@ -60,7 +60,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 
 {:/}
 
-![image](/assets/RD's/insert.png)
+![image](../../assets/RD's/insert.png)
 
 {% highlight sql %}
 "BNF start"
