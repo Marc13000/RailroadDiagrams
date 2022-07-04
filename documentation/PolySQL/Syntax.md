@@ -7,6 +7,42 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 
 {::nomarkdown}
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+      <meta name="generator" content="Railroad Diagram Generator 1.63" />
+      <style type="text/css">
+    ::-moz-selection
+    {
+      color: #FFFCF0;
+      background: #0F0C00;
+    }
+    ::selection
+    {
+      color: #FFFCF0;
+      background: #0F0C00;
+    }
+    .ebnf a, .grammar a
+    {
+      text-decoration: none;
+    }
+    .ebnf a:hover, .grammar a:hover
+    {
+      color: #050400;
+      text-decoration: underline;
+    }
+    .signature
+    {
+      color: #806600;
+      font-size: 11px;
+      text-align: right;
+    }
+    body
+    {
+      font: normal 12px Verdana, sans-serif;
+      color: #0F0C00;
+      background: #FFFCF0;
+    }
     a:link, a:visited
     {
       color: #0F0C00;
@@ -243,60 +279,9 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
             <rect x="547" y="17" width="56" height="32" class="nonterminal"/>
             <text class="nonterminal" x="557" y="37">query</text></a><svg:path xmlns:svg="http://www.w3.org/2000/svg" class="line" d="m17 33 h2 m0 0 h10 m64 0 h10 m0 0 h10 m50 0 h10 m0 0 h10 m88 0 h10 m20 0 h10 m26 0 h10 m20 0 h10 m64 0 h10 m-104 0 l20 0 m-1 0 q-9 0 -9 -10 l0 -12 q0 -10 10 -10 m84 32 l20 0 m-20 0 q10 0 10 -10 l0 -12 q0 -10 -10 -10 m-84 0 h10 m0 0 h74 m20 32 h10 m26 0 h10 m-236 0 h20 m216 0 h20 m-256 0 q10 0 10 10 m236 0 q0 -10 10 -10 m-246 10 v14 m236 0 v-14 m-236 14 q0 10 10 10 m216 0 q10 0 10 -10 m-226 10 h10 m0 0 h206 m20 -34 h10 m56 0 h10 m3 0 h-3"/>
          <polygon points="623 33 631 29 631 37"/>
-         <polygon points="623 33 615 29 615 37"/></svg><xhtml:p xmlns:xhtml="http://www.w3.org/1999/xhtml">no references</xhtml:p><xhtml:br xmlns:xhtml="http://www.w3.org/1999/xhtml" /><xhtml:hr xmlns:xhtml="http://www.w3.org/1999/xhtml" />
+         <polygon points="623 33 615 29 615 37"/></svg>
    </body>
 </html>
-<!-- <svg class="railroad-diagram" width="281" height="152" viewBox="0 0 281 152">
-<g transform="translate(.5 .5)">
-<g>
-<path d="M20 21v20m10 -20v20m-10 -10h20"></path>
-</g>
-<path d="M40 31h10"></path>
-<g class="comment ">
-<path d="M50 31h0"></path>
-<path d="M123 31h0"></path>
-<text x="86.5" y="36" class="comment">statement</text>
-</g>
-<path d="M123 31h10"></path>
-<g>
-<path d="M133 31h0"></path>
-<path d="M241 31h0"></path>
-<path d="M133 31h20"></path>
-<g class="non-terminal ">
-<path d="M153 31h0"></path>
-<path d="M221 31h0"></path>
-<rect x="153" y="20" width="68" height="22"></rect>
-<text x="187" y="35">insert</text>
-</g>
-<path d="M221 31h20"></path>
-<path d="M133 31a10 10 0 0 1 10 10v10a10 10 0 0 0 10 10"></path>
-<g class="non-terminal ">
-<path d="M153 61h0"></path>
-<path d="M221 61h0"></path>
-<rect x="153" y="50" width="68" height="22"></rect>
-<text x="187" y="65">update</text>
-</g>
-<path d="M221 61a10 10 0 0 0 10 -10v-10a10 10 0 0 1 10 -10"></path>
-<path d="M133 31a10 10 0 0 1 10 10v40a10 10 0 0 0 10 10"></path>
-<g class="non-terminal ">
-<path d="M153 91h0"></path>
-<path d="M221 91h0"></path>
-<rect x="153" y="80" width="68" height="22"></rect>
-<text x="187" y="95">delete</text>
-</g>
-<path d="M221 91a10 10 0 0 0 10 -10v-40a10 10 0 0 1 10 -10"></path>
-<path d="M133 31a10 10 0 0 1 10 10v70a10 10 0 0 0 10 10"></path>
-<g class="non-terminal ">
-<path d="M153 121h4"></path>
-<path d="M217 121h4"></path>
-<rect x="157" y="110" width="60" height="22"></rect>
-<text x="187" y="125">query</text>
-</g>
-<path d="M221 121a10 10 0 0 0 10 -10v-70a10 10 0 0 1 10 -10"></path>
-</g>
-<path d="M 241 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
-</g>
-</svg> -->
 
 {:/}
 
