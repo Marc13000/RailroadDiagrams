@@ -342,7 +342,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 </g>
 <path d="M 191 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
-</svg>\
+</svg>
 {:/}
 <!--- BNF end --->
 
