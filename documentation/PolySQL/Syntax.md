@@ -307,6 +307,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 {% highlight sql %}
 <!--- BNF start --->
 {::nomarkdown}
+<html>
 <svg class="railroad-diagram" width="231" height="92" viewBox="0 0 231 92">
 <g transform="translate(.5 .5)">
 <g>
@@ -343,6 +344,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M 191 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
+</html>
 {:/}
 <!--- BNF end --->
 
