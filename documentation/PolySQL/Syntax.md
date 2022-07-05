@@ -306,6 +306,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 
 {% highlight sql %}
 <!--- BNF start --->
+{% endhighlight %}
 {::nomarkdown}
 <html>
 <svg class="railroad-diagram" width="231" height="92" viewBox="0 0 231 92">
@@ -346,8 +347,8 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 </svg>
 </html>
 {:/}
+{% highlight sql %}
 <!--- BNF end --->
-
 insert:
       INSERT INTO tableName
       [ '(' column [, column ]* ')' ]
