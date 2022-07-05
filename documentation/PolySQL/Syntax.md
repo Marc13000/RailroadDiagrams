@@ -309,7 +309,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 {% endhighlight %}
 {::nomarkdown}
 <html>
-<link rel="stylesheet" type="text/css" href = "../../parser/generator/railroad.css">
+<link rel="stylesheet" type="text/css" href = "railroad.css">
 <svg class="railroad-diagram" width="231" height="92" viewBox="0 0 231 92">
 <g transform="translate(.5 .5)">
 <g>
