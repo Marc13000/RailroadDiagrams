@@ -28,6 +28,7 @@ function editFile(file) {
             console.log(bnf_code);//add function here to convert to rd's
             const d = rr.Diagram("foo", rr.Choice(0, "bar", "baz"));
             console.log(d.toSVG);
+            result = result.replace(bnf_code, d.toString());
             // const diagram = changeToDiagram(bnf_code);
             // result = result.replace(bnf_code, diagram);
             bnf_code = "";
@@ -42,4 +43,6 @@ function editFile(file) {
     }
     fs.writeFileSync(file, result, 'utf8');
 }
+
+// function generate_diagram()
 
