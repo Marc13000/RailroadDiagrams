@@ -368,7 +368,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <g class="terminal ">
 <path d="M50 31h0"></path>
 <path d="M95.5 31h0"></path>
-<rect x="50" y="20" width="45.5" height="22" rx="10" ry="10"></rect>
+<rect x="50" y="20" width="45.5" height="22"></rect>
 <text x="72.75" y="35">foo</text>
 </g>
 <path d="M95.5 31h10"></path>
@@ -379,7 +379,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <g class="terminal ">
 <path d="M125.5 31h0"></path>
 <path d="M171 31h0"></path>
-<rect x="125.5" y="20" width="45.5" height="22" rx="10" ry="10"></rect>
+<rect x="125.5" y="20" width="45.5" height="22"></rect>
 <text x="148.25" y="35">bar</text>
 </g>
 <path d="M171 31h20"></path>
@@ -387,7 +387,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <g class="terminal ">
 <path d="M125.5 61h0"></path>
 <path d="M171 61h0"></path>
-<rect x="125.5" y="50" width="45.5" height="22" rx="10" ry="10"></rect>
+<rect x="125.5" y="50" width="45.5" height="22"></rect>
 <text x="148.25" y="65">baz</text>
 </g>
 <path d="M171 61a10 10 0 0 0 10 -10v-10a10 10 0 0 1 10 -10"></path>
