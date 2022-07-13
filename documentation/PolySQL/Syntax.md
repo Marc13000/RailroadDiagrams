@@ -305,8 +305,8 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 ![image](../../assets/RD's/insert.png)
 
 {% highlight sql %}
-<!--- BNF start --->
 {% endhighlight %}
+<!--- BNF start --->
 {::nomarkdown}
 <html>
 <style>
@@ -314,7 +314,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
    background-color: hsl(30,20%,95%);
  }
  svg.railroad-diagram path {
-   stroke-width: 1;
+   stroke-width: 1.5;
    stroke: black;
    fill: rgba(0,0,0,0);
  }
@@ -339,7 +339,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
    /*font-style: italic;*/
  }
  svg.railroad-diagram rect {
-   stroke-width: 1;
+   stroke-width: 2;
    stroke: black;
    fill: hsl(120,100%,90%);
  }
@@ -349,7 +349,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
    fill: none;
  }
  svg.railroad-diagram path.diagram-text {
-   stroke-width: 1;
+   stroke-width: 1.5;
    stroke: black;
    fill: white;
    cursor: help;
