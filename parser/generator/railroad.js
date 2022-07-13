@@ -34,7 +34,7 @@ export const defaultCSS = `
 		background-color: hsl(30,20%,95%);
 	}
 	path {
-		stroke-width: 3;
+		stroke-width: 1;
 		stroke: black;
 		fill: rgba(0,0,0,0);
 	}
@@ -59,7 +59,7 @@ export const defaultCSS = `
 		/*font-style: italic;*/
 	}
 	rect {
-		stroke-width: 3;
+		stroke-width: 1;
 		stroke: black;
 		fill: hsl(120,100%,90%);
 	}
@@ -69,7 +69,7 @@ export const defaultCSS = `
 		fill: none;
 	}
 	path.diagram-text {
-		stroke-width: 3;
+		stroke-width: 1;
 		stroke: black;
 		fill: white;
 		cursor: help;
