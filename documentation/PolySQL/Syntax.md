@@ -341,7 +341,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
-       fill: hsl(163°, 20%, 100%);
+       fill: hsl(173°, 35%, 100%);
      }
      svg.railroad-diagram rect.group-box {
        stroke: gray;
@@ -367,7 +367,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <g class="terminal ">
 <path d="M50 31h0"></path>
 <path d="M97 31h0"></path>
-<rect x="50" y="20" width="47" height="22" rx="10" ry="10"></rect>
+<rect x="50" y="20" width="47" height="22"></rect>
 <text x="73.5" y="35">foo</text>
 </g>
 <path d="M97 31h10"></path>
@@ -378,7 +378,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <g class="terminal ">
 <path d="M143 31h0"></path>
 <path d="M190 31h0"></path>
-<rect x="143" y="20" width="47" height="22" rx="10" ry="10"></rect>
+<rect x="143" y="20" width="47" height="22"></rect>
 <text x="166.5" y="35">bar</text>
 </g>
 <path d="M190 31h36"></path>
@@ -386,7 +386,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <g class="terminal ">
 <path d="M143 67h0"></path>
 <path d="M190 67h0"></path>
-<rect x="143" y="56" width="47" height="22" rx="10" ry="10"></rect>
+<rect x="143" y="56" width="47" height="22"></rect>
 <text x="166.5" y="71">baz</text>
 </g>
 <path d="M190 67a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
