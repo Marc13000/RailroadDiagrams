@@ -341,7 +341,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
-       fill: hsl(173°, 35%, 100%);
+       fill: #eee;
      }
      svg.railroad-diagram rect.group-box {
        stroke: gray;
