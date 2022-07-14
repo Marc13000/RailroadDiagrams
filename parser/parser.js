@@ -16,8 +16,8 @@ fs.readdir('../documentation/PolySQL/', (err, files) => {
 
 function editFile(file) {
     const css_var = ` {::nomarkdown}
-    <html>
-    <style>
+<html>
+<style>
      svg.railroad-diagram {
        background-color: hsl(30,20%,95%);
      }
@@ -65,8 +65,8 @@ function editFile(file) {
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
        fill: #eee;
      }
-     </style>
-    `
+</style>
+`
     const data = fs.readFileSync(file, 'utf8');
     var lines = data.split("\n");
     var result = data;

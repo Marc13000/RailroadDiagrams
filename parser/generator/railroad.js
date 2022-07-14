@@ -61,7 +61,7 @@ export const defaultCSS = `
 	rect {
 		stroke-width: 1;
 		stroke: black;
-		fill: hsl(120,100%,90%);
+		fill: hsl(173°, 35%, 100%);
 	}
 	rect.group-box {
 		stroke: gray;
