@@ -307,59 +307,58 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 {% highlight sql %}
 {% endhighlight %}
 <!--- BNF start --->
-{::nomarkdown}
-<html>
-<style>
- svg.railroad-diagram {
-   background-color: hsl(30,20%,95%);
- }
- svg.railroad-diagram path {
-   stroke-width: 1.5;
-   stroke: black;
-   fill: rgba(0,0,0,0);
- }
- svg.railroad-diagram text {
-   font: bold 14px monospace;
-   text-anchor: middle;
-   white-space: pre;
- }
- svg.railroad-diagram text.diagram-text {
-   font-size: 12px;
- }
- svg.railroad-diagram text.diagram-arrow {
-   font-size: 16px;
- }
- svg.railroad-diagram text.label {
-   text-anchor: start;
- }
- svg.railroad-diagram text.comment {
-   font: italic 12px monospace;
- }
- svg.railroad-diagram g.non-terminal text {
-   /*font-style: italic;*/
- }
- svg.railroad-diagram rect {
-   stroke-width: 2;
-   stroke: black;
-   fill: hsl(120,100%,90%);
- }
- svg.railroad-diagram rect.group-box {
-   stroke: gray;
-   stroke-dasharray: 10 5;
-   fill: none;
- }
- svg.railroad-diagram path.diagram-text {
-   stroke-width: 1.5;
-   stroke: black;
-   fill: white;
-   cursor: help;
- }
- svg.railroad-diagram g.diagram-text:hover path.diagram-text {
-   fill: #eee;
- }
- </style>
-
-<svg class="railroad-diagram" width="231" height="92" viewBox="0 0 231 92">
+ {::nomarkdown}
+    <html>
+    <style>
+     svg.railroad-diagram {
+       background-color: hsl(30,20%,95%);
+     }
+     svg.railroad-diagram path {
+       stroke-width: 1.5;
+       stroke: black;
+       fill: rgba(0,0,0,0);
+     }
+     svg.railroad-diagram text {
+       font: bold 14px monospace;
+       text-anchor: middle;
+       white-space: pre;
+     }
+     svg.railroad-diagram text.diagram-text {
+       font-size: 12px;
+     }
+     svg.railroad-diagram text.diagram-arrow {
+       font-size: 16px;
+     }
+     svg.railroad-diagram text.label {
+       text-anchor: start;
+     }
+     svg.railroad-diagram text.comment {
+       font: italic 12px monospace;
+     }
+     svg.railroad-diagram g.non-terminal text {
+       /*font-style: italic;*/
+     }
+     svg.railroad-diagram rect {
+       stroke-width: 2;
+       stroke: black;
+       fill: hsl(120,100%,90%);
+     }
+     svg.railroad-diagram rect.group-box {
+       stroke: gray;
+       stroke-dasharray: 10 5;
+       fill: none;
+     }
+     svg.railroad-diagram path.diagram-text {
+       stroke-width: 1.5;
+       stroke: black;
+       fill: white;
+       cursor: help;
+     }
+     svg.railroad-diagram g.diagram-text:hover path.diagram-text {
+       fill: #eee;
+     }
+     </style>
+    <svg class="railroad-diagram" width="266" height="98" viewBox="0 0 266 98">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
@@ -367,37 +366,36 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M40 31h10"></path>
 <g class="terminal ">
 <path d="M50 31h0"></path>
-<path d="M95.5 31h0"></path>
-<rect x="50" y="20" width="45.5" height="22"></rect>
-<text x="72.75" y="35">foo</text>
+<path d="M97 31h0"></path>
+<rect x="50" y="20" width="47" height="22" rx="10" ry="10"></rect>
+<text x="73.5" y="35">foo</text>
 </g>
-<path d="M95.5 31h10"></path>
+<path d="M97 31h10"></path>
 <g>
-<path d="M105.5 31h0"></path>
-<path d="M191 31h0"></path>
-<path d="M105.5 31h20"></path>
+<path d="M107 31h0"></path>
+<path d="M226 31h0"></path>
+<path d="M107 31h36"></path>
 <g class="terminal ">
-<path d="M125.5 31h0"></path>
-<path d="M171 31h0"></path>
-<rect x="125.5" y="20" width="45.5" height="22"></rect>
-<text x="148.25" y="35">bar</text>
+<path d="M143 31h0"></path>
+<path d="M190 31h0"></path>
+<rect x="143" y="20" width="47" height="22" rx="10" ry="10"></rect>
+<text x="166.5" y="35">bar</text>
 </g>
-<path d="M171 31h20"></path>
-<path d="M105.5 31a10 10 0 0 1 10 10v10a10 10 0 0 0 10 10"></path>
+<path d="M190 31h36"></path>
+<path d="M107 31a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
 <g class="terminal ">
-<path d="M125.5 61h0"></path>
-<path d="M171 61h0"></path>
-<rect x="125.5" y="50" width="45.5" height="22"></rect>
-<text x="148.25" y="65">baz</text>
+<path d="M143 67h0"></path>
+<path d="M190 67h0"></path>
+<rect x="143" y="56" width="47" height="22" rx="10" ry="10"></rect>
+<text x="166.5" y="71">baz</text>
 </g>
-<path d="M171 61a10 10 0 0 0 10 -10v-10a10 10 0 0 1 10 -10"></path>
+<path d="M190 67a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 </g>
-<path d="M 191 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M 226 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
-</html>
-{:/}
-<!--- BNF end --->
+</html> 
+{:/}<!--- BNF end --->
 {% highlight sql %}
 insert:
       INSERT INTO tableName
