@@ -507,7 +507,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M 451 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
-</html> 
+</html>
 {:/}
 {% highlight sql %}
 <!--- BNF end --->

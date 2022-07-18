@@ -15,7 +15,7 @@ fs.readdir('../documentation/PolySQL/', (err, files) => {
 });
 
 function editFile(file) {
-    const css_var = ` {::nomarkdown}
+    const css_var = `{::nomarkdown}
 <html>
 <style>
      svg.railroad-diagram {
