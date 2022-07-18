@@ -397,6 +397,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 </html> 
 {:/}
 {% highlight sql %}
+{% endhighlight %}
 <!--- BNF start --->
 {::nomarkdown}
 <html>
@@ -460,6 +461,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 </html> 
 {:/}
 <!--- BNF end --->
+{% highlight sql %}
 
 update:
       UPDATE tableName
