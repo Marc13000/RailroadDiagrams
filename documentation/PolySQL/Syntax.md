@@ -397,8 +397,10 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 </html> 
 {:/}
 {% highlight sql %}
+
+{% endhighlight %}
 <!--- BNF start --->
- {::nomarkdown}
+{::nomarkdown}
 <html>
 <style>
      svg.railroad-diagram {
