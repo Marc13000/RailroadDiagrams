@@ -306,7 +306,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 
 {% highlight sql %}
 {% endhighlight %}
-<!--- BNF start --->
+
 {::nomarkdown}
 <html>
 <style>
@@ -396,12 +396,69 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 </svg>
 </html> 
 {:/}
-<!--- BNF end --->
 {% highlight sql %}
-insert:
-      INSERT INTO tableName
-      [ '(' column [, column ]* ')' ]
-      query
+<!--- BNF start --->
+ {::nomarkdown}
+<html>
+<style>
+     svg.railroad-diagram {
+       background-color: hsl(30,20%,95%);
+     }
+     svg.railroad-diagram path {
+       stroke-width: 1.5;
+       stroke: black;
+       fill: rgba(0,0,0,0);
+     }
+     svg.railroad-diagram text {
+       font: bold 14px monospace;
+       text-anchor: middle;
+       white-space: pre;
+     }
+     svg.railroad-diagram text.diagram-text {
+       font-size: 12px;
+     }
+     svg.railroad-diagram text.diagram-arrow {
+       font-size: 16px;
+     }
+     svg.railroad-diagram text.label {
+       text-anchor: start;
+     }
+     svg.railroad-diagram text.comment {
+       font: italic 12px monospace;
+     }
+     svg.railroad-diagram g.non-terminal text {
+       /*font-style: italic;*/
+     }
+     svg.railroad-diagram rect {
+       stroke-width: 2;
+       stroke: black;
+       fill: hsl(120,100%,90%);
+     }
+     svg.railroad-diagram rect.group-box {
+       stroke: gray;
+       stroke-dasharray: 10 5;
+       fill: none;
+     }
+     svg.railroad-diagram path.diagram-text {
+       stroke-width: 1.5;
+       stroke: black;
+       fill: white;
+       cursor: help;
+     }
+     svg.railroad-diagram g.diagram-text:hover path.diagram-text {
+       fill: #eee;
+     }
+</style>
+<svg class="railroad-diagram" width="80" height="60" viewBox="0 0 80 60">
+<g transform="translate(.5 .5)">
+<g>
+<path d="M20 20v20m10 -20v20m-10 -10h20"></path>
+</g>
+<path d="M 40 30 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+</g>
+</svg>
+</html> 
+{:/}<!--- BNF end --->
 
 update:
       UPDATE tableName

@@ -1,6 +1,6 @@
 import fs from 'fs';
 import readLine from 'readline';
-import rr from "./generator/railroad.js";
+import rr, { Diagram } from "./generator/railroad.js";
 
 fs.readdir('../documentation/PolySQL/', (err, files) => {
     if (err) {
@@ -78,7 +78,7 @@ function editFile(file) {
         if (text.includes("BNF end")) {
             console.log(text);
             console.log(bnf_code);//add function here to convert to rd's
-            const d = rr.Diagram("foo", rr.Choice(0, "bar", "baz"));
+            const d = generate_diagram(bnf_code);
             console.log(d.toSVG);
             result = result.replace(bnf_code, css_var+d.toString()+"</html> \n{:/}");
             // const diagram = changeToDiagram(bnf_code);
@@ -96,5 +96,22 @@ function editFile(file) {
     fs.writeFileSync(file, result, 'utf8');
 }
 
-// function generate_diagram()
+function generate_diagram(bnf_code) {
+    var d = rr.Diagram();
+    var bnf_lines = bnf_code.split("\n");
+    for(let i = 1; i < 2; i++) {
+        bnf_lines[i].trim();
+        var s = "";
+        for(let j = 0; j < bnf_lines[i].length; j++) {
+            var c = bnf_lines[i].charAt[j];
+            if(c == ' ') {
+                d = new Diagram(d, new Diagram(NonTerminal(s)));
+            }
+            else {
+                s = s+c;
+            }
+        }
+    }
+    return d;
+}
 
