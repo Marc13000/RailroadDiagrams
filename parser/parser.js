@@ -77,10 +77,10 @@ function editFile(file) {
         var text = lines[j];
         if (text.includes("BNF end")) {
             console.log(text);
-            console.log(bnf_code);//add function here to convert to rd's
+            //console.log(bnf_code);//add function here to convert to rd's
             const d = generate_diagram(bnf_code);
-            console.log(d.toSVG);
-            result = result.replace(bnf_code, css_var+d.toString()+"</html> \n{:/}");
+            //console.log(d.toSVG);
+            result = result.replace(bnf_code, css_var+"{% endhighlight %}"+d.toString()+"</html> \n{:/}\n{% highlight sql %}\n");
             // const diagram = changeToDiagram(bnf_code);
             // result = result.replace(bnf_code, diagram);
             bnf_code = "";
@@ -100,12 +100,17 @@ function generate_diagram(bnf_code) {
     var d = rr.Diagram();
     var bnf_lines = bnf_code.split("\n");
     for(let i = 1; i < 2; i++) {
-        bnf_lines[i].trim();
+        bnf_lines[i] = bnf_lines[i].trim();
         var s = "";
         for(let j = 0; j < bnf_lines[i].length; j++) {
-            var c = bnf_lines[i].charAt[j];
+            var c = bnf_lines[i].charAt(j);
             if(c == ' ') {
-                d = new Diagram(d, new Diagram(NonTerminal(s)));
+                d = new Diagram(d, rr.NonTerminal(s));
+                s = "";
+            }
+            else if(j == bnf_lines[i].length - 1){
+                s = s+c;
+                d = new Diagram(d, rr.NonTerminal(s));
             }
             else {
                 s = s+c;
