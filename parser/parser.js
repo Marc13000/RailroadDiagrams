@@ -15,7 +15,8 @@ fs.readdir('../documentation/PolySQL/', (err, files) => {
 });
 
 function editFile(file) {
-    const css_var = `{::nomarkdown}
+    const css_var = `{% endhighlight %}
+{::nomarkdown}
 <html>
 <style>
      svg.railroad-diagram {
@@ -80,7 +81,7 @@ function editFile(file) {
             //console.log(bnf_code);//add function here to convert to rd's
             const d = generate_diagram(bnf_code);
             //console.log(d.toSVG);
-            result = result.replace(bnf_code, css_var+"{% endhighlight %}"+d.toString()+"</html> \n{:/}\n{% highlight sql %}\n");
+            result = result.replace(bnf_code, css_var+d.toString()+"</html> \n{:/}\n{% highlight sql %}\n");
             // const diagram = changeToDiagram(bnf_code);
             // result = result.replace(bnf_code, diagram);
             bnf_code = "";

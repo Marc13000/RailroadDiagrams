@@ -451,7 +451,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
        fill: #eee;
      }
 </style>
-{% endhighlight %}<svg class="railroad-diagram" width="491" height="62" viewBox="0 0 491 62">
+<svg class="railroad-diagram" width="491" height="62" viewBox="0 0 491 62">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
