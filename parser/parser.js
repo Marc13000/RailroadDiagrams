@@ -101,23 +101,43 @@ function generate_diagram(bnf_code) {
     var bnf_lines = bnf_code.split("\n");
     for(let i = 1; i < 2; i++) {
         bnf_lines[i] = bnf_lines[i].trim() + ' ';
-        var s = "";
-        var sequence = [];
+        var s = "rr.NonTerminal('";
         for(let j = 0; j < bnf_lines[i].length; j++) {
             var c = bnf_lines[i].charAt(j);
-            if(c == ' ') {
-                console.log(sequence);
-                sequence.push(rr.NonTerminal(s));
-                s = "";
+            if(c == ' ' && j != bnf_lines[i].length - 1) {
+              s += "'),rr.NonTerminal('"
             }
             else {
                 s = s+c;
             }
             if(j == bnf_lines[i].length - 1){
-                var d = rr.ComplexDiagram(rr.Sequence(sequence));
+                s += "')";
+                var d = eval("rr.Diagram(rr.Sequence("+s+"))");
             }
         }
     }
     return d;
+}
+
+function process(input) {
+	if(!input) input = find('.input').value;
+	// const standalone = find('#option-standalone').checked;
+	// rrOptions.VS = parseInt(find("#option-vs").value, 10);
+	// rrOptions.AR = parseInt(find("#option-ar").value, 10);
+	// rrOptions.STROKE_ODD_PIXEL_LENGTH = find("#option-odd-stroke").checked;
+	// rrOptions.CHAR_WIDTH = parseInt(find("#option-char-width").value, 10);
+	// rrOptions.COMMENT_CHAR_WIDTH = parseInt(find("#option-comment-width").value, 10);
+	// rrOptions.INTERNAL_ALIGNMENT = find("#option-alignment").value;
+	try {
+		var result = eval(input).format();
+		// location.hash = "#" + encodeURIComponent(input);
+	} catch (e) {
+		find('.output-text').textContent = "Invalid input.\n" + e
+		throw e;
+	}
+	// find('.output-image').innerHTML = '';
+	// result.addTo(find('.output-image'));
+	// find('.output-text').textContent = standalone ? result.toStandalone() : result.toString();
+	console.log(result);
 }
 

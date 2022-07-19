@@ -474,22 +474,94 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M 309 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
-<script src='./parser/generator/railroad.js'>
-ComplexDiagram(
-	Choice(0, Skip(), '-'),
-	Choice(0, NonTerminal('name-start char'), NonTerminal('escape')),
-	ZeroOrMore(
-		Choice(0, NonTerminal('name char'), NonTerminal('escape')))).addTo();
-</script>
 </html> 
 {:/}
 {% highlight sql %}
 
 <!--- BNF start --->
-update:
-      UPDATE tableName
-      SET assign [, assign ]*
-      [ WHERE booleanExpression ]
+{% endhighlight %}
+{::nomarkdown}
+<html>
+<style>
+     svg.railroad-diagram {
+       background-color: hsl(30,20%,95%);
+     }
+     svg.railroad-diagram path {
+       stroke-width: 1.5;
+       stroke: black;
+       fill: rgba(0,0,0,0);
+     }
+     svg.railroad-diagram text {
+       font: bold 14px monospace;
+       text-anchor: middle;
+       white-space: pre;
+     }
+     svg.railroad-diagram text.diagram-text {
+       font-size: 12px;
+     }
+     svg.railroad-diagram text.diagram-arrow {
+       font-size: 16px;
+     }
+     svg.railroad-diagram text.label {
+       text-anchor: start;
+     }
+     svg.railroad-diagram text.comment {
+       font: italic 12px monospace;
+     }
+     svg.railroad-diagram g.non-terminal text {
+       /*font-style: italic;*/
+     }
+     svg.railroad-diagram rect {
+       stroke-width: 2;
+       stroke: black;
+       fill: hsl(120,100%,90%);
+     }
+     svg.railroad-diagram rect.group-box {
+       stroke: gray;
+       stroke-dasharray: 10 5;
+       fill: none;
+     }
+     svg.railroad-diagram path.diagram-text {
+       stroke-width: 1.5;
+       stroke: black;
+       fill: white;
+       cursor: help;
+     }
+     svg.railroad-diagram g.diagram-text:hover path.diagram-text {
+       fill: #eee;
+     }
+</style>
+<svg class="railroad-diagram" width="304" height="62" viewBox="0 0 304 62">
+<g transform="translate(.5 .5)">
+<g>
+<path d="M20 21v20m10 -20v20m-10 -10h20"></path>
+</g>
+<path d="M40 31h10"></path>
+<g>
+<path d="M50 31h0"></path>
+<path d="M254 31h0"></path>
+<g class="non-terminal ">
+<path d="M50 31h0"></path>
+<path d="M124 31h0"></path>
+<rect x="50" y="20" width="74" height="22"></rect>
+<text x="87" y="35">UPDATE</text>
+</g>
+<path d="M124 31h10"></path>
+<path d="M134 31h10"></path>
+<g class="non-terminal ">
+<path d="M144 31h0"></path>
+<path d="M254 31h0"></path>
+<rect x="144" y="20" width="110" height="22"></rect>
+<text x="199" y="35">tableName </text>
+</g>
+</g>
+<path d="M254 31h10"></path>
+<path d="M 264 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+</g>
+</svg>
+</html> 
+{:/}
+{% highlight sql %}
 <!--- BNF end --->
 
 assign:
