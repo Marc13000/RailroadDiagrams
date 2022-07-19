@@ -399,7 +399,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 {% highlight sql %}
 
 {% endhighlight %}
-<!--- BNF start --->
 {::nomarkdown}
 <html>
 <style>
@@ -451,71 +450,47 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
        fill: #eee;
      }
 </style>
-<svg class="railroad-diagram" width="491" height="62" viewBox="0 0 491 62">
+<svg class="railroad-diagram" width="349" height="62" viewBox="0 0 349 62">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
 </g>
-<svg class="railroad-diagram" width="352" height="352" viewBox="0 0 352 352">
+<svg class="railroad-diagram" width="102" height="100" viewBox="0 0 102 100">
 <g transform="translate(.5 .5)">
 <g>
-<path d="M31 41v20m10 -20v20m-10 -10h20"></path>
+<path d="M31 40v20m10 -20v20m-10 -10h20"></path>
 </g>
-<svg class="railroad-diagram" width="276" height="247" viewBox="0 0 276 247">
-<g transform="translate(.5 .5)">
-<g>
-<path d="M51 52v20m10 -20v20m-10 -10h20"></path>
-</g>
-<svg class="railroad-diagram" width="164" height="131" viewBox="0 0 164 131">
-<g transform="translate(.5 .5)">
-<g>
-<path d="M62 71v20m10 -20v20m-10 -10h20"></path>
-</g>
-<path d="M 82 81 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M 51 50 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
-<path d="M111 62h10"></path>
+<path d="M80 31h10"></path>
 <g class="non-terminal ">
-<path d="M121 62h0"></path>
-<path d="M195 62h0"></path>
-<rect x="121" y="51" width="74" height="22"></rect>
-<text x="158" y="66">INSERT</text>
+<path d="M90 31h0"></path>
+<path d="M299 31h0"></path>
+<rect x="90" y="20" width="209" height="22"></rect>
+<text x="194.5" y="35">INSERT,INTO,tableName</text>
 </g>
-<path d="M195 62h10"></path>
-<path d="M 205 62 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
-</g>
-</svg>
-<path d="M225 51h10"></path>
-<g class="non-terminal ">
-<path d="M235 51h0"></path>
-<path d="M291 51h0"></path>
-<rect x="235" y="40" width="56" height="22"></rect>
-<text x="263" y="55">INTO</text>
-</g>
-<path d="M291 51h10"></path>
-<path d="M 301 51 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M299 31h10"></path>
+<path d="M 309 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
-<path d="M330 31h10"></path>
-<g class="non-terminal ">
-<path d="M340 31h0"></path>
-<path d="M441 31h0"></path>
-<rect x="340" y="20" width="101" height="22"></rect>
-<text x="390.5" y="35">tableName</text>
-</g>
-<path d="M441 31h10"></path>
-<path d="M 451 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
-</g>
-</svg>
-</html>
+<script src='./parser/generator/railroad.js'>
+ComplexDiagram(
+	Choice(0, Skip(), '-'),
+	Choice(0, NonTerminal('name-start char'), NonTerminal('escape')),
+	ZeroOrMore(
+		Choice(0, NonTerminal('name char'), NonTerminal('escape')))).addTo();
+</script>
+</html> 
 {:/}
 {% highlight sql %}
-<!--- BNF end --->
 
+<!--- BNF start --->
 update:
       UPDATE tableName
       SET assign [, assign ]*
       [ WHERE booleanExpression ]
+<!--- BNF end --->
 
 assign:
       identifier '=' expression

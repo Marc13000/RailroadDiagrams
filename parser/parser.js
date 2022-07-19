@@ -98,23 +98,23 @@ function editFile(file) {
 }
 
 function generate_diagram(bnf_code) {
-    var d = rr.Diagram();
     var bnf_lines = bnf_code.split("\n");
     for(let i = 1; i < 2; i++) {
-        bnf_lines[i] = bnf_lines[i].trim();
+        bnf_lines[i] = bnf_lines[i].trim() + ' ';
         var s = "";
+        var sequence = [];
         for(let j = 0; j < bnf_lines[i].length; j++) {
             var c = bnf_lines[i].charAt(j);
             if(c == ' ') {
-                d = new Diagram(d, rr.NonTerminal(s));
+                console.log(sequence);
+                sequence.push(rr.NonTerminal(s));
                 s = "";
-            }
-            else if(j == bnf_lines[i].length - 1){
-                s = s+c;
-                d = new Diagram(d, rr.NonTerminal(s));
             }
             else {
                 s = s+c;
+            }
+            if(j == bnf_lines[i].length - 1){
+                var d = rr.ComplexDiagram(rr.Sequence(sequence));
             }
         }
     }
