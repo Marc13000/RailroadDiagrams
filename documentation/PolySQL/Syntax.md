@@ -531,7 +531,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
        fill: #eee;
      }
 </style>
-<svg class="railroad-diagram" width="304" height="62" viewBox="0 0 304 62">
+<svg class="railroad-diagram" width="295" height="62" viewBox="0 0 295 62">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
@@ -539,24 +539,24 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M40 31h10"></path>
 <g>
 <path d="M50 31h0"></path>
-<path d="M254 31h0"></path>
-<g class="non-terminal ">
+<path d="M245 31h0"></path>
+<g class="terminal ">
 <path d="M50 31h0"></path>
 <path d="M124 31h0"></path>
-<rect x="50" y="20" width="74" height="22"></rect>
+<rect x="50" y="20" width="74" height="22" rx="10" ry="10"></rect>
 <text x="87" y="35">UPDATE</text>
 </g>
 <path d="M124 31h10"></path>
 <path d="M134 31h10"></path>
-<g class="non-terminal ">
+<g class="terminal ">
 <path d="M144 31h0"></path>
-<path d="M254 31h0"></path>
-<rect x="144" y="20" width="110" height="22"></rect>
-<text x="199" y="35">tableName </text>
+<path d="M245 31h0"></path>
+<rect x="144" y="20" width="101" height="22" rx="10" ry="10"></rect>
+<text x="194.5" y="35">tableName</text>
 </g>
 </g>
-<path d="M254 31h10"></path>
-<path d="M 264 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M245 31h10"></path>
+<path d="M 255 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
 </html> 
