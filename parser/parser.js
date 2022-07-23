@@ -101,12 +101,13 @@ function generate_diagram(bnf_code) {
     var bnf_lines = bnf_code.split("\n");
     var choice_flag = false;
     var s = "";
-    for(let i = 1; i < bnf_lines.length; i++) {
+    for(let i = 1; i < bnf_lines.length - 1; i++) {
         s += "rr.Sequence(";
         bnf_lines[i] = bnf_lines[i].trim() + ' ';
         var j = 0;
         var bnf_words = bnf_lines[i].split(" ");
-        if (bnf_words[j] == "") {
+        if (bnf_words[j] == "" || bnf_words[j] == undefined) {
+          console.log("hi");
           j++;
         }
         if(bnf_words[j] !== "|") {
@@ -122,8 +123,11 @@ function generate_diagram(bnf_code) {
         }
         else {
           j++;
-          if (bnf_words[j] == "") {
+          while (bnf_words[j] == "" || bnf_words[j] == undefined) {
             j++;
+          }
+          if(bnf_words[j].charAt(0) == "'") {
+            bnf_words[j] = bnf_words[j].substring(1,bnf_words[j].length - 1);
           }
           if(bnf_words[j].toUpperCase() == bnf_words[j]) {
             s += "rr.NonTerminal('"+bnf_words[j++];
