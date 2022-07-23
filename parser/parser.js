@@ -99,36 +99,62 @@ function editFile(file) {
 
 function generate_diagram(bnf_code) {
     var bnf_lines = bnf_code.split("\n");
-    for(let i = 1; i < 2; i++) {
+    var choice_flag = false;
+    var s = "";
+    for(let i = 1; i < bnf_lines.length; i++) {
+        s += "rr.Sequence(";
         bnf_lines[i] = bnf_lines[i].trim() + ' ';
-        var s = "";
-        if(bnf_lines[i].charAt(0).toUpperCase == bnf_lines[i].charAt(0)) {
-          s += "rr.NonTerminal('";
+        var j = 1;
+        var bnf_words = bnf_lines[i].split(" ");
+        if(bnf_words[0] !== "|") {
+          if(bnf_words[0].toUpperCase == bnf_words[0]) {
+            s += "rr.NonTerminal('"+bnf_words[0];
+          }
+          else {
+            s += "rr.Terminal('"+bnf_words[0];
+          }
+          if(i !== 1) {
+            choice_flag = false;
+          }
+          j = 1;
         }
         else {
-          s += "rr.Terminal('";
+          if(bnf_words[1].toUpperCase == bnf_words[1]) {
+            s += "rr.NonTerminal('"+bnf_words[1];
+          }
+          else {
+            s += "rr.Terminal('"+bnf_words[1];
+          }
+          j = 2;
+          choice_flag = true;
         }
-        for(let j = 0; j < bnf_lines[i].length; j++) {
-            var c = bnf_lines[i].charAt(j);
-            if(c == ' ' && j != bnf_lines[i].length - 1) {
-              if(s.charAt(s.length - 1).toUpperCase == s.charAt(s.length - 1)) {
-                s += "'),rr.NonTerminal('";
-              }
-              else {
-                s += "'),rr.Terminal('";
-              }
+        // console.log(bnf_words.length);
+        for(; j < bnf_words.length; j++) {
+          if(bnf_words[j] !== "" && bnf_words[j] !== undefined) {
+            if(bnf_words[j].charAt(0) == "'") {
+              bnf_words[j] = bnf_words[j].substring(1,bnf_words[j].length - 1);
+            }
+            if(bnf_words[j].toUpperCase == bnf_words[j]) {
+              s += "'),rr.NonTerminal('"+bnf_words[j];
             }
             else {
-              if(c != ' ') {
-                s = s+c;
-              }
+              s += "'),rr.Terminal('"+bnf_words[j];
             }
-            if(j == bnf_lines[i].length - 1){
-                s += "')";
-                s = "rr.Sequence("+s+")";
-            }
+          }
         }
-        var d = eval("rr.Diagram("+s+")");
+        if(i != bnf_lines.length - 1) {
+          s += "')),";
+          if(choice_flag == false && i !== 1) {
+            s = "rr.Choice(0,"+s+")),"
+          }
+        }
+        else {
+          s += "'))";
+          if(choice_flag == false && i !== 1) {
+            s = "rr.Choice(0,"+s+")"
+          }
+        }
     }
+    var d = eval("rr.Diagram("+s+")");
     return d;
 }
