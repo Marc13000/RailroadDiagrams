@@ -637,26 +637,26 @@ values:
 <g>
 <path d="M76 67h273"></path>
 <path d="M467 67h273"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M349 67h0"></path>
 <path d="M369 67h0"></path>
-<rect x="349" y="56" width="20" height="22" rx="10" ry="10"></rect>
+<rect x="349" y="56" width="20" height="22"></rect>
 <text x="359" y="71"></text>
 </g>
 <path d="M369 67h10"></path>
 <path d="M379 67h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M389 67h0"></path>
 <path d="M418 67h0"></path>
-<rect x="389" y="56" width="29" height="22" rx="10" ry="10"></rect>
+<rect x="389" y="56" width="29" height="22"></rect>
 <text x="403.5" y="71">(</text>
 </g>
 <path d="M418 67h10"></path>
 <path d="M428 67h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M438 67h0"></path>
 <path d="M467 67h0"></path>
-<rect x="438" y="56" width="29" height="22" rx="10" ry="10"></rect>
+<rect x="438" y="56" width="29" height="22"></rect>
 <text x="452.5" y="71">)</text>
 </g>
 </g>
@@ -665,18 +665,18 @@ values:
 <g>
 <path d="M76 97h85"></path>
 <path d="M655 97h85"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M161 97h0"></path>
 <path d="M181 97h0"></path>
-<rect x="161" y="86" width="20" height="22" rx="10" ry="10"></rect>
+<rect x="161" y="86" width="20" height="22"></rect>
 <text x="171" y="101"></text>
 </g>
 <path d="M181 97h10"></path>
 <path d="M191 97h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M201 97h0"></path>
 <path d="M230 97h0"></path>
-<rect x="201" y="86" width="29" height="22" rx="10" ry="10"></rect>
+<rect x="201" y="86" width="29" height="22"></rect>
 <text x="215.5" y="101">(</text>
 </g>
 <path d="M230 97h10"></path>
@@ -689,10 +689,10 @@ values:
 </g>
 <path d="M360 97h10"></path>
 <path d="M370 97h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M380 97h0"></path>
 <path d="M418 97h0"></path>
-<rect x="380" y="86" width="38" height="22" rx="10" ry="10"></rect>
+<rect x="380" y="86" width="38" height="22"></rect>
 <text x="399" y="101">&#91;,</text>
 </g>
 <path d="M418 97h10"></path>
@@ -705,18 +705,18 @@ values:
 </g>
 <path d="M548 97h10"></path>
 <path d="M558 97h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M568 97h0"></path>
 <path d="M606 97h0"></path>
-<rect x="568" y="86" width="38" height="22" rx="10" ry="10"></rect>
+<rect x="568" y="86" width="38" height="22"></rect>
 <text x="587" y="101">&#93;&#42;</text>
 </g>
 <path d="M606 97h10"></path>
 <path d="M616 97h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M626 97h0"></path>
 <path d="M655 97h0"></path>
-<rect x="626" y="86" width="29" height="22" rx="10" ry="10"></rect>
+<rect x="626" y="86" width="29" height="22"></rect>
 <text x="640.5" y="101">)</text>
 </g>
 </g>
@@ -725,26 +725,26 @@ values:
 <g>
 <path d="M76 127h47"></path>
 <path d="M693 127h47"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M123 127h0"></path>
 <path d="M143 127h0"></path>
-<rect x="123" y="116" width="20" height="22" rx="10" ry="10"></rect>
+<rect x="123" y="116" width="20" height="22"></rect>
 <text x="133" y="131"></text>
 </g>
 <path d="M143 127h10"></path>
 <path d="M153 127h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M163 127h0"></path>
 <path d="M219 127h0"></path>
-<rect x="163" y="116" width="56" height="22" rx="10" ry="10"></rect>
+<rect x="163" y="116" width="56" height="22"></rect>
 <text x="191" y="131">CUBE</text>
 </g>
 <path d="M219 127h10"></path>
 <path d="M229 127h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M239 127h0"></path>
 <path d="M268 127h0"></path>
-<rect x="239" y="116" width="29" height="22" rx="10" ry="10"></rect>
+<rect x="239" y="116" width="29" height="22"></rect>
 <text x="253.5" y="131">(</text>
 </g>
 <path d="M268 127h10"></path>
@@ -757,10 +757,10 @@ values:
 </g>
 <path d="M398 127h10"></path>
 <path d="M408 127h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M418 127h0"></path>
 <path d="M456 127h0"></path>
-<rect x="418" y="116" width="38" height="22" rx="10" ry="10"></rect>
+<rect x="418" y="116" width="38" height="22"></rect>
 <text x="437" y="131">&#91;,</text>
 </g>
 <path d="M456 127h10"></path>
@@ -773,18 +773,18 @@ values:
 </g>
 <path d="M586 127h10"></path>
 <path d="M596 127h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M606 127h0"></path>
 <path d="M644 127h0"></path>
-<rect x="606" y="116" width="38" height="22" rx="10" ry="10"></rect>
+<rect x="606" y="116" width="38" height="22"></rect>
 <text x="625" y="131">&#93;&#42;</text>
 </g>
 <path d="M644 127h10"></path>
 <path d="M654 127h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M664 127h0"></path>
 <path d="M693 127h0"></path>
-<rect x="664" y="116" width="29" height="22" rx="10" ry="10"></rect>
+<rect x="664" y="116" width="29" height="22"></rect>
 <text x="678.5" y="131">)</text>
 </g>
 </g>
@@ -793,26 +793,26 @@ values:
 <g>
 <path d="M76 157h38"></path>
 <path d="M702 157h38"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M114 157h0"></path>
 <path d="M134 157h0"></path>
-<rect x="114" y="146" width="20" height="22" rx="10" ry="10"></rect>
+<rect x="114" y="146" width="20" height="22"></rect>
 <text x="124" y="161"></text>
 </g>
 <path d="M134 157h10"></path>
 <path d="M144 157h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M154 157h0"></path>
 <path d="M228 157h0"></path>
-<rect x="154" y="146" width="74" height="22" rx="10" ry="10"></rect>
+<rect x="154" y="146" width="74" height="22"></rect>
 <text x="191" y="161">ROLLUP</text>
 </g>
 <path d="M228 157h10"></path>
 <path d="M238 157h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M248 157h0"></path>
 <path d="M277 157h0"></path>
-<rect x="248" y="146" width="29" height="22" rx="10" ry="10"></rect>
+<rect x="248" y="146" width="29" height="22"></rect>
 <text x="262.5" y="161">(</text>
 </g>
 <path d="M277 157h10"></path>
@@ -825,10 +825,10 @@ values:
 </g>
 <path d="M407 157h10"></path>
 <path d="M417 157h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M427 157h0"></path>
 <path d="M465 157h0"></path>
-<rect x="427" y="146" width="38" height="22" rx="10" ry="10"></rect>
+<rect x="427" y="146" width="38" height="22"></rect>
 <text x="446" y="161">&#91;,</text>
 </g>
 <path d="M465 157h10"></path>
@@ -841,18 +841,18 @@ values:
 </g>
 <path d="M595 157h10"></path>
 <path d="M605 157h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M615 157h0"></path>
 <path d="M653 157h0"></path>
-<rect x="615" y="146" width="38" height="22" rx="10" ry="10"></rect>
+<rect x="615" y="146" width="38" height="22"></rect>
 <text x="634" y="161">&#93;&#42;</text>
 </g>
 <path d="M653 157h10"></path>
 <path d="M663 157h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M673 157h0"></path>
 <path d="M702 157h0"></path>
-<rect x="673" y="146" width="29" height="22" rx="10" ry="10"></rect>
+<rect x="673" y="146" width="29" height="22"></rect>
 <text x="687.5" y="161">)</text>
 </g>
 </g>
@@ -861,34 +861,34 @@ values:
 <g>
 <path d="M76 187h0"></path>
 <path d="M740 187h0"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M76 187h0"></path>
 <path d="M96 187h0"></path>
-<rect x="76" y="176" width="20" height="22" rx="10" ry="10"></rect>
+<rect x="76" y="176" width="20" height="22"></rect>
 <text x="86" y="191"></text>
 </g>
 <path d="M96 187h10"></path>
 <path d="M106 187h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M116 187h0"></path>
 <path d="M208 187h0"></path>
-<rect x="116" y="176" width="92" height="22" rx="10" ry="10"></rect>
+<rect x="116" y="176" width="92" height="22"></rect>
 <text x="162" y="191">GROUPING</text>
 </g>
 <path d="M208 187h10"></path>
 <path d="M218 187h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M228 187h0"></path>
 <path d="M284 187h0"></path>
-<rect x="228" y="176" width="56" height="22" rx="10" ry="10"></rect>
+<rect x="228" y="176" width="56" height="22"></rect>
 <text x="256" y="191">SETS</text>
 </g>
 <path d="M284 187h10"></path>
 <path d="M294 187h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M304 187h0"></path>
 <path d="M333 187h0"></path>
-<rect x="304" y="176" width="29" height="22" rx="10" ry="10"></rect>
+<rect x="304" y="176" width="29" height="22"></rect>
 <text x="318.5" y="191">(</text>
 </g>
 <path d="M333 187h10"></path>
@@ -901,10 +901,10 @@ values:
 </g>
 <path d="M454 187h10"></path>
 <path d="M464 187h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M474 187h0"></path>
 <path d="M512 187h0"></path>
-<rect x="474" y="176" width="38" height="22" rx="10" ry="10"></rect>
+<rect x="474" y="176" width="38" height="22"></rect>
 <text x="493" y="191">&#91;,</text>
 </g>
 <path d="M512 187h10"></path>
@@ -917,18 +917,18 @@ values:
 </g>
 <path d="M633 187h10"></path>
 <path d="M643 187h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M653 187h0"></path>
 <path d="M691 187h0"></path>
-<rect x="653" y="176" width="38" height="22" rx="10" ry="10"></rect>
+<rect x="653" y="176" width="38" height="22"></rect>
 <text x="672" y="191">&#93;&#42;</text>
 </g>
 <path d="M691 187h10"></path>
 <path d="M701 187h10"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M711 187h0"></path>
 <path d="M740 187h0"></path>
-<rect x="711" y="176" width="29" height="22" rx="10" ry="10"></rect>
+<rect x="711" y="176" width="29" height="22"></rect>
 <text x="725.5" y="191">)</text>
 </g>
 </g>
@@ -937,10 +937,10 @@ values:
 <g>
 <path d="M76 217h322"></path>
 <path d="M418 217h322"></path>
-<g class="terminal ">
+<g class="non-terminal ">
 <path d="M398 217h0"></path>
 <path d="M418 217h0"></path>
-<rect x="398" y="206" width="20" height="22" rx="10" ry="10"></rect>
+<rect x="398" y="206" width="20" height="22"></rect>
 <text x="408" y="221"></text>
 </g>
 </g>
