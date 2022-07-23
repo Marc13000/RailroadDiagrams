@@ -104,28 +104,33 @@ function generate_diagram(bnf_code) {
     for(let i = 1; i < bnf_lines.length; i++) {
         s += "rr.Sequence(";
         bnf_lines[i] = bnf_lines[i].trim() + ' ';
-        var j = 1;
+        var j = 0;
         var bnf_words = bnf_lines[i].split(" ");
-        if(bnf_words[0] !== "|") {
-          if(bnf_words[0].toUpperCase == bnf_words[0]) {
-            s += "rr.NonTerminal('"+bnf_words[0];
+        if (bnf_words[j] == "") {
+          j++;
+        }
+        if(bnf_words[j] !== "|") {
+          if(bnf_words[j].toUpperCase == bnf_words[j]) {
+            s += "rr.NonTerminal('"+bnf_words[j++];
           }
           else {
-            s += "rr.Terminal('"+bnf_words[0];
+            s += "rr.Terminal('"+bnf_words[j++];
           }
           if(i !== 1) {
             choice_flag = false;
           }
-          j = 1;
         }
         else {
-          if(bnf_words[1].toUpperCase == bnf_words[1]) {
-            s += "rr.NonTerminal('"+bnf_words[1];
+          j++;
+          if (bnf_words[j] == "") {
+            j++;
+          }
+          if(bnf_words[j].toUpperCase == bnf_words[j]) {
+            s += "rr.NonTerminal('"+bnf_words[j++];
           }
           else {
-            s += "rr.Terminal('"+bnf_words[1];
+            s += "rr.Terminal('"+bnf_words[j++];
           }
-          j = 2;
           choice_flag = true;
         }
         // console.log(bnf_words.length);
