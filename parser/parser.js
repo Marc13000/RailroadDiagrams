@@ -148,7 +148,7 @@ function generate_diagram(bnf_code) {
                 s += "'),rr.Terminal('"+bnf_words[j];
               }
             }
-            else if(bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j].indexOf("[") != -1) {
+            else if(bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j].indexOf("[") != -1 || bnf_words[j+1].indexOf("[") != -1) {
               var recursion_result = recursive_helper(s, bnf_words, j);
               s = recursion_result.s;
               j = recursion_result.j
@@ -202,7 +202,8 @@ function recursive_helper(s, bnf_words, j) {
     s_end = "'))),";
   }
   else {
-    s_temp += "rr.ZeroOrMore(rr.Sequence(";
+    j++;
+    s_temp += "rr.OneOrMore(rr.Sequence(";
     s_end = "'))),";
   }
   j++;
