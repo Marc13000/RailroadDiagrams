@@ -111,7 +111,7 @@ function generate_diagram(bnf_code) {
           j++;
         }
         if(bnf_words[j] !== "|") {
-          if(bnf_words[j].toUpperCase() == bnf_words[j]) {
+          if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
             s += "rr.NonTerminal('"+bnf_words[j++];
           }
           else {
@@ -129,7 +129,7 @@ function generate_diagram(bnf_code) {
           if(bnf_words[j].charAt(0) == "'") {
             bnf_words[j] = bnf_words[j].substring(1,bnf_words[j].length - 1);
           }
-          if(bnf_words[j].toUpperCase() == bnf_words[j]) {
+          if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
             s += "rr.NonTerminal('"+bnf_words[j++];
           }
           else {
@@ -142,7 +142,7 @@ function generate_diagram(bnf_code) {
           if(bnf_words[j] !== "" && bnf_words[j] !== undefined) {
             if(bnf_words[j].charAt(0) == "'") {
               bnf_words[j] = bnf_words[j].substring(1,bnf_words[j].length - 1);
-              if(bnf_words[j].toUpperCase() == bnf_words[j]) {
+              if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
                 s += "'),rr.NonTerminal('"+bnf_words[j] && bnf_words[j].length > 1;
               }
               else {
@@ -229,7 +229,7 @@ function recursive_helper(s, bnf_words, j) {
     s_end = "'))),";
   }
   j++;
-  if(bnf_words[j].toUpperCase() == bnf_words[j]) {
+  if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
     s_temp += "rr.NonTerminal('"+bnf_words[j++];
   }
   else {
