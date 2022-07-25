@@ -107,7 +107,6 @@ function generate_diagram(bnf_code) {
         var j = 0;
         var bnf_words = bnf_lines[i].split(" ");
         if (bnf_words[j] == "" || bnf_words[j] == undefined) {
-          console.log("hi");
           j++;
         }
         if(bnf_words[j] !== "|") {
@@ -142,16 +141,39 @@ function generate_diagram(bnf_code) {
           if(bnf_words[j] !== "" && bnf_words[j] !== undefined) {
             if(bnf_words[j].charAt(0) == "'") {
               bnf_words[j] = bnf_words[j].substring(1,bnf_words[j].length - 1);
+              if(bnf_words[j].toUpperCase() == bnf_words[j]) {
+                s += "'),rr.NonTerminal('"+bnf_words[j];
+              }
+              else {
+                s += "'),rr.Terminal('"+bnf_words[j];
+              }
             }
-            if(bnf_words[j].toUpperCase() == bnf_words[j]) {
-              s += "'),rr.NonTerminal('"+bnf_words[j];
+            else if(bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j].indexOf("[") != -1) {
+              var recursion_result = recursive_helper(s, bnf_words, j);
+              s = recursion_result.s;
+              j = recursion_result.j
+              j++;
+              if(bnf_words[j].charAt(0) == "'") {
+                bnf_words[j] = bnf_words[j].substring(1,bnf_words[j].length - 1);
+              }
+              if(bnf_words[j].toUpperCase() == bnf_words[j]) {
+                s += "rr.NonTerminal('"+bnf_words[j];
+              }
+              else {
+                s += "rr.Terminal('"+bnf_words[j];
+              }
             }
-            else {
-              s += "'),rr.Terminal('"+bnf_words[j];
+            else {  
+              if(bnf_words[j].toUpperCase() == bnf_words[j]) {
+                s += "'),rr.NonTerminal('"+bnf_words[j];
+              }
+              else {
+                s += "'),rr.Terminal('"+bnf_words[j];
+              }
             }
           }
         }
-        if(i != bnf_lines.length - 1) {
+        if(i != bnf_lines.length - 2) {//as last line has no words
           s += "')),";
           if(choice_flag == false && i !== 1) {
             s = "rr.Choice(0,"+s+")),"
@@ -159,11 +181,54 @@ function generate_diagram(bnf_code) {
         }
         else {
           s += "'))";
-          if(choice_flag == false && i !== 1) {
+          if(choice_flag == true && i !== 1) {
             s = "rr.Choice(0,"+s+")"
           }
         }
     }
+    console.log(s);
     var d = eval("rr.Diagram("+s+")");
     return d;
+}
+
+function recursive_helper(s, bnf_words, j) {
+  var s_temp = "'),";
+  var s_end = "')),";
+  if(bnf_words[j] == "(" || bnf_words[j] == "{") {
+    s_temp += "rr.Choice(1,";
+  }
+  else if(bnf_words[j] == "[") {
+    s_temp += "rr.Optional(rr.Choice(1,";
+    s_end = "'))),";
+  }
+  else {
+    s_temp += "rr.ZeroOrMore(rr.Sequence(";
+    s_end = "'))),";
+  }
+  j++;
+  if(bnf_words[j].toUpperCase() == bnf_words[j]) {
+    s_temp += "rr.NonTerminal('"+bnf_words[j++];
+  }
+  else {
+    s_temp += "rr.Terminal('"+bnf_words[j++];
+  }
+  for(; j < bnf_words.length; j++) {
+    if(bnf_words[j] == "(" || bnf_words[j].indexOf("[") != -1) {
+      var recursion_result = recursive_helper(s, bnf_words, j);
+      s = recursion_result.s;
+      j = recursion_result.j;
+    }
+    if(bnf_words[j] == ")" || bnf_words[j] == "}" || bnf_words[j].indexOf("]") != -1) {
+      s = s + s_temp + s_end;
+      return {s, j};
+    }
+    else if(bnf_words[j] !== "|"){
+      if(bnf_words[j].toUpperCase() == bnf_words[j]) {
+        s_temp += "'),rr.NonTerminal('"+bnf_words[j];
+      }
+      else {
+        s_temp += "'),rr.Terminal('"+bnf_words[j];
+      }
+    }
+  }
 }
