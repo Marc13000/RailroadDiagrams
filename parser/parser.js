@@ -81,6 +81,7 @@ function editFile(file) {
             //console.log(bnf_code);//add function here to convert to rd's
             const d = generate_diagram(bnf_code);
             //console.log(d.toSVG);
+            bnf_code = "BNF start\n" + bnf_code + "BNF end\n";
             result = result.replace(bnf_code, css_var+d.toString()+"</html> \n{:/}\n{% highlight sql %}\n");
             // const diagram = changeToDiagram(bnf_code);
             // result = result.replace(bnf_code, diagram);
