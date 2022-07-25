@@ -154,6 +154,11 @@ function generate_diagram(bnf_code) {
               s = recursion_result.s;
               j = recursion_result.j
               j++;
+              if(j == bnf_words.length - 1) {
+                s = s.substring(0, s.length - 2);
+                j+=2;
+                break;
+              }
               if(bnf_words[j].charAt(0) == "'") {
                 bnf_words[j] = bnf_words[j].substring(1,bnf_words[j].length - 1);
               }
@@ -174,16 +179,32 @@ function generate_diagram(bnf_code) {
             }
           }
         }
-        if(i != bnf_lines.length - 2) {//as last line has no words
-          s += "')),";
-          if(choice_flag == false && i !== 1) {
-            s = "rr.Choice(0,"+s+")),"
+        if(j == bnf_words.length + 1){
+          if(i != bnf_lines.length - 2) {//as last line has no words
+            s += "))";
+            if(choice_flag == false && i !== 1) {
+              s = "rr.Choice(0,"+s+")),"
+            }
+          }
+          else {
+            s += "))";
+            if(choice_flag == true && i !== 1) {
+              s = "rr.Choice(0,"+s+")"
+            }
           }
         }
-        else {
-          s += "'))";
-          if(choice_flag == true && i !== 1) {
-            s = "rr.Choice(0,"+s+")"
+        else{
+          if(i != bnf_lines.length - 2) {//as last line has no words
+            s += "')),";
+            if(choice_flag == false && i !== 1) {
+              s = "rr.Choice(0,"+s+")),"
+            }
+          }
+          else {
+            s += "'))";
+            if(choice_flag == true && i !== 1) {
+              s = "rr.Choice(0,"+s+")"
+            }
           }
         }
     }
@@ -216,8 +237,8 @@ function recursive_helper(s, bnf_words, j) {
   }
   for(; j < bnf_words.length; j++) {
     if(bnf_words[j] == "(" || bnf_words[j].indexOf("[") != -1) {
-      var recursion_result = recursive_helper(s, bnf_words, j);
-      s = recursion_result.s;
+      var recursion_result = recursive_helper(s + s_temp, bnf_words, j);
+      s_temp = recursion_result.s;
       j = recursion_result.j;
     }
     if(bnf_words[j] == ")" || bnf_words[j] == "}" || bnf_words[j].indexOf("]") != -1) {

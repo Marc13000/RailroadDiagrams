@@ -609,7 +609,7 @@ columnDecl:
        fill: #eee;
      }
 </style>
-<svg class="railroad-diagram" width="380" height="87" viewBox="0 0 380 87">
+<svg class="railroad-diagram" width="340" height="87" viewBox="0 0 340 87">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
@@ -617,7 +617,7 @@ columnDecl:
 <path d="M40 31h10"></path>
 <g>
 <path d="M50 31h0"></path>
-<path d="M330 31h0"></path>
+<path d="M290 31h0"></path>
 <g class="non-terminal ">
 <path d="M50 31h0"></path>
 <path d="M124 31h0"></path>
@@ -647,17 +647,9 @@ columnDecl:
 </g>
 <path d="M272 67a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
 </g>
+</g>
 <path d="M290 31h10"></path>
-<path d="M300 31h10"></path>
-<g class="non-terminal ">
-<path d="M310 31h0"></path>
-<path d="M330 31h0"></path>
-<rect x="310" y="20" width="20" height="22"></rect>
-<text x="320" y="35"></text>
-</g>
-</g>
-<path d="M330 31h10"></path>
-<path d="M 340 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M 300 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
 </html> 
