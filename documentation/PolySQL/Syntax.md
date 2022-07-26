@@ -563,7 +563,6 @@ values:
 <html>
 <style>
      svg.railroad-diagram {
-       background-color: hsl(30,20%,95%);
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -607,7 +606,6 @@ values:
        cursor: help;
      }
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
-       fill: #eee;
      }
 </style>
 <svg class="railroad-diagram" width="340" height="87" viewBox="0 0 340 87">
@@ -662,7 +660,6 @@ groupItem:
 <html>
 <style>
      svg.railroad-diagram {
-       background-color: hsl(30,20%,95%);
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -706,7 +703,6 @@ groupItem:
        cursor: help;
      }
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
-       fill: #eee;
      }
 </style>
 <svg class="railroad-diagram" width="575" height="318" viewBox="0 0 575 318">
@@ -966,7 +962,6 @@ windowRef:
 <html>
 <style>
      svg.railroad-diagram {
-       background-color: hsl(30,20%,95%);
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -1010,7 +1005,6 @@ windowRef:
        cursor: help;
      }
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
-       fill: #eee;
      }
 </style>
 <svg class="railroad-diagram" width="262" height="98" viewBox="0 0 262 98">

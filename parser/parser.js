@@ -20,7 +20,6 @@ function editFile(file) {
 <html>
 <style>
      svg.railroad-diagram {
-       background-color: hsl(30,20%,95%);
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -64,7 +63,6 @@ function editFile(file) {
        cursor: help;
      }
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
-       fill: #eee;
      }
 </style>
 `
