@@ -77,21 +77,31 @@ function editFile(file) {
     for (var j = 0; j < lines.length; j++) {
         var text = lines[j];
         if (text.includes("BNF end")) {
-            console.log(text);
             //console.log(bnf_code);//add function here to convert to rd's
-            const d = generate_diagram(bnf_code);
             //console.log(d.toSVG);
-            bnf_code = "<!--- BNF start --->\n" + bnf_code  + "<!--- BNF end --->\n";
+            console.log(bnf_code.trim());
+            const d = generate_diagram(bnf_code.trim()+"\n");
             result = result.replace(bnf_code, css_var+d.toString()+"</html> \n{:/}\n{% highlight sql %}\n");
+            result = result.replace("<!--- BNF end --->\n","");
             // const diagram = changeToDiagram(bnf_code);
             // result = result.replace(bnf_code, diagram);
-            bnf_code = "";
             read_flag = false;
         }
         if (read_flag) {
-            bnf_code += text + "\n";
+            if(text.endsWith(":")) {
+              if(bnf_code !== ""){
+                console.log(bnf_code.trim());
+                const d = generate_diagram(bnf_code.trim()+"\n");
+                result = result.replace(bnf_code, css_var+d.toString()+"</html> \n{:/}\n{% highlight sql %}\n");
+              }
+              console.log(text);
+              bnf_code = "";
+            } else {
+              bnf_code += text + "\n";
+            }
         }
         if (text.includes("BNF start")) {
+            result = result.replace("<!--- BNF start --->\n", "");
             read_flag = true;
         }
     }
@@ -102,7 +112,7 @@ function generate_diagram(bnf_code) {
     var bnf_lines = bnf_code.split("\n");
     var choice_flag = false;
     var s = "";
-    for(let i = 1; i < bnf_lines.length - 1; i++) {
+    for(let i = 0; i < bnf_lines.length - 1; i++) {
         s += "rr.Sequence(";
         bnf_lines[i] = bnf_lines[i].trim() + ' ';
         var j = 0;
@@ -117,7 +127,7 @@ function generate_diagram(bnf_code) {
           else {
             s += "rr.Terminal('"+bnf_words[j++];
           }
-          if(i !== 1) {
+          if(i !== 0) {
             choice_flag = false;
           }
         }
@@ -149,7 +159,7 @@ function generate_diagram(bnf_code) {
                 s += "'),rr.Terminal('"+bnf_words[j];
               }
             }
-            else if(bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j].indexOf("[") != -1 || bnf_words[j+1].indexOf("[") != -1) {
+            else if(bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j].indexOf("[") !== -1 || bnf_words[j+1].indexOf("[") !== -1) {
               var recursion_result = recursive_helper(s, bnf_words, j);
               s = recursion_result.s;
               j = recursion_result.j
@@ -196,13 +206,13 @@ function generate_diagram(bnf_code) {
         else{
           if(i != bnf_lines.length - 2) {//as last line has no words
             s += "')),";
-            if(choice_flag == false && i !== 1) {
+            if(choice_flag == false && i !== 0) {
               s = "rr.Choice(0,"+s+")),"
             }
           }
           else {
             s += "'))";
-            if(choice_flag == true && i !== 1) {
+            if(choice_flag == true && i !== 0) {
               s = "rr.Choice(0,"+s+")"
             }
           }
