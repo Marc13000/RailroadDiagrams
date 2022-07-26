@@ -595,7 +595,6 @@ values:
        fill: #c9fff3;
      }
      svg.railroad-diagram rect.group-box {
-       stroke: gray;
        stroke-dasharray: 10 5;
        fill: none;
      }
@@ -692,7 +691,6 @@ groupItem:
        fill: #c9fff3;
      }
      svg.railroad-diagram rect.group-box {
-       stroke: gray;
        stroke-dasharray: 10 5;
        fill: none;
      }
@@ -994,7 +992,6 @@ windowRef:
        fill: #c9fff3;
      }
      svg.railroad-diagram rect.group-box {
-       stroke: gray;
        stroke-dasharray: 10 5;
        fill: none;
      }
