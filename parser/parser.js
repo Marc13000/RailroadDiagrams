@@ -50,7 +50,7 @@ function editFile(file) {
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
-       fill: hsl(120,100%,90%);
+       fill: #c9fff3;
      }
      svg.railroad-diagram rect.group-box {
        stroke: gray;
