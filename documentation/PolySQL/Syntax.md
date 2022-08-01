@@ -134,14 +134,14 @@ values:
        fill: #c9fff3;
      }
      svg.railroad-diagram rect.group-box {
-       stroke-dasharray: 10 5;
-       fill: none;
+       /* stroke-dasharray: 10 5;
+       fill: none; */
      }
      svg.railroad-diagram path.diagram-text {
-       stroke-width: 1.5;
+       /* stroke-width: 1.5;
        stroke: black;
        fill: white;
-       cursor: help;
+       cursor: help; */
      }
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
