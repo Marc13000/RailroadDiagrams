@@ -97,8 +97,9 @@ columnDecl:
       column type [ NOT NULL ]
 
 {% endhighlight %}
-{::nomarkdown}
 ## values:
+{::nomarkdown}
+
 <html>
 <style>
      svg.railroad-diagram {
@@ -191,8 +192,11 @@ columnDecl:
 </g>
 </svg>
 </html>
+{:/}
 
 ## groupItem:
+{::nomarkdown}
+
 <html>
 <style>
      svg.railroad-diagram {
@@ -490,8 +494,11 @@ columnDecl:
 </g>
 </svg>
 </html>
+{:/}
 
 ## windowRef:
+{::nomarkdown}
+
 <html>
 <style>
      svg.railroad-diagram {
@@ -577,6 +584,7 @@ columnDecl:
 </g>
 </svg>
 </html>
+{:/}
 
 
 {:/}

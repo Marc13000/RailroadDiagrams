@@ -77,7 +77,7 @@ function editFile(file) {
             //console.log(d.toSVG);
             console.log(bnf_code.trim());
             const d = generate_diagram(bnf_code.trim()+"\n");
-            result = result.replace(bnf_code, css_var+d.toString()+"</html>\n\n");
+            result = result.replace(bnf_code, css_var+d.toString()+"</html>\n{:/}\n\n");
             result = result.replace("<!--- BNF end --->\n","\n{:/}\n{% highlight sql %}\n");
             // const diagram = changeToDiagram(bnf_code);
             // result = result.replace(bnf_code, diagram);
@@ -88,9 +88,9 @@ function editFile(file) {
               if(bnf_code !== ""){
                 console.log(bnf_code.trim());
                 const d = generate_diagram(bnf_code.trim()+"\n");
-                result = result.replace(bnf_code, css_var+d.toString()+"</html>\n\n");
+                result = result.replace(bnf_code, css_var+d.toString()+"</html>\n{:/}\n\n");
               }
-              result = result.replace(text,"## "+text);
+              result = result.replace(text,"## "+text+"\n{::nomarkdown}\n");
               console.log(text);
               bnf_code = "";
             } else {
@@ -98,7 +98,7 @@ function editFile(file) {
             }
         }
         if (text.includes("BNF start")) {
-            result = result.replace("<!--- BNF start --->\n", `{% endhighlight %}\n{::nomarkdown}\n`);
+            result = result.replace("<!--- BNF start --->\n", `{% endhighlight %}\n`);
             read_flag = true;
         }
     }
