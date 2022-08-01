@@ -52,8 +52,9 @@ function editFile(file) {
        fill: #c9fff3;
      }
      svg.railroad-diagram rect.group-box {
-       stroke-dasharray: 10 5;
-       fill: none;
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
      }
      svg.railroad-diagram path.diagram-text {
        stroke-width: 1.5;
