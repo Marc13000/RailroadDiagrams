@@ -96,9 +96,9 @@ tableName:
 columnDecl:
       column type [ NOT NULL ]
 
-values:
 {% endhighlight %}
 {::nomarkdown}
+## values:
 <html>
 <style>
      svg.railroad-diagram {
@@ -190,12 +190,9 @@ values:
 <path d="M 300 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
-</html> 
-{:/}
-{% highlight sql %}
-groupItem:
-{% endhighlight %}
-{::nomarkdown}
+</html>
+
+## groupItem:
 <html>
 <style>
      svg.railroad-diagram {
@@ -492,12 +489,9 @@ groupItem:
 <path d="M 535 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
-</html> 
-{:/}
-{% highlight sql %}
-windowRef:
-{% endhighlight %}
-{::nomarkdown}
+</html>
+
+## windowRef:
 <html>
 <style>
      svg.railroad-diagram {
@@ -582,7 +576,9 @@ windowRef:
 <path d="M 222 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
-</html> 
+</html>
+
+
 {:/}
 {% highlight sql %}
 

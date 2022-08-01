@@ -15,9 +15,7 @@ fs.readdir('../documentation/PolySQL/', (err, files) => {
 });
 
 function editFile(file) {
-    const css_var = `{% endhighlight %}
-{::nomarkdown}
-<html>
+    const css_var = `<html>
 <style>
      svg.railroad-diagram {
      }
@@ -79,8 +77,8 @@ function editFile(file) {
             //console.log(d.toSVG);
             console.log(bnf_code.trim());
             const d = generate_diagram(bnf_code.trim()+"\n");
-            result = result.replace(bnf_code, css_var+d.toString()+"</html> \n{:/}\n{% highlight sql %}\n");
-            result = result.replace("<!--- BNF end --->\n","");
+            result = result.replace(bnf_code, css_var+d.toString()+"</html>\n\n");
+            result = result.replace("<!--- BNF end --->\n","\n{:/}\n{% highlight sql %}\n");
             // const diagram = changeToDiagram(bnf_code);
             // result = result.replace(bnf_code, diagram);
             read_flag = false;
@@ -90,8 +88,9 @@ function editFile(file) {
               if(bnf_code !== ""){
                 console.log(bnf_code.trim());
                 const d = generate_diagram(bnf_code.trim()+"\n");
-                result = result.replace(bnf_code, css_var+d.toString()+"</html> \n{:/}\n{% highlight sql %}\n");
+                result = result.replace(bnf_code, css_var+d.toString()+"</html>\n\n");
               }
+              result = result.replace(text,"## "+text);
               console.log(text);
               bnf_code = "";
             } else {
@@ -99,7 +98,7 @@ function editFile(file) {
             }
         }
         if (text.includes("BNF start")) {
-            result = result.replace("<!--- BNF start --->\n", "");
+            result = result.replace("<!--- BNF start --->\n", `{% endhighlight %}\n{::nomarkdown}\n`);
             read_flag = true;
         }
     }
