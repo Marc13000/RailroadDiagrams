@@ -31,7 +31,7 @@ export const Options = {
 
 export const defaultCSS = `
 	svg {
-		background-color: hsl(30,20%,95%);
+		
 	}
 	path {
 		stroke-width: 1;
@@ -75,7 +75,6 @@ export const defaultCSS = `
 		cursor: help;
 	}
 	g.diagram-text:hover path.diagram-text {
-		fill: #eee;
 	}`;
 
 
