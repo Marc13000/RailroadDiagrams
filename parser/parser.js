@@ -3,19 +3,19 @@ import readLine from 'readline';
 import rr, { Diagram } from "./generator/railroad.js";
 
 fs.readdir('../documentation/PolySQL/', (err, files) => {
-    if (err) {
-        return console.error(err);
-    }
-    console.log(files.includes("Syntax.md"));
-    for (var i = 0; i < files.length; i++) {
-        var file = '../documentation/PolySQL/' + files[i];
-        editFile(file);
-    }
-    // done
+  if (err) {
+    return console.error(err);
+  }
+  console.log(files.includes("Syntax.md"));
+  for (var i = 0; i < files.length; i++) {
+    var file = '../documentation/PolySQL/' + files[i];
+    editFile(file);
+  }
+  // done
 });
 
 function editFile(file) {
-    const css_var = `<html>
+  const css_var = `<html>
 <style>
      svg.railroad-diagram {
      }
@@ -64,169 +64,161 @@ function editFile(file) {
      }
 </style>
 `
-    const data = fs.readFileSync(file, 'utf8');
-    var lines = data.split("\n");
-    var result = data;
-    // console.log(lines.length);
-    var read_flag = false;
-    var bnf_code = "";
-    for (var j = 0; j < lines.length; j++) {
-        var text = lines[j];
-        if (text.includes("BNF end")) {
-            //console.log(bnf_code);//add function here to convert to rd's
-            //console.log(d.toSVG);
-            console.log(bnf_code.trim());
-            const d = generate_diagram(bnf_code.trim()+"\n");
-            result = result.replace(bnf_code, css_var+d.toString()+"</html>\n{:/}\n\n");
-            result = result.replace("<!--- BNF end --->\n","\n{:/}\n{% highlight sql %}\n");
-            // const diagram = changeToDiagram(bnf_code);
-            // result = result.replace(bnf_code, diagram);
-            read_flag = false;
-        }
-        if (read_flag) {
-            if(text.endsWith(":")) {
-              if(bnf_code !== ""){
-                console.log(bnf_code.trim());
-                const d = generate_diagram(bnf_code.trim()+"\n");
-                result = result.replace(bnf_code, css_var+d.toString()+"</html>\n{:/}\n\n");
-              }
-              result = result.replace(text,"## "+text+"\n{::nomarkdown}\n");
-              console.log(text);
-              bnf_code = "";
-            } else {
-              bnf_code += text + "\n";
-            }
-        }
-        if (text.includes("BNF start")) {
-            result = result.replace("<!--- BNF start --->\n", `{% endhighlight %}\n`);
-            read_flag = true;
-        }
+  const data = fs.readFileSync(file, 'utf8');
+  var lines = data.split("\n");
+  var result = data;
+  // console.log(lines.length);
+  var read_flag = false;
+  var bnf_code = "";
+  for (var j = 0; j < lines.length; j++) {
+    var text = lines[j];
+    if (text.includes("BNF end")) {
+      //console.log(bnf_code);//add function here to convert to rd's
+      //console.log(d.toSVG);
+      console.log(bnf_code.trim());
+      const d = generate_diagram(bnf_code.trim() + "\n");
+      var diag = eval("rr.Diagram(" + d + ")");
+      result = result.replace(bnf_code, css_var + diag.toString() + "</html>\n{:/}\n\n");
+      result = result.replace("<!--- BNF end --->\n", "\n{% highlight sql %}\n");
+      // const diagram = changeToDiagram(bnf_code);
+      // result = result.replace(bnf_code, diagram);
+      read_flag = false;
     }
-    fs.writeFileSync(file, result, 'utf8');
+    if (read_flag) {
+      if (text.endsWith(":")) {
+        if (bnf_code !== "") {
+          console.log(bnf_code.trim());
+          const d = generate_diagram(bnf_code.trim() + "\n");
+          var diag = eval("rr.Diagram(" + d + ")");
+          result = result.replace(bnf_code, css_var + diag.toString() + "</html>\n{:/}\n\n");
+        }
+        result = result.replace(text, "### " + text + "\n{::nomarkdown}\n");
+        console.log(text);
+        bnf_code = "";
+      } else {
+        bnf_code += text + "\n";
+      }
+    }
+    if (text.includes("BNF start")) {
+      result = result.replace("<!--- BNF start --->\n", `{% endhighlight %}\n`);
+      read_flag = true;
+    }
+  }
+  fs.writeFileSync(file, result, 'utf8');
 }
 
 function generate_diagram(bnf_code) {
-    var bnf_lines = bnf_code.split("\n");
-    var choice_flag = false;
-    var s = "";
-    for(let i = 0; i < bnf_lines.length - 1; i++) {
-        s += "rr.Sequence(";
-        bnf_lines[i] = bnf_lines[i].trim() + ' ';
-        var j = 0;
-        var bnf_words = bnf_lines[i].split(" ");
-        if (bnf_words[j] == "" || bnf_words[j] == undefined) {
-          j++;
+  var bnf_lines = bnf_code.trim().split("\n");
+  var choice_flag = 0;
+  var s = "";
+  for (let i = 0; i < bnf_lines.length; i++) {
+    if (bnf_lines[i] == "" || bnf_lines[i] == undefined) {
+      continue;
+    }
+    s += "rr.Sequence(";
+    bnf_lines[i] = bnf_lines[i].trim();
+    var bnf_words = bnf_lines[i].split(" ");
+    var recursed_flag = 0;
+    for (var j = 0; j < bnf_words.length; j++) {
+      if (bnf_words[j] == "|") {
+        if (choice_flag == 0) {
+          s = "rr.Choice(0," + s;
         }
-        if(bnf_words[j] !== "|") {
-          if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
-            s += "rr.NonTerminal('"+bnf_words[j++];
+        choice_flag = 1;
+        continue;
+      }
+      else {
+        if (choice_flag == 1 && j == 0) {
+          choice_flag = 2;
+        }
+      }
+      if (bnf_words[j] !== "" && bnf_words[j] !== undefined) {
+        if (bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j] == "[" || (j != bnf_words.length - 1 && bnf_words[j + 1].indexOf("[,") !== -1)) {
+          var s_temp = "";
+          if (bnf_words[j] == "(" || bnf_words[j] == "{") {
+            s_temp += "rr.Sequence(";
+          }
+          else if (bnf_words[j] == "[") {
+            s_temp += "rr.Optional(";
           }
           else {
-            s += "rr.Terminal('"+bnf_words[j++];
+            j++;
+            s_temp += "rr.OneOrMore(";
           }
-          if(i !== 0) {
-            choice_flag = false;
-          }
-        }
-        else {
           j++;
-          while (bnf_words[j] == "" || bnf_words[j] == undefined) {
+          var bnf_code_recurs = "";
+          var ct = 0;
+          while ((bnf_words[j] !== ")" && bnf_words[j] !== "}" && bnf_words[j] !== "]" && bnf_words[j] !== "]*") || ct !== 0) {
+            if (bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j] == "[" || (j < bnf_words.length - 1 && bnf_words[j+1].indexOf("[,") !== -1)) {
+              ct++;
+            }
+            if (bnf_words[j] == ")" || bnf_words[j] == "}" || bnf_words[j] == "]" || bnf_words[j] == "]*") {
+              if(ct > 0) {
+                ct--;
+              }
+            }
+            bnf_code_recurs += bnf_words[j] + " ";
             j++;
           }
-          if(bnf_words[j].charAt(0) == "'") {
-            bnf_words[j] = bnf_words[j].substring(1,bnf_words[j].length - 1);
-          }
-          if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
-            s += "rr.NonTerminal('"+bnf_words[j++];
-          }
-          else {
-            s += "rr.Terminal('"+bnf_words[j++];
-          }
-          choice_flag = true;
-        }
-        // console.log(bnf_words.length);
-        for(; j < bnf_words.length; j++) {
-          if(bnf_words[j] !== "" && bnf_words[j] !== undefined) {
-            if(bnf_words[j].charAt(0) == "'") {
-              bnf_words[j] = bnf_words[j].substring(1,bnf_words[j].length - 1);
-              if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
-                s += "'),rr.NonTerminal('"+bnf_words[j] && bnf_words[j].length > 1;
-              }
-              else {
-                s += "'),rr.Terminal('"+bnf_words[j];
-              }
-            }
-            else if(bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j].indexOf("[") !== -1 || bnf_words[j+1].indexOf("[") !== -1) {
-              var recursion_result = recursive_helper(s, bnf_words, j);
-              s = recursion_result.s;
-              j = recursion_result.j
-              j++;
-              if(j == bnf_words.length - 1) {
-                s = s.substring(0, s.length - 2);
-                j+=2;
-                break;
-              }
-              if(bnf_words[j].charAt(0) == "'") {
-                bnf_words[j] = bnf_words[j].substring(1,bnf_words[j].length - 1);
-              }
-              if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
-                s += "rr.NonTerminal('"+bnf_words[j];
-              }
-              else {
-                s += "rr.Terminal('"+bnf_words[j];
-              }
-            }
-            else {  
-              if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
-                s += "'),rr.NonTerminal('"+bnf_words[j];
-              }
-              else {
-                s += "'),rr.Terminal('"+bnf_words[j];
-              }
-            }
-          }
-        }
-        if(j == bnf_words.length + 1){
-          if(i != bnf_lines.length - 2) {//as last line has no words
+          s += s_temp + generate_diagram(bnf_code_recurs);
+          if (i == bnf_lines.length - 1 && j == bnf_words.length - 1) {
+            recursed_flag = 1;
             s += "))";
-            if(choice_flag == false && i !== 1) {
-              s = "rr.Choice(0,"+s+")),"
-            }
           }
           else {
-            s += "))";
-            if(choice_flag == true && i !== 1) {
-              s = "rr.Choice(0,"+s+")"
-            }
+            s += "),"
           }
+          continue;
         }
-        else{
-          if(i != bnf_lines.length - 2) {//as last line has no words
-            s += "')),";
-            if(choice_flag == false && i !== 0) {
-              s = "rr.Choice(0,"+s+")),"
-            }
+        else {
+          if (bnf_words[j].charAt(0) == "'") {
+            bnf_words[j] = bnf_words[j].substring(1, bnf_words[j].length - 1);
+          }
+          if (bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
+            s += "rr.NonTerminal('" + bnf_words[j];
           }
           else {
-            s += "'))";
-            if(choice_flag == true && i !== 0) {
-              s = "rr.Choice(0,"+s+")"
-            }
+            s += "rr.Terminal('" + bnf_words[j];
           }
         }
+        if (j == bnf_words.length - 1) {
+          s += "')";
+        }
+        else {
+          s += "'),";
+        }
+      }
     }
-    console.log(s);
-    var d = eval("rr.Diagram("+s+")");
-    return d;
+    if (recursed_flag != 1) {
+      if (i != bnf_lines.length - 1) {//as last line has no words
+        s += "),";
+      }
+      else {
+        s += ")";
+      }
+    }
+    if (choice_flag == 2) {
+      s += "),";
+      choice_flag = 0;
+    }
+    if (choice_flag == 1 && i == bnf_lines.length - 1) {
+      s += ")";
+    }
+  }
+  // if (recursed_flag !== 1) {
+  //   s += ")";
+  // }
+  console.log(s);
+  return s;
 }
 
 function recursive_helper(s, bnf_words, j) {
   var s_temp = "'),";
   var s_end = "')),";
-  if(bnf_words[j] == "(" || bnf_words[j] == "{") {
+  if (bnf_words[j] == "(" || bnf_words[j] == "{") {
     s_temp += "rr.Choice(1,";
   }
-  else if(bnf_words[j] == "[") {
+  else if (bnf_words[j] == "[") {
     s_temp += "rr.Optional(rr.Choice(1,";
     s_end = "'))),";
   }
@@ -236,28 +228,28 @@ function recursive_helper(s, bnf_words, j) {
     s_end = "'))),";
   }
   j++;
-  if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
-    s_temp += "rr.NonTerminal('"+bnf_words[j++];
+  if (bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
+    s_temp += "rr.NonTerminal('" + bnf_words[j++];
   }
   else {
-    s_temp += "rr.Terminal('"+bnf_words[j++];
+    s_temp += "rr.Terminal('" + bnf_words[j++];
   }
-  for(; j < bnf_words.length; j++) {
-    if(bnf_words[j] == "(" || bnf_words[j].indexOf("[") != -1) {
+  for (; j < bnf_words.length; j++) {
+    if (bnf_words[j] == "(" || bnf_words[j].indexOf("[") != -1) {
       var recursion_result = recursive_helper(s + s_temp, bnf_words, j);
       s_temp = recursion_result.s;
       j = recursion_result.j;
     }
-    if(bnf_words[j] == ")" || bnf_words[j] == "}" || bnf_words[j].indexOf("]") != -1) {
+    if (bnf_words[j] == ")" || bnf_words[j] == "}" || bnf_words[j].indexOf("]") != -1) {
       s = s + s_temp + s_end;
-      return {s, j};
+      return { s, j };
     }
-    else if(bnf_words[j] !== "|"){
-      if(bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
-        s_temp += "'),rr.NonTerminal('"+bnf_words[j];
+    else if (bnf_words[j] !== "|") {
+      if (bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
+        s_temp += "'),rr.NonTerminal('" + bnf_words[j];
       }
       else {
-        s_temp += "'),rr.Terminal('"+bnf_words[j];
+        s_temp += "'),rr.Terminal('" + bnf_words[j];
       }
     }
   }
