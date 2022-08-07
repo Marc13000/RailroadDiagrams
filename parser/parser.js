@@ -162,6 +162,13 @@ function generate_diagram(bnf_code) {
             }
             bnf_code_recurs += bnf_words[j] + " ";
             j++;
+            if(j > bnf_words.length){
+              i++;
+              bnf_lines[i] = bnf_lines[i].trim();
+              var bnf_words = bnf_lines[i].split(" ");
+              j = 0;
+              bnf_code_recurs += "\n";
+            }
           }
           s += s_temp + generate_diagram(bnf_code_recurs);
           if (i == bnf_lines.length - 1 && j == bnf_words.length - 1) {
