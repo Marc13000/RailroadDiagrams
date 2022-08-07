@@ -123,9 +123,9 @@ function generate_diagram(bnf_code) {
       if (bnf_words[j] == "|") {
         if (choice_flag == 0) {
           s = "rr.Choice(0," + s;
-          if(j!=0) {
-            s = s.substring(0, s.length -1) + "),rr.Sequence("
-          }
+        }
+        if(j!=0) {
+          s = s.substring(0, s.length -1) + "),rr.Sequence("
         }
         choice_flag = 1;
         continue;
