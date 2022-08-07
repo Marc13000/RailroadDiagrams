@@ -110,7 +110,7 @@ function editFile(file) {
 function generate_diagram(bnf_code) {
   var bnf_lines = bnf_code.trim().split("\n");
   var choice_flag = 0;
-  var s = "rr.Stack(";
+  var s = "";
   for (let i = 0; i < bnf_lines.length; i++) {
     if (bnf_lines[i] == "" || bnf_lines[i] == undefined) {
       continue;
@@ -224,5 +224,5 @@ function generate_diagram(bnf_code) {
   //   s += ")";
   // }
   console.log(s);
-  return s+")";
+  return "rr.Stack(" + s + ")";
 }
