@@ -20,7 +20,7 @@ export default funcs;
 
 export const Options = {
 	DEBUG: false, // if true, writes some debug information into attributes
-	VS: 8, // minimum vertical separation between things. For a 3px stroke, must be at least 4
+	VS: 12, // minimum vertical separation between things. For a 3px stroke, must be at least 4
 	AR: 18, // radius of arcs
 	DIAGRAM_CLASS: 'railroad-diagram', // class to put on the root <svg>
 	STROKE_ODD_PIXEL_LENGTH: true, // is the stroke width an odd (1px, 3px, etc) pixel length?
@@ -57,6 +57,11 @@ export const defaultCSS = `
 	}
 	g.non-terminal text {
 		/*font-style: italic;*/
+	}
+	rect2 {
+		stroke-width: 1;
+		stroke: black;
+		fill: hsl(118°, 57%, 91%);
 	}
 	rect {
 		stroke-width: 1;
@@ -1235,6 +1240,43 @@ export class Terminal extends FakeSVG {
 	}
 }
 funcs.Terminal = (...args)=>new Terminal(...args);
+
+export class Terminal2 extends FakeSVG {
+	constructor(text, {href, title, cls}={}) {
+		super('g', {'class': ['terminal', cls].join(" ")});
+		this.text = ""+text;
+		this.href = href;
+		this.title = title;
+		this.cls = cls;
+		this.width = this.text.length * Options.CHAR_WIDTH + 10; /* Assume that each char is .5em, and that the em is 16px */
+		this.height = 0;
+		this.up = 11;
+		this.down = 11;
+		this.needsSpace = true;
+		if(Options.DEBUG) {
+			this.attrs['data-updown'] = this.up + " " + this.height + " " + this.down;
+			this.attrs['data-type'] = "terminal";
+		}
+	}
+	format(x, y, width) {
+		// Hook up the two sides if this is narrower than its stated width.
+		var gaps = determineGaps(width, this.width);
+		new Path(x,y).h(gaps[0]).addTo(this);
+		new Path(x+gaps[0]+this.width,y).h(gaps[1]).addTo(this);
+		x += gaps[0];
+
+		new FakeSVG('rect2', {x:x, y:y-11, width:this.width, height:this.up+this.down, rx:10, ry:10}).addTo(this);
+		var text = new FakeSVG('text', {x:x+this.width/2, y:y+4}, this.text);
+		if(this.href)
+			new FakeSVG('a', {'xlink:href': this.href}, [text]).addTo(this);
+		else
+			text.addTo(this);
+		if(this.title)
+			new FakeSVG('title', {}, [this.title]).addTo(this);
+		return this;
+	}
+}
+funcs.Terminal2 = (...args)=>new Terminal2(...args);
 
 
 export class NonTerminal extends FakeSVG {

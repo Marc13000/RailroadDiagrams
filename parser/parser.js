@@ -44,6 +44,11 @@ function editFile(file) {
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
+     svg.railroad-diagramrect2 {
+      stroke-width: 1;
+      stroke: black;
+      fill: #D8F4D7;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -190,7 +195,7 @@ function generate_diagram(bnf_code) {
             s += "rr.NonTerminal('" + bnf_words[j];
           }
           else if(bnf_words[j].length == 1) {
-            s += "rr.Comment('" + bnf_words[j];
+            s += "rr.Terminal2('" + bnf_words[j];
           }
           else {
             s += "rr.Terminal('" + bnf_words[j];
