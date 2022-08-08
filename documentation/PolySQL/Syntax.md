@@ -189,7 +189,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<svg class="railroad-diagram" width="456" height="233" viewBox="0 0 456 233">
+<svg class="railroad-diagram" width="476" height="233" viewBox="0 0 476 233">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
@@ -199,114 +199,114 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M50 31h0"></path>
 <path d="M50 31h18"></path>
 <g>
-<path d="M68 31h24.5"></path>
-<path d="M363.5 31h24.5"></path>
+<path d="M68 31h34.5"></path>
+<path d="M373.5 31h34.5"></path>
 <g class="non-terminal ">
-<path d="M92.5 31h0"></path>
-<path d="M166.5 31h0"></path>
-<rect x="92.5" y="20" width="74" height="22"></rect>
-<text x="129.5" y="35">INSERT</text>
+<path d="M102.5 31h0"></path>
+<path d="M176.5 31h0"></path>
+<rect x="102.5" y="20" width="74" height="22"></rect>
+<text x="139.5" y="35">INSERT</text>
 </g>
-<path d="M166.5 31h10"></path>
 <path d="M176.5 31h10"></path>
+<path d="M186.5 31h10"></path>
 <g class="non-terminal ">
-<path d="M186.5 31h0"></path>
-<path d="M242.5 31h0"></path>
-<rect x="186.5" y="20" width="56" height="22"></rect>
-<text x="214.5" y="35">INTO</text>
+<path d="M196.5 31h0"></path>
+<path d="M252.5 31h0"></path>
+<rect x="196.5" y="20" width="56" height="22"></rect>
+<text x="224.5" y="35">INTO</text>
 </g>
-<path d="M242.5 31h10"></path>
 <path d="M252.5 31h10"></path>
+<path d="M262.5 31h10"></path>
 <g class="terminal ">
-<path d="M262.5 31h0"></path>
-<path d="M363.5 31h0"></path>
-<rect x="262.5" y="20" width="101" height="22" rx="10" ry="10"></rect>
-<text x="313" y="35">tableName</text>
+<path d="M272.5 31h0"></path>
+<path d="M373.5 31h0"></path>
+<rect x="272.5" y="20" width="101" height="22" rx="10" ry="10"></rect>
+<text x="323" y="35">tableName</text>
 </g>
 </g>
-<path d="M388 31a18 18 0 0 1 18 18v0a18 18 0 0 1 -18 18h-320a18 18 0 0 0 -18 18v12a18 18 0 0 0 18 18"></path>
+<path d="M408 31a18 18 0 0 1 18 18v0a18 18 0 0 1 -18 18h-340a18 18 0 0 0 -18 18v12a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M68 115h10"></path>
-<path d="M378 115h10"></path>
+<path d="M398 115h10"></path>
 <g>
 <path d="M78 115h0"></path>
-<path d="M378 115h0"></path>
+<path d="M398 115h0"></path>
 <path d="M78 115a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 <g>
-<path d="M114 79h228"></path>
+<path d="M114 79h248"></path>
 </g>
-<path d="M342 79a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M362 79a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
 <path d="M78 115h36"></path>
 <g>
 <path d="M114 115h0"></path>
 <g>
 <path d="M114 115h10"></path>
-<path d="M332 115h10"></path>
+<path d="M352 115h10"></path>
 <g class="terminal ">
 <path d="M124 115h0"></path>
-<path d="M143 115h0"></path>
-<rect2 x="124" y="104" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="133.5" y="119">(</text>
+<path d="M153 115h0"></path>
+<rect2 x="124" y="104" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="138.5" y="119">(</text>
 </g>
-<path d="M143 115h10"></path>
 <path d="M153 115h10"></path>
+<path d="M163 115h10"></path>
 <g>
-<path d="M163 115h0"></path>
-<path d="M293 115h0"></path>
-<path d="M163 115h18"></path>
+<path d="M173 115h0"></path>
+<path d="M303 115h0"></path>
+<path d="M173 115h18"></path>
 <g>
-<path d="M181 115h0"></path>
-<g>
-<path d="M181 115h10"></path>
-<path d="M265 115h10"></path>
-<g class="terminal ">
 <path d="M191 115h0"></path>
-<path d="M265 115h0"></path>
-<rect x="191" y="104" width="74" height="22" rx="10" ry="10"></rect>
-<text x="228" y="119">column</text>
-</g>
-</g>
-<path d="M275 115h0"></path>
-</g>
-<path d="M275 115h18"></path>
-<path d="M181 115a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
-<g class="comment ">
-<path d="M181 151h38.5"></path>
-<path d="M236.5 151h38.5"></path>
-<text x="228" y="156" class="comment">,</text>
-</g>
-<path d="M275 151a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
-</g>
-<path d="M293 115h10"></path>
-<path d="M303 115h10"></path>
-<g class="terminal ">
-<path d="M313 115h0"></path>
-<path d="M332 115h0"></path>
-<rect2 x="313" y="104" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="322.5" y="119">)</text>
-</g>
-</g>
-<path d="M342 115h0"></path>
-</g>
-<path d="M342 115h36"></path>
-</g>
-</g>
-<path d="M388 115a18 18 0 0 1 18 18v15a18 18 0 0 1 -18 18h-320a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M68 202h127.5"></path>
-<path d="M260.5 202h127.5"></path>
+<path d="M191 115h10"></path>
+<path d="M275 115h10"></path>
 <g class="terminal ">
-<path d="M195.5 202h0"></path>
-<path d="M260.5 202h0"></path>
-<rect x="195.5" y="191" width="65" height="22" rx="10" ry="10"></rect>
-<text x="228" y="206">query</text>
+<path d="M201 115h0"></path>
+<path d="M275 115h0"></path>
+<rect x="201" y="104" width="74" height="22" rx="10" ry="10"></rect>
+<text x="238" y="119">column</text>
 </g>
 </g>
-<path d="M388 202h18"></path>
-<path d="M406 202h0"></path>
+<path d="M285 115h0"></path>
 </g>
-<path d="M406 202h10"></path>
-<path d="M 416 202 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M285 115h18"></path>
+<path d="M191 115a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g class="comment ">
+<path d="M191 151h38.5"></path>
+<path d="M246.5 151h38.5"></path>
+<text x="238" y="156" class="comment">,</text>
+</g>
+<path d="M285 151a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
+</g>
+<path d="M303 115h10"></path>
+<path d="M313 115h10"></path>
+<g class="terminal ">
+<path d="M323 115h0"></path>
+<path d="M352 115h0"></path>
+<rect2 x="323" y="104" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="337.5" y="119">)</text>
+</g>
+</g>
+<path d="M362 115h0"></path>
+</g>
+<path d="M362 115h36"></path>
+</g>
+</g>
+<path d="M408 115a18 18 0 0 1 18 18v15a18 18 0 0 1 -18 18h-340a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g>
+<path d="M68 202h137.5"></path>
+<path d="M270.5 202h137.5"></path>
+<g class="terminal ">
+<path d="M205.5 202h0"></path>
+<path d="M270.5 202h0"></path>
+<rect x="205.5" y="191" width="65" height="22" rx="10" ry="10"></rect>
+<text x="238" y="206">query</text>
+</g>
+</g>
+<path d="M408 202h18"></path>
+<path d="M426 202h0"></path>
+</g>
+<path d="M426 202h10"></path>
+<path d="M 436 202 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
 </html>
@@ -539,7 +539,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<svg class="railroad-diagram" width="399" height="62" viewBox="0 0 399 62">
+<svg class="railroad-diagram" width="409" height="62" viewBox="0 0 409 62">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
@@ -549,7 +549,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M50 31h0"></path>
 <g>
 <path d="M50 31h10"></path>
-<path d="M339 31h10"></path>
+<path d="M349 31h10"></path>
 <g class="terminal ">
 <path d="M60 31h0"></path>
 <path d="M170 31h0"></path>
@@ -560,23 +560,23 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M180 31h10"></path>
 <g class="terminal ">
 <path d="M190 31h0"></path>
-<path d="M209 31h0"></path>
-<rect2 x="190" y="20" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="199.5" y="35">=</text>
+<path d="M219 31h0"></path>
+<rect2 x="190" y="20" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="204.5" y="35">=</text>
 </g>
-<path d="M209 31h10"></path>
 <path d="M219 31h10"></path>
+<path d="M229 31h10"></path>
 <g class="terminal ">
-<path d="M229 31h0"></path>
-<path d="M339 31h0"></path>
-<rect x="229" y="20" width="110" height="22" rx="10" ry="10"></rect>
-<text x="284" y="35">expression</text>
-</g>
-</g>
+<path d="M239 31h0"></path>
 <path d="M349 31h0"></path>
+<rect x="239" y="20" width="110" height="22" rx="10" ry="10"></rect>
+<text x="294" y="35">expression</text>
 </g>
-<path d="M349 31h10"></path>
-<path d="M 359 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+</g>
+<path d="M359 31h0"></path>
+</g>
+<path d="M359 31h10"></path>
+<path d="M 369 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
 </html>
@@ -1715,7 +1715,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<svg class="railroad-diagram" width="456" height="233" viewBox="0 0 456 233">
+<svg class="railroad-diagram" width="476" height="233" viewBox="0 0 476 233">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
@@ -1725,86 +1725,86 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M50 31h0"></path>
 <path d="M50 31h18"></path>
 <g>
-<path d="M68 31h132"></path>
-<path d="M256 31h132"></path>
+<path d="M68 31h142"></path>
+<path d="M266 31h142"></path>
 <g class="terminal ">
-<path d="M200 31h0"></path>
-<path d="M256 31h0"></path>
-<rect x="200" y="20" width="56" height="22" rx="10" ry="10"></rect>
-<text x="228" y="35">name</text>
+<path d="M210 31h0"></path>
+<path d="M266 31h0"></path>
+<rect x="210" y="20" width="56" height="22" rx="10" ry="10"></rect>
+<text x="238" y="35">name</text>
 </g>
 </g>
-<path d="M388 31a18 18 0 0 1 18 18v0a18 18 0 0 1 -18 18h-320a18 18 0 0 0 -18 18v12a18 18 0 0 0 18 18"></path>
+<path d="M408 31a18 18 0 0 1 18 18v0a18 18 0 0 1 -18 18h-340a18 18 0 0 0 -18 18v12a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M68 115h10"></path>
-<path d="M378 115h10"></path>
+<path d="M398 115h10"></path>
 <g>
 <path d="M78 115h0"></path>
-<path d="M378 115h0"></path>
+<path d="M398 115h0"></path>
 <path d="M78 115a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 <g>
-<path d="M114 79h228"></path>
+<path d="M114 79h248"></path>
 </g>
-<path d="M342 79a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M362 79a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
 <path d="M78 115h36"></path>
 <g>
 <path d="M114 115h0"></path>
 <g>
 <path d="M114 115h10"></path>
-<path d="M332 115h10"></path>
+<path d="M352 115h10"></path>
 <g class="terminal ">
 <path d="M124 115h0"></path>
-<path d="M143 115h0"></path>
-<rect2 x="124" y="104" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="133.5" y="119">(</text>
+<path d="M153 115h0"></path>
+<rect2 x="124" y="104" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="138.5" y="119">(</text>
 </g>
-<path d="M143 115h10"></path>
 <path d="M153 115h10"></path>
+<path d="M163 115h10"></path>
 <g>
-<path d="M163 115h0"></path>
-<path d="M293 115h0"></path>
-<path d="M163 115h18"></path>
+<path d="M173 115h0"></path>
+<path d="M303 115h0"></path>
+<path d="M173 115h18"></path>
 <g>
-<path d="M181 115h0"></path>
-<g>
-<path d="M181 115h10"></path>
-<path d="M265 115h10"></path>
-<g class="terminal ">
 <path d="M191 115h0"></path>
-<path d="M265 115h0"></path>
-<rect x="191" y="104" width="74" height="22" rx="10" ry="10"></rect>
-<text x="228" y="119">column</text>
-</g>
-</g>
-<path d="M275 115h0"></path>
-</g>
-<path d="M275 115h18"></path>
-<path d="M181 115a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
-<g class="comment ">
-<path d="M181 151h38.5"></path>
-<path d="M236.5 151h38.5"></path>
-<text x="228" y="156" class="comment">,</text>
-</g>
-<path d="M275 151a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
-</g>
-<path d="M293 115h10"></path>
-<path d="M303 115h10"></path>
+<g>
+<path d="M191 115h10"></path>
+<path d="M275 115h10"></path>
 <g class="terminal ">
-<path d="M313 115h0"></path>
-<path d="M332 115h0"></path>
-<rect2 x="313" y="104" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="322.5" y="119">)</text>
+<path d="M201 115h0"></path>
+<path d="M275 115h0"></path>
+<rect x="201" y="104" width="74" height="22" rx="10" ry="10"></rect>
+<text x="238" y="119">column</text>
 </g>
 </g>
-<path d="M342 115h0"></path>
+<path d="M285 115h0"></path>
 </g>
-<path d="M342 115h36"></path>
+<path d="M285 115h18"></path>
+<path d="M191 115a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g class="comment ">
+<path d="M191 151h38.5"></path>
+<path d="M246.5 151h38.5"></path>
+<text x="238" y="156" class="comment">,</text>
+</g>
+<path d="M285 151a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
+</g>
+<path d="M303 115h10"></path>
+<path d="M313 115h10"></path>
+<g class="terminal ">
+<path d="M323 115h0"></path>
+<path d="M352 115h0"></path>
+<rect2 x="323" y="104" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="337.5" y="119">)</text>
 </g>
 </g>
-<path d="M388 115a18 18 0 0 1 18 18v15a18 18 0 0 1 -18 18h-320a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M362 115h0"></path>
+</g>
+<path d="M362 115h36"></path>
+</g>
+</g>
+<path d="M408 115a18 18 0 0 1 18 18v15a18 18 0 0 1 -18 18h-340a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M68 202h59.5"></path>
-<path d="M328.5 202h59.5"></path>
+<path d="M348.5 202h59.5"></path>
 <g class="non-terminal ">
 <path d="M127.5 202h0"></path>
 <path d="M165.5 202h0"></path>
@@ -1815,32 +1815,32 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M175.5 202h10"></path>
 <g class="terminal ">
 <path d="M185.5 202h0"></path>
-<path d="M204.5 202h0"></path>
-<rect2 x="185.5" y="191" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="195" y="206">(</text>
+<path d="M214.5 202h0"></path>
+<rect2 x="185.5" y="191" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="200" y="206">(</text>
 </g>
-<path d="M204.5 202h10"></path>
 <path d="M214.5 202h10"></path>
+<path d="M224.5 202h10"></path>
 <g class="terminal ">
-<path d="M224.5 202h0"></path>
-<path d="M289.5 202h0"></path>
-<rect x="224.5" y="191" width="65" height="22" rx="10" ry="10"></rect>
-<text x="257" y="206">query</text>
+<path d="M234.5 202h0"></path>
+<path d="M299.5 202h0"></path>
+<rect x="234.5" y="191" width="65" height="22" rx="10" ry="10"></rect>
+<text x="267" y="206">query</text>
 </g>
-<path d="M289.5 202h10"></path>
 <path d="M299.5 202h10"></path>
+<path d="M309.5 202h10"></path>
 <g class="terminal ">
-<path d="M309.5 202h0"></path>
-<path d="M328.5 202h0"></path>
-<rect2 x="309.5" y="191" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="319" y="206">)</text>
+<path d="M319.5 202h0"></path>
+<path d="M348.5 202h0"></path>
+<rect2 x="319.5" y="191" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="334" y="206">)</text>
 </g>
 </g>
-<path d="M388 202h18"></path>
-<path d="M406 202h0"></path>
+<path d="M408 202h18"></path>
+<path d="M426 202h0"></path>
 </g>
-<path d="M406 202h10"></path>
-<path d="M 416 202 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M426 202h10"></path>
+<path d="M 436 202 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
 </html>
@@ -2190,12 +2190,12 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M565.5 151h0"></path>
 <path d="M318.5 151h36"></path>
 <g>
-<path d="M354.5 151h78"></path>
-<path d="M451.5 151h78"></path>
+<path d="M354.5 151h73"></path>
+<path d="M456.5 151h73"></path>
 <g class="terminal ">
-<path d="M432.5 151h0"></path>
-<path d="M451.5 151h0"></path>
-<rect2 x="432.5" y="140" width="19" height="22" rx="10" ry="10"></rect2>
+<path d="M427.5 151h0"></path>
+<path d="M456.5 151h0"></path>
+<rect2 x="427.5" y="140" width="29" height="22" rx="10" ry="10"></rect2>
 <text x="442" y="155">&#42;</text>
 </g>
 </g>
@@ -2646,12 +2646,12 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M361.5 151h0"></path>
 <path d="M114.5 151h36"></path>
 <g>
-<path d="M150.5 151h78"></path>
-<path d="M247.5 151h78"></path>
+<path d="M150.5 151h73"></path>
+<path d="M252.5 151h73"></path>
 <g class="terminal ">
-<path d="M228.5 151h0"></path>
-<path d="M247.5 151h0"></path>
-<rect2 x="228.5" y="140" width="19" height="22" rx="10" ry="10"></rect2>
+<path d="M223.5 151h0"></path>
+<path d="M252.5 151h0"></path>
+<rect2 x="223.5" y="140" width="29" height="22" rx="10" ry="10"></rect2>
 <text x="238" y="155">&#42;</text>
 </g>
 </g>
@@ -2837,29 +2837,29 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M557 68h36"></path>
 <path d="M50 68a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M86 104h141.5"></path>
-<path d="M415.5 104h141.5"></path>
+<path d="M86 104h131.5"></path>
+<path d="M425.5 104h131.5"></path>
 <g class="terminal ">
-<path d="M227.5 104h0"></path>
-<path d="M337.5 104h0"></path>
-<rect x="227.5" y="93" width="110" height="22" rx="10" ry="10"></rect>
-<text x="282.5" y="108">tableAlias</text>
+<path d="M217.5 104h0"></path>
+<path d="M327.5 104h0"></path>
+<rect x="217.5" y="93" width="110" height="22" rx="10" ry="10"></rect>
+<text x="272.5" y="108">tableAlias</text>
 </g>
+<path d="M327.5 104h10"></path>
 <path d="M337.5 104h10"></path>
-<path d="M347.5 104h10"></path>
 <g class="terminal ">
-<path d="M357.5 104h0"></path>
+<path d="M347.5 104h0"></path>
 <path d="M376.5 104h0"></path>
-<rect2 x="357.5" y="93" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="367" y="108">.</text>
+<rect2 x="347.5" y="93" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="362" y="108">.</text>
 </g>
 <path d="M376.5 104h10"></path>
 <path d="M386.5 104h10"></path>
 <g class="terminal ">
 <path d="M396.5 104h0"></path>
-<path d="M415.5 104h0"></path>
-<rect2 x="396.5" y="93" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="406" y="108">&#42;</text>
+<path d="M425.5 104h0"></path>
+<rect2 x="396.5" y="93" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="411" y="108">&#42;</text>
 </g>
 </g>
 <path d="M557 104a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
@@ -3318,7 +3318,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<svg class="railroad-diagram" width="465" height="126" viewBox="0 0 465 126">
+<svg class="railroad-diagram" width="485" height="126" viewBox="0 0 485 126">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
@@ -3328,31 +3328,31 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M50 31h0"></path>
 <g>
 <path d="M50 31h0"></path>
-<path d="M415 31h0"></path>
+<path d="M435 31h0"></path>
 <path d="M50 31h36"></path>
 <g>
-<path d="M86 31h31"></path>
-<path d="M348 31h31"></path>
+<path d="M86 31h41"></path>
+<path d="M358 31h41"></path>
 <g class="non-terminal ">
-<path d="M117 31h0"></path>
-<path d="M155 31h0"></path>
-<rect x="117" y="20" width="38" height="22"></rect>
-<text x="136" y="35">ON</text>
+<path d="M127 31h0"></path>
+<path d="M165 31h0"></path>
+<rect x="127" y="20" width="38" height="22"></rect>
+<text x="146" y="35">ON</text>
 </g>
-<path d="M155 31h10"></path>
 <path d="M165 31h10"></path>
+<path d="M175 31h10"></path>
 <g class="terminal ">
-<path d="M175 31h0"></path>
-<path d="M348 31h0"></path>
-<rect x="175" y="20" width="173" height="22" rx="10" ry="10"></rect>
-<text x="261.5" y="35">booleanExpression</text>
+<path d="M185 31h0"></path>
+<path d="M358 31h0"></path>
+<rect x="185" y="20" width="173" height="22" rx="10" ry="10"></rect>
+<text x="271.5" y="35">booleanExpression</text>
 </g>
 </g>
-<path d="M379 31h36"></path>
+<path d="M399 31h36"></path>
 <path d="M50 31a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M86 67h0"></path>
-<path d="M379 67h0"></path>
+<path d="M399 67h0"></path>
 <g class="non-terminal ">
 <path d="M86 67h0"></path>
 <path d="M151 67h0"></path>
@@ -3363,54 +3363,54 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M161 67h10"></path>
 <g class="terminal ">
 <path d="M171 67h0"></path>
-<path d="M190 67h0"></path>
-<rect2 x="171" y="56" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="180.5" y="71">(</text>
+<path d="M200 67h0"></path>
+<rect2 x="171" y="56" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="185.5" y="71">(</text>
 </g>
-<path d="M190 67h10"></path>
 <path d="M200 67h10"></path>
+<path d="M210 67h10"></path>
 <g>
-<path d="M210 67h0"></path>
-<path d="M340 67h0"></path>
-<path d="M210 67h18"></path>
+<path d="M220 67h0"></path>
+<path d="M350 67h0"></path>
+<path d="M220 67h18"></path>
 <g>
-<path d="M228 67h0"></path>
-<g>
-<path d="M228 67h10"></path>
-<path d="M312 67h10"></path>
-<g class="terminal ">
 <path d="M238 67h0"></path>
-<path d="M312 67h0"></path>
-<rect x="238" y="56" width="74" height="22" rx="10" ry="10"></rect>
-<text x="275" y="71">column</text>
-</g>
-</g>
-<path d="M322 67h0"></path>
-</g>
-<path d="M322 67h18"></path>
-<path d="M228 67a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
-<g class="comment ">
-<path d="M228 103h38.5"></path>
-<path d="M283.5 103h38.5"></path>
-<text x="275" y="108" class="comment">,</text>
-</g>
-<path d="M322 103a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
-</g>
-<path d="M340 67h10"></path>
-<path d="M350 67h10"></path>
+<g>
+<path d="M238 67h10"></path>
+<path d="M322 67h10"></path>
 <g class="terminal ">
-<path d="M360 67h0"></path>
-<path d="M379 67h0"></path>
-<rect2 x="360" y="56" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="369.5" y="71">)</text>
+<path d="M248 67h0"></path>
+<path d="M322 67h0"></path>
+<rect x="248" y="56" width="74" height="22" rx="10" ry="10"></rect>
+<text x="285" y="71">column</text>
 </g>
 </g>
-<path d="M379 67a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
+<path d="M332 67h0"></path>
 </g>
-<path d="M415 31h0"></path>
+<path d="M332 67h18"></path>
+<path d="M238 67a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g class="comment ">
+<path d="M238 103h38.5"></path>
+<path d="M293.5 103h38.5"></path>
+<text x="285" y="108" class="comment">,</text>
 </g>
-<path d="M415 31h10"></path>
-<path d="M 425 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M332 103a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
+</g>
+<path d="M350 67h10"></path>
+<path d="M360 67h10"></path>
+<g class="terminal ">
+<path d="M370 67h0"></path>
+<path d="M399 67h0"></path>
+<rect2 x="370" y="56" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="384.5" y="71">)</text>
+</g>
+</g>
+<path d="M399 67a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
+</g>
+<path d="M435 31h0"></path>
+</g>
+<path d="M435 31h10"></path>
+<path d="M 445 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
 </html>
@@ -3472,7 +3472,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<svg class="railroad-diagram" width="808" height="270" viewBox="0 0 808 270">
+<svg class="railroad-diagram" width="828" height="270" viewBox="0 0 828 270">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
@@ -3482,63 +3482,63 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M50 31h0"></path>
 <path d="M50 31h18"></path>
 <g>
-<path d="M68 31h285.5"></path>
-<path d="M454.5 31h285.5"></path>
+<path d="M68 31h295.5"></path>
+<path d="M464.5 31h295.5"></path>
 <g class="terminal ">
-<path d="M353.5 31h0"></path>
-<path d="M454.5 31h0"></path>
-<rect x="353.5" y="20" width="101" height="22" rx="10" ry="10"></rect>
-<text x="404" y="35">tableName</text>
+<path d="M363.5 31h0"></path>
+<path d="M464.5 31h0"></path>
+<rect x="363.5" y="20" width="101" height="22" rx="10" ry="10"></rect>
+<text x="414" y="35">tableName</text>
 </g>
 </g>
-<path d="M740 31a18 18 0 0 1 18 18v0a18 18 0 0 1 -18 18h-672a18 18 0 0 0 -18 18v12a18 18 0 0 0 18 18"></path>
+<path d="M760 31a18 18 0 0 1 18 18v0a18 18 0 0 1 -18 18h-692a18 18 0 0 0 -18 18v12a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M68 115h217"></path>
-<path d="M523 115h217"></path>
+<path d="M68 115h227"></path>
+<path d="M533 115h227"></path>
 <g>
-<path d="M285 115h0"></path>
-<path d="M523 115h0"></path>
-<path d="M285 115a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
+<path d="M295 115h0"></path>
+<path d="M533 115h0"></path>
+<path d="M295 115a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 <g>
-<path d="M321 79h166"></path>
+<path d="M331 79h166"></path>
 </g>
-<path d="M487 79a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
-<path d="M285 115h36"></path>
+<path d="M497 79a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M295 115h36"></path>
 <g>
-<path d="M321 115h0"></path>
-<g>
-<path d="M321 115h10"></path>
-<path d="M477 115h10"></path>
-<g class="terminal ">
 <path d="M331 115h0"></path>
-<path d="M477 115h0"></path>
-<rect x="331" y="104" width="146" height="22" rx="10" ry="10"></rect>
-<text x="404" y="119">matchRecognize</text>
-</g>
-</g>
+<g>
+<path d="M331 115h10"></path>
+<path d="M487 115h10"></path>
+<g class="terminal ">
+<path d="M341 115h0"></path>
 <path d="M487 115h0"></path>
+<rect x="341" y="104" width="146" height="22" rx="10" ry="10"></rect>
+<text x="414" y="119">matchRecognize</text>
 </g>
-<path d="M487 115h36"></path>
+</g>
+<path d="M497 115h0"></path>
+</g>
+<path d="M497 115h36"></path>
 </g>
 </g>
-<path d="M740 115a18 18 0 0 1 18 18v0a18 18 0 0 1 -18 18h-672a18 18 0 0 0 -18 18v24a18 18 0 0 0 18 18"></path>
+<path d="M760 115a18 18 0 0 1 18 18v0a18 18 0 0 1 -18 18h-692a18 18 0 0 0 -18 18v24a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M68 211h10"></path>
-<path d="M730 211h10"></path>
+<path d="M750 211h10"></path>
 <g>
 <path d="M78 211h0"></path>
-<path d="M730 211h0"></path>
+<path d="M750 211h0"></path>
 <path d="M78 211a18 18 0 0 0 18 -18v-12a18 18 0 0 1 18 -18"></path>
 <g>
-<path d="M114 163h580"></path>
+<path d="M114 163h600"></path>
 </g>
-<path d="M694 163a18 18 0 0 1 18 18v12a18 18 0 0 0 18 18"></path>
+<path d="M714 163a18 18 0 0 1 18 18v12a18 18 0 0 0 18 18"></path>
 <path d="M78 211h36"></path>
 <g>
 <path d="M114 211h0"></path>
 <g>
 <path d="M114 211h10"></path>
-<path d="M684 211h10"></path>
+<path d="M704 211h10"></path>
 <g>
 <path d="M124 211h0"></path>
 <path d="M254 211h0"></path>
@@ -3574,77 +3574,77 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M329 211h10"></path>
 <g>
 <path d="M339 211h0"></path>
-<path d="M684 211h0"></path>
+<path d="M704 211h0"></path>
 <path d="M339 211a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 <g>
-<path d="M375 175h273"></path>
+<path d="M375 175h293"></path>
 </g>
-<path d="M648 175a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M668 175a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
 <path d="M339 211h36"></path>
 <g>
 <path d="M375 211h0"></path>
 <g>
 <path d="M375 211h10"></path>
-<path d="M638 211h10"></path>
+<path d="M658 211h10"></path>
 <g class="terminal ">
 <path d="M385 211h0"></path>
-<path d="M404 211h0"></path>
-<rect2 x="385" y="200" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="394.5" y="215">(</text>
+<path d="M414 211h0"></path>
+<rect2 x="385" y="200" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="399.5" y="215">(</text>
 </g>
-<path d="M404 211h10"></path>
 <path d="M414 211h10"></path>
+<path d="M424 211h10"></path>
 <g>
-<path d="M424 211h0"></path>
-<path d="M599 211h0"></path>
-<path d="M424 211h18"></path>
+<path d="M434 211h0"></path>
+<path d="M609 211h0"></path>
+<path d="M434 211h18"></path>
 <g>
-<path d="M442 211h0"></path>
-<g>
-<path d="M442 211h10"></path>
-<path d="M571 211h10"></path>
-<g class="terminal ">
 <path d="M452 211h0"></path>
-<path d="M571 211h0"></path>
-<rect x="452" y="200" width="119" height="22" rx="10" ry="10"></rect>
-<text x="511.5" y="215">columnAlias</text>
-</g>
-</g>
-<path d="M581 211h0"></path>
-</g>
-<path d="M581 211h18"></path>
-<path d="M442 211a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
-<g class="comment ">
-<path d="M442 247h61"></path>
-<path d="M520 247h61"></path>
-<text x="511.5" y="252" class="comment">,</text>
-</g>
-<path d="M581 247a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
-</g>
-<path d="M599 211h10"></path>
-<path d="M609 211h10"></path>
+<g>
+<path d="M452 211h10"></path>
+<path d="M581 211h10"></path>
 <g class="terminal ">
-<path d="M619 211h0"></path>
-<path d="M638 211h0"></path>
-<rect2 x="619" y="200" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="628.5" y="215">)</text>
+<path d="M462 211h0"></path>
+<path d="M581 211h0"></path>
+<rect x="462" y="200" width="119" height="22" rx="10" ry="10"></rect>
+<text x="521.5" y="215">columnAlias</text>
 </g>
 </g>
-<path d="M648 211h0"></path>
+<path d="M591 211h0"></path>
 </g>
-<path d="M648 211h36"></path>
+<path d="M591 211h18"></path>
+<path d="M452 211a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g class="comment ">
+<path d="M452 247h61"></path>
+<path d="M530 247h61"></path>
+<text x="521.5" y="252" class="comment">,</text>
+</g>
+<path d="M591 247a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
+</g>
+<path d="M609 211h10"></path>
+<path d="M619 211h10"></path>
+<g class="terminal ">
+<path d="M629 211h0"></path>
+<path d="M658 211h0"></path>
+<rect2 x="629" y="200" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="643.5" y="215">)</text>
 </g>
 </g>
-<path d="M694 211h0"></path>
+<path d="M668 211h0"></path>
 </g>
-<path d="M694 211h36"></path>
+<path d="M668 211h36"></path>
 </g>
 </g>
-<path d="M740 211h18"></path>
-<path d="M758 211h0"></path>
+<path d="M714 211h0"></path>
 </g>
-<path d="M758 211h10"></path>
-<path d="M 768 211 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M714 211h36"></path>
+</g>
+</g>
+<path d="M760 211h18"></path>
+<path d="M778 211h0"></path>
+</g>
+<path d="M778 211h10"></path>
+<path d="M 788 211 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
 </html>
@@ -3706,7 +3706,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<svg class="railroad-diagram" width="1096" height="438" viewBox="0 0 1096 438">
+<svg class="railroad-diagram" width="1136" height="438" viewBox="0 0 1136 438">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 46v20m10 -20v20m-10 -10h20"></path>
@@ -3716,332 +3716,332 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M50 56h0"></path>
 <g>
 <path d="M50 56h0"></path>
-<path d="M1046 56h0"></path>
+<path d="M1086 56h0"></path>
 <path d="M50 56h36"></path>
 <g>
-<path d="M86 56h286"></path>
-<path d="M724 56h286"></path>
+<path d="M86 56h301"></path>
+<path d="M749 56h301"></path>
 <g>
-<path d="M372 56h0"></path>
-<path d="M613 56h0"></path>
-<path d="M372 56a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
+<path d="M387 56h0"></path>
+<path d="M638 56h0"></path>
+<path d="M387 56a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 <g>
-<path d="M408 20h169"></path>
+<path d="M423 20h179"></path>
 </g>
-<path d="M577 20a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
-<path d="M372 56h36"></path>
+<path d="M602 20a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M387 56h36"></path>
 <g>
-<path d="M408 56h0"></path>
+<path d="M423 56h0"></path>
 <g>
-<path d="M408 56h10"></path>
-<path d="M567 56h10"></path>
+<path d="M423 56h10"></path>
+<path d="M592 56h10"></path>
 <g class="terminal ">
-<path d="M418 56h0"></path>
-<path d="M528 56h0"></path>
-<rect x="418" y="45" width="110" height="22" rx="10" ry="10"></rect>
-<text x="473" y="60">schemaName</text>
+<path d="M433 56h0"></path>
+<path d="M543 56h0"></path>
+<rect x="433" y="45" width="110" height="22" rx="10" ry="10"></rect>
+<text x="488" y="60">schemaName</text>
 </g>
-<path d="M528 56h10"></path>
-<path d="M538 56h10"></path>
+<path d="M543 56h10"></path>
+<path d="M553 56h10"></path>
 <g class="terminal ">
-<path d="M548 56h0"></path>
-<path d="M567 56h0"></path>
-<rect2 x="548" y="45" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="557.5" y="60">.</text>
+<path d="M563 56h0"></path>
+<path d="M592 56h0"></path>
+<rect2 x="563" y="45" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="577.5" y="60">.</text>
 </g>
 </g>
-<path d="M577 56h0"></path>
+<path d="M602 56h0"></path>
 </g>
-<path d="M577 56h36"></path>
+<path d="M602 56h36"></path>
 </g>
-<path d="M613 56h10"></path>
+<path d="M638 56h10"></path>
 <g class="terminal ">
-<path d="M623 56h0"></path>
-<path d="M724 56h0"></path>
-<rect x="623" y="45" width="101" height="22" rx="10" ry="10"></rect>
-<text x="673.5" y="60">tableName</text>
+<path d="M648 56h0"></path>
+<path d="M749 56h0"></path>
+<rect x="648" y="45" width="101" height="22" rx="10" ry="10"></rect>
+<text x="698.5" y="60">tableName</text>
 </g>
 </g>
-<path d="M1010 56h36"></path>
+<path d="M1050 56h36"></path>
 <path d="M50 56a18 18 0 0 1 18 18v23a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M86 115h209.5"></path>
-<path d="M800.5 115h209.5"></path>
+<path d="M86 115h214.5"></path>
+<path d="M835.5 115h214.5"></path>
 <g class="terminal ">
-<path d="M295.5 115h0"></path>
-<path d="M314.5 115h0"></path>
-<rect2 x="295.5" y="104" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="305" y="119">(</text>
+<path d="M300.5 115h0"></path>
+<path d="M329.5 115h0"></path>
+<rect2 x="300.5" y="104" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="315" y="119">(</text>
 </g>
-<path d="M314.5 115h10"></path>
-<path d="M324.5 115h10"></path>
+<path d="M329.5 115h10"></path>
+<path d="M339.5 115h10"></path>
 <g class="non-terminal ">
-<path d="M334.5 115h0"></path>
-<path d="M399.5 115h0"></path>
-<rect x="334.5" y="104" width="65" height="22"></rect>
-<text x="367" y="119">TABLE</text>
+<path d="M349.5 115h0"></path>
+<path d="M414.5 115h0"></path>
+<rect x="349.5" y="104" width="65" height="22"></rect>
+<text x="382" y="119">TABLE</text>
 </g>
-<path d="M399.5 115h10"></path>
+<path d="M414.5 115h10"></path>
 <g>
-<path d="M409.5 115h0"></path>
-<path d="M650.5 115h0"></path>
-<path d="M409.5 115a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
+<path d="M424.5 115h0"></path>
+<path d="M675.5 115h0"></path>
+<path d="M424.5 115a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 <g>
-<path d="M445.5 79h169"></path>
+<path d="M460.5 79h179"></path>
 </g>
-<path d="M614.5 79a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
-<path d="M409.5 115h36"></path>
+<path d="M639.5 79a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M424.5 115h36"></path>
 <g>
-<path d="M445.5 115h0"></path>
+<path d="M460.5 115h0"></path>
 <g>
-<path d="M445.5 115h10"></path>
-<path d="M604.5 115h10"></path>
+<path d="M460.5 115h10"></path>
+<path d="M629.5 115h10"></path>
 <g class="terminal ">
-<path d="M455.5 115h0"></path>
-<path d="M565.5 115h0"></path>
-<rect x="455.5" y="104" width="110" height="22" rx="10" ry="10"></rect>
-<text x="510.5" y="119">schemaName</text>
+<path d="M470.5 115h0"></path>
+<path d="M580.5 115h0"></path>
+<rect x="470.5" y="104" width="110" height="22" rx="10" ry="10"></rect>
+<text x="525.5" y="119">schemaName</text>
 </g>
-<path d="M565.5 115h10"></path>
-<path d="M575.5 115h10"></path>
+<path d="M580.5 115h10"></path>
+<path d="M590.5 115h10"></path>
 <g class="terminal ">
-<path d="M585.5 115h0"></path>
-<path d="M604.5 115h0"></path>
-<rect2 x="585.5" y="104" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="595" y="119">.</text>
+<path d="M600.5 115h0"></path>
+<path d="M629.5 115h0"></path>
+<rect2 x="600.5" y="104" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="615" y="119">.</text>
 </g>
 </g>
-<path d="M614.5 115h0"></path>
+<path d="M639.5 115h0"></path>
 </g>
-<path d="M614.5 115h36"></path>
+<path d="M639.5 115h36"></path>
 </g>
-<path d="M650.5 115h10"></path>
+<path d="M675.5 115h10"></path>
 <g class="terminal ">
-<path d="M660.5 115h0"></path>
-<path d="M761.5 115h0"></path>
-<rect x="660.5" y="104" width="101" height="22" rx="10" ry="10"></rect>
-<text x="711" y="119">tableName</text>
+<path d="M685.5 115h0"></path>
+<path d="M786.5 115h0"></path>
+<rect x="685.5" y="104" width="101" height="22" rx="10" ry="10"></rect>
+<text x="736" y="119">tableName</text>
 </g>
-<path d="M761.5 115h10"></path>
-<path d="M771.5 115h10"></path>
+<path d="M786.5 115h10"></path>
+<path d="M796.5 115h10"></path>
 <g class="terminal ">
-<path d="M781.5 115h0"></path>
-<path d="M800.5 115h0"></path>
-<rect2 x="781.5" y="104" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="791" y="119">)</text>
+<path d="M806.5 115h0"></path>
+<path d="M835.5 115h0"></path>
+<rect2 x="806.5" y="104" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="821" y="119">)</text>
 </g>
 </g>
-<path d="M1010 115a18 18 0 0 0 18 -18v-23a18 18 0 0 1 18 -18"></path>
+<path d="M1050 115a18 18 0 0 0 18 -18v-23a18 18 0 0 1 18 -18"></path>
 <path d="M50 56a18 18 0 0 1 18 18v82a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M86 174h196.5"></path>
-<path d="M813.5 174h196.5"></path>
+<path d="M86 174h206.5"></path>
+<path d="M843.5 174h206.5"></path>
 <g class="terminal ">
-<path d="M282.5 174h0"></path>
-<path d="M383.5 174h0"></path>
-<rect x="282.5" y="163" width="101" height="22" rx="10" ry="10"></rect>
-<text x="333" y="178">tableName</text>
-</g>
-<path d="M383.5 174h10"></path>
-<g>
+<path d="M292.5 174h0"></path>
 <path d="M393.5 174h0"></path>
-<path d="M559.5 174h0"></path>
-<path d="M393.5 174a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
+<rect x="292.5" y="163" width="101" height="22" rx="10" ry="10"></rect>
+<text x="343" y="178">tableName</text>
+</g>
+<path d="M393.5 174h10"></path>
 <g>
-<path d="M429.5 138h94"></path>
-</g>
-<path d="M523.5 138a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
-<path d="M393.5 174h36"></path>
-<g>
-<path d="M429.5 174h0"></path>
-<g>
-<path d="M429.5 174h10"></path>
-<path d="M513.5 174h10"></path>
-<g class="non-terminal ">
-<path d="M439.5 174h0"></path>
-<path d="M513.5 174h0"></path>
-<rect x="439.5" y="163" width="74" height="22"></rect>
-<text x="476.5" y="178">EXTEND</text>
-</g>
-</g>
-<path d="M523.5 174h0"></path>
-</g>
-<path d="M523.5 174h36"></path>
-</g>
-<path d="M559.5 174h10"></path>
-<g class="terminal ">
+<path d="M403.5 174h0"></path>
 <path d="M569.5 174h0"></path>
-<path d="M588.5 174h0"></path>
-<rect2 x="569.5" y="163" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="579" y="178">(</text>
-</g>
-<path d="M588.5 174h10"></path>
-<path d="M598.5 174h10"></path>
+<path d="M403.5 174a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 <g>
+<path d="M439.5 138h94"></path>
+</g>
+<path d="M533.5 138a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M403.5 174h36"></path>
+<g>
+<path d="M439.5 174h0"></path>
+<g>
+<path d="M439.5 174h10"></path>
+<path d="M523.5 174h10"></path>
+<g class="non-terminal ">
+<path d="M449.5 174h0"></path>
+<path d="M523.5 174h0"></path>
+<rect x="449.5" y="163" width="74" height="22"></rect>
+<text x="486.5" y="178">EXTEND</text>
+</g>
+</g>
+<path d="M533.5 174h0"></path>
+</g>
+<path d="M533.5 174h36"></path>
+</g>
+<path d="M569.5 174h10"></path>
+<g class="terminal ">
+<path d="M579.5 174h0"></path>
 <path d="M608.5 174h0"></path>
-<path d="M774.5 174h0"></path>
-<path d="M608.5 174h18"></path>
+<rect2 x="579.5" y="163" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="594" y="178">(</text>
+</g>
+<path d="M608.5 174h10"></path>
+<path d="M618.5 174h10"></path>
 <g>
-<path d="M626.5 174h0"></path>
-<g>
-<path d="M626.5 174h10"></path>
-<path d="M746.5 174h10"></path>
-<g class="terminal ">
-<path d="M636.5 174h0"></path>
-<path d="M746.5 174h0"></path>
-<rect x="636.5" y="163" width="110" height="22" rx="10" ry="10"></rect>
-<text x="691.5" y="178">columnDecl</text>
-</g>
-</g>
-<path d="M756.5 174h0"></path>
-</g>
-<path d="M756.5 174h18"></path>
-<path d="M626.5 174a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
-<g class="comment ">
-<path d="M626.5 210h56.5"></path>
-<path d="M700 210h56.5"></path>
-<text x="691.5" y="215" class="comment">,</text>
-</g>
-<path d="M756.5 210a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
-</g>
-<path d="M774.5 174h10"></path>
-<path d="M784.5 174h10"></path>
-<g class="terminal ">
+<path d="M628.5 174h0"></path>
 <path d="M794.5 174h0"></path>
-<path d="M813.5 174h0"></path>
-<rect2 x="794.5" y="163" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="804" y="178">)</text>
+<path d="M628.5 174h18"></path>
+<g>
+<path d="M646.5 174h0"></path>
+<g>
+<path d="M646.5 174h10"></path>
+<path d="M766.5 174h10"></path>
+<g class="terminal ">
+<path d="M656.5 174h0"></path>
+<path d="M766.5 174h0"></path>
+<rect x="656.5" y="163" width="110" height="22" rx="10" ry="10"></rect>
+<text x="711.5" y="178">columnDecl</text>
 </g>
 </g>
-<path d="M1010 174a18 18 0 0 0 18 -18v-82a18 18 0 0 1 18 -18"></path>
+<path d="M776.5 174h0"></path>
+</g>
+<path d="M776.5 174h18"></path>
+<path d="M646.5 174a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g class="comment ">
+<path d="M646.5 210h56.5"></path>
+<path d="M720 210h56.5"></path>
+<text x="711.5" y="215" class="comment">,</text>
+</g>
+<path d="M776.5 210a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
+</g>
+<path d="M794.5 174h10"></path>
+<path d="M804.5 174h10"></path>
+<g class="terminal ">
+<path d="M814.5 174h0"></path>
+<path d="M843.5 174h0"></path>
+<rect2 x="814.5" y="163" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="829" y="178">)</text>
+</g>
+</g>
+<path d="M1050 174a18 18 0 0 0 18 -18v-82a18 18 0 0 1 18 -18"></path>
 <path d="M50 56a18 18 0 0 1 18 18v169a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M86 261h298"></path>
-<path d="M712 261h298"></path>
+<path d="M86 261h308"></path>
+<path d="M742 261h308"></path>
 <g>
-<path d="M384 261h0"></path>
-<path d="M559 261h0"></path>
-<path d="M384 261a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
-<g>
-<path d="M420 225h103"></path>
-</g>
-<path d="M523 225a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
-<path d="M384 261h36"></path>
-<g>
-<path d="M420 261h0"></path>
-<g>
-<path d="M420 261h10"></path>
-<path d="M513 261h10"></path>
-<g class="non-terminal ">
-<path d="M430 261h0"></path>
-<path d="M513 261h0"></path>
-<rect x="430" y="250" width="83" height="22"></rect>
-<text x="471.5" y="265">LATERAL</text>
-</g>
-</g>
-<path d="M523 261h0"></path>
-</g>
-<path d="M523 261h36"></path>
-</g>
-<path d="M559 261h10"></path>
-<g class="terminal ">
+<path d="M394 261h0"></path>
 <path d="M569 261h0"></path>
-<path d="M588 261h0"></path>
-<rect2 x="569" y="250" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="578.5" y="265">(</text>
+<path d="M394 261a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
+<g>
+<path d="M430 225h103"></path>
 </g>
-<path d="M588 261h10"></path>
-<path d="M598 261h10"></path>
+<path d="M533 225a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M394 261h36"></path>
+<g>
+<path d="M430 261h0"></path>
+<g>
+<path d="M430 261h10"></path>
+<path d="M523 261h10"></path>
+<g class="non-terminal ">
+<path d="M440 261h0"></path>
+<path d="M523 261h0"></path>
+<rect x="440" y="250" width="83" height="22"></rect>
+<text x="481.5" y="265">LATERAL</text>
+</g>
+</g>
+<path d="M533 261h0"></path>
+</g>
+<path d="M533 261h36"></path>
+</g>
+<path d="M569 261h10"></path>
 <g class="terminal ">
+<path d="M579 261h0"></path>
 <path d="M608 261h0"></path>
-<path d="M673 261h0"></path>
-<rect x="608" y="250" width="65" height="22" rx="10" ry="10"></rect>
-<text x="640.5" y="265">query</text>
+<rect2 x="579" y="250" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="593.5" y="265">(</text>
 </g>
-<path d="M673 261h10"></path>
-<path d="M683 261h10"></path>
+<path d="M608 261h10"></path>
+<path d="M618 261h10"></path>
 <g class="terminal ">
+<path d="M628 261h0"></path>
 <path d="M693 261h0"></path>
-<path d="M712 261h0"></path>
-<rect2 x="693" y="250" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="702.5" y="265">)</text>
+<rect x="628" y="250" width="65" height="22" rx="10" ry="10"></rect>
+<text x="660.5" y="265">query</text>
+</g>
+<path d="M693 261h10"></path>
+<path d="M703 261h10"></path>
+<g class="terminal ">
+<path d="M713 261h0"></path>
+<path d="M742 261h0"></path>
+<rect2 x="713" y="250" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="727.5" y="265">)</text>
 </g>
 </g>
-<path d="M1010 261a18 18 0 0 0 18 -18v-169a18 18 0 0 1 18 -18"></path>
+<path d="M1050 261a18 18 0 0 0 18 -18v-169a18 18 0 0 1 18 -18"></path>
 <path d="M50 56a18 18 0 0 1 18 18v228a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M86 320h177"></path>
-<path d="M833 320h177"></path>
+<path d="M86 320h187"></path>
+<path d="M863 320h187"></path>
 <g class="non-terminal ">
-<path d="M263 320h0"></path>
-<path d="M337 320h0"></path>
-<rect x="263" y="309" width="74" height="22"></rect>
-<text x="300" y="324">UNNEST</text>
+<path d="M273 320h0"></path>
+<path d="M347 320h0"></path>
+<rect x="273" y="309" width="74" height="22"></rect>
+<text x="310" y="324">UNNEST</text>
 </g>
-<path d="M337 320h10"></path>
 <path d="M347 320h10"></path>
+<path d="M357 320h10"></path>
 <g class="terminal ">
-<path d="M357 320h0"></path>
-<path d="M376 320h0"></path>
-<rect2 x="357" y="309" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="366.5" y="324">(</text>
-</g>
-<path d="M376 320h10"></path>
-<path d="M386 320h10"></path>
-<g class="terminal ">
+<path d="M367 320h0"></path>
 <path d="M396 320h0"></path>
-<path d="M506 320h0"></path>
-<rect x="396" y="309" width="110" height="22" rx="10" ry="10"></rect>
-<text x="451" y="324">expression</text>
+<rect2 x="367" y="309" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="381.5" y="324">(</text>
 </g>
-<path d="M506 320h10"></path>
-<path d="M516 320h10"></path>
+<path d="M396 320h10"></path>
+<path d="M406 320h10"></path>
 <g class="terminal ">
+<path d="M416 320h0"></path>
 <path d="M526 320h0"></path>
-<path d="M545 320h0"></path>
-<rect2 x="526" y="309" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="535.5" y="324">)</text>
+<rect x="416" y="309" width="110" height="22" rx="10" ry="10"></rect>
+<text x="471" y="324">expression</text>
 </g>
-<path d="M545 320h10"></path>
-<g>
-<path d="M555 320h0"></path>
-<path d="M833 320h0"></path>
-<path d="M555 320a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
-<g>
-<path d="M591 284h206"></path>
+<path d="M526 320h10"></path>
+<path d="M536 320h10"></path>
+<g class="terminal ">
+<path d="M546 320h0"></path>
+<path d="M575 320h0"></path>
+<rect2 x="546" y="309" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="560.5" y="324">)</text>
 </g>
-<path d="M797 284a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
-<path d="M555 320h36"></path>
+<path d="M575 320h10"></path>
 <g>
-<path d="M591 320h0"></path>
+<path d="M585 320h0"></path>
+<path d="M863 320h0"></path>
+<path d="M585 320a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 <g>
-<path d="M591 320h10"></path>
-<path d="M787 320h10"></path>
+<path d="M621 284h206"></path>
+</g>
+<path d="M827 284a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M585 320h36"></path>
+<g>
+<path d="M621 320h0"></path>
+<g>
+<path d="M621 320h10"></path>
+<path d="M817 320h10"></path>
 <g class="non-terminal ">
-<path d="M601 320h0"></path>
-<path d="M657 320h0"></path>
-<rect x="601" y="309" width="56" height="22"></rect>
-<text x="629" y="324">WITH</text>
+<path d="M631 320h0"></path>
+<path d="M687 320h0"></path>
+<rect x="631" y="309" width="56" height="22"></rect>
+<text x="659" y="324">WITH</text>
 </g>
-<path d="M657 320h10"></path>
-<path d="M667 320h10"></path>
+<path d="M687 320h10"></path>
+<path d="M697 320h10"></path>
 <g class="non-terminal ">
-<path d="M677 320h0"></path>
-<path d="M787 320h0"></path>
-<rect x="677" y="309" width="110" height="22"></rect>
-<text x="732" y="324">ORDINALITY</text>
+<path d="M707 320h0"></path>
+<path d="M817 320h0"></path>
+<rect x="707" y="309" width="110" height="22"></rect>
+<text x="762" y="324">ORDINALITY</text>
 </g>
 </g>
-<path d="M797 320h0"></path>
+<path d="M827 320h0"></path>
 </g>
-<path d="M797 320h36"></path>
+<path d="M827 320h36"></path>
 </g>
 </g>
-<path d="M1010 320a18 18 0 0 0 18 -18v-228a18 18 0 0 1 18 -18"></path>
+<path d="M1050 320a18 18 0 0 0 18 -18v-228a18 18 0 0 1 18 -18"></path>
 <path d="M50 56a18 18 0 0 1 18 18v287a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M86 379h0"></path>
-<path d="M1010 379h0"></path>
+<path d="M1050 379h0"></path>
 <g>
 <path d="M86 379h0"></path>
 <path d="M261 379h0"></path>
@@ -4078,103 +4078,103 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M346 379h10"></path>
 <g class="terminal ">
 <path d="M356 379h0"></path>
-<path d="M375 379h0"></path>
-<rect2 x="356" y="368" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="365.5" y="383">(</text>
-</g>
-<path d="M375 379h10"></path>
-<g>
 <path d="M385 379h0"></path>
-<path d="M569 379h0"></path>
-<path d="M385 379a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
+<rect2 x="356" y="368" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="370.5" y="383">(</text>
+</g>
+<path d="M385 379h10"></path>
 <g>
-<path d="M421 343h112"></path>
-</g>
-<path d="M533 343a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
-<path d="M385 379h36"></path>
-<g>
-<path d="M421 379h0"></path>
-<g>
-<path d="M421 379h10"></path>
-<path d="M523 379h10"></path>
-<g class="non-terminal ">
-<path d="M431 379h0"></path>
-<path d="M523 379h0"></path>
-<rect x="431" y="368" width="92" height="22"></rect>
-<text x="477" y="383">SPECIFIC</text>
-</g>
-</g>
-<path d="M533 379h0"></path>
-</g>
-<path d="M533 379h36"></path>
-</g>
-<path d="M569 379h10"></path>
-<g class="terminal ">
+<path d="M395 379h0"></path>
 <path d="M579 379h0"></path>
-<path d="M707 379h0"></path>
-<rect x="579" y="368" width="128" height="22" rx="10" ry="10"></rect>
-<text x="643" y="383">functionName</text>
+<path d="M395 379a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
+<g>
+<path d="M431 343h112"></path>
 </g>
-<path d="M707 379h10"></path>
+<path d="M543 343a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
+<path d="M395 379h36"></path>
+<g>
+<path d="M431 379h0"></path>
+<g>
+<path d="M431 379h10"></path>
+<path d="M533 379h10"></path>
+<g class="non-terminal ">
+<path d="M441 379h0"></path>
+<path d="M533 379h0"></path>
+<rect x="441" y="368" width="92" height="22"></rect>
+<text x="487" y="383">SPECIFIC</text>
+</g>
+</g>
+<path d="M543 379h0"></path>
+</g>
+<path d="M543 379h36"></path>
+</g>
+<path d="M579 379h10"></path>
+<g class="terminal ">
+<path d="M589 379h0"></path>
+<path d="M717 379h0"></path>
+<rect x="589" y="368" width="128" height="22" rx="10" ry="10"></rect>
+<text x="653" y="383">functionName</text>
+</g>
 <path d="M717 379h10"></path>
+<path d="M727 379h10"></path>
 <g class="terminal ">
-<path d="M727 379h0"></path>
-<path d="M746 379h0"></path>
-<rect2 x="727" y="368" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="736.5" y="383">(</text>
-</g>
-<path d="M746 379h10"></path>
-<path d="M756 379h10"></path>
-<g>
+<path d="M737 379h0"></path>
 <path d="M766 379h0"></path>
-<path d="M932 379h0"></path>
-<path d="M766 379h18"></path>
+<rect2 x="737" y="368" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="751.5" y="383">(</text>
+</g>
+<path d="M766 379h10"></path>
+<path d="M776 379h10"></path>
 <g>
-<path d="M784 379h0"></path>
-<g>
-<path d="M784 379h10"></path>
-<path d="M904 379h10"></path>
-<g class="terminal ">
-<path d="M794 379h0"></path>
-<path d="M904 379h0"></path>
-<rect x="794" y="368" width="110" height="22" rx="10" ry="10"></rect>
-<text x="849" y="383">expression</text>
-</g>
-</g>
-<path d="M914 379h0"></path>
-</g>
-<path d="M914 379h18"></path>
-<path d="M784 379a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
-<g class="comment ">
-<path d="M784 415h56.5"></path>
-<path d="M857.5 415h56.5"></path>
-<text x="849" y="420" class="comment">,</text>
-</g>
-<path d="M914 415a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
-</g>
-<path d="M932 379h10"></path>
-<path d="M942 379h10"></path>
-<g class="terminal ">
+<path d="M786 379h0"></path>
 <path d="M952 379h0"></path>
-<path d="M971 379h0"></path>
-<rect2 x="952" y="368" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="961.5" y="383">)</text>
-</g>
-<path d="M971 379h10"></path>
-<path d="M981 379h10"></path>
+<path d="M786 379h18"></path>
+<g>
+<path d="M804 379h0"></path>
+<g>
+<path d="M804 379h10"></path>
+<path d="M924 379h10"></path>
 <g class="terminal ">
-<path d="M991 379h0"></path>
-<path d="M1010 379h0"></path>
-<rect2 x="991" y="368" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="1000.5" y="383">)</text>
+<path d="M814 379h0"></path>
+<path d="M924 379h0"></path>
+<rect x="814" y="368" width="110" height="22" rx="10" ry="10"></rect>
+<text x="869" y="383">expression</text>
 </g>
 </g>
-<path d="M1010 379a18 18 0 0 0 18 -18v-287a18 18 0 0 1 18 -18"></path>
+<path d="M934 379h0"></path>
 </g>
-<path d="M1046 56h0"></path>
+<path d="M934 379h18"></path>
+<path d="M804 379a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g class="comment ">
+<path d="M804 415h56.5"></path>
+<path d="M877.5 415h56.5"></path>
+<text x="869" y="420" class="comment">,</text>
 </g>
-<path d="M1046 56h10"></path>
-<path d="M 1056 56 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M934 415a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
+</g>
+<path d="M952 379h10"></path>
+<path d="M962 379h10"></path>
+<g class="terminal ">
+<path d="M972 379h0"></path>
+<path d="M1001 379h0"></path>
+<rect2 x="972" y="368" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="986.5" y="383">)</text>
+</g>
+<path d="M1001 379h10"></path>
+<path d="M1011 379h10"></path>
+<g class="terminal ">
+<path d="M1021 379h0"></path>
+<path d="M1050 379h0"></path>
+<rect2 x="1021" y="368" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="1035.5" y="383">)</text>
+</g>
+</g>
+<path d="M1050 379a18 18 0 0 0 18 -18v-287a18 18 0 0 1 18 -18"></path>
+</g>
+<path d="M1086 56h0"></path>
+</g>
+<path d="M1086 56h10"></path>
+<path d="M 1096 56 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
 </html>
@@ -4473,7 +4473,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<svg class="railroad-diagram" width="595" height="346" viewBox="0 0 595 346">
+<svg class="railroad-diagram" width="615" height="346" viewBox="0 0 615 346">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
@@ -4483,92 +4483,92 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M50 31h0"></path>
 <g>
 <path d="M50 31h0"></path>
-<path d="M545 31h0"></path>
+<path d="M565 31h0"></path>
 <path d="M50 31h36"></path>
 <g>
-<path d="M86 31h156.5"></path>
-<path d="M352.5 31h156.5"></path>
+<path d="M86 31h166.5"></path>
+<path d="M362.5 31h166.5"></path>
 <g class="terminal ">
-<path d="M242.5 31h0"></path>
-<path d="M352.5 31h0"></path>
-<rect x="242.5" y="20" width="110" height="22" rx="10" ry="10"></rect>
-<text x="297.5" y="35">expression</text>
+<path d="M252.5 31h0"></path>
+<path d="M362.5 31h0"></path>
+<rect x="252.5" y="20" width="110" height="22" rx="10" ry="10"></rect>
+<text x="307.5" y="35">expression</text>
 </g>
 </g>
-<path d="M509 31h36"></path>
+<path d="M529 31h36"></path>
 <path d="M50 31a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M86 67h182.5"></path>
-<path d="M326.5 67h182.5"></path>
+<path d="M346.5 67h182.5"></path>
 <g class="terminal ">
 <path d="M268.5 67h0"></path>
-<path d="M287.5 67h0"></path>
-<rect2 x="268.5" y="56" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="278" y="71">(</text>
+<path d="M297.5 67h0"></path>
+<rect2 x="268.5" y="56" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="283" y="71">(</text>
 </g>
-<path d="M287.5 67h10"></path>
 <path d="M297.5 67h10"></path>
+<path d="M307.5 67h10"></path>
 <g class="terminal ">
-<path d="M307.5 67h0"></path>
-<path d="M326.5 67h0"></path>
-<rect2 x="307.5" y="56" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="317" y="71">)</text>
+<path d="M317.5 67h0"></path>
+<path d="M346.5 67h0"></path>
+<rect2 x="317.5" y="56" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="332" y="71">)</text>
 </g>
 </g>
-<path d="M509 67a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
+<path d="M529 67a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 <path d="M50 31a18 18 0 0 1 18 18v34a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M86 101h89.5"></path>
-<path d="M419.5 101h89.5"></path>
+<path d="M439.5 101h89.5"></path>
 <g class="terminal ">
 <path d="M175.5 101h0"></path>
-<path d="M194.5 101h0"></path>
-<rect2 x="175.5" y="90" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="185" y="105">(</text>
+<path d="M204.5 101h0"></path>
+<rect2 x="175.5" y="90" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="190" y="105">(</text>
 </g>
-<path d="M194.5 101h10"></path>
 <path d="M204.5 101h10"></path>
+<path d="M214.5 101h10"></path>
 <g>
-<path d="M214.5 101h0"></path>
-<path d="M380.5 101h0"></path>
-<path d="M214.5 101h18"></path>
+<path d="M224.5 101h0"></path>
+<path d="M390.5 101h0"></path>
+<path d="M224.5 101h18"></path>
 <g>
-<path d="M232.5 101h0"></path>
-<g>
-<path d="M232.5 101h10"></path>
-<path d="M352.5 101h10"></path>
-<g class="terminal ">
 <path d="M242.5 101h0"></path>
-<path d="M352.5 101h0"></path>
-<rect x="242.5" y="90" width="110" height="22" rx="10" ry="10"></rect>
-<text x="297.5" y="105">expression</text>
-</g>
-</g>
-<path d="M362.5 101h0"></path>
-</g>
-<path d="M362.5 101h18"></path>
-<path d="M232.5 101a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
-<g class="comment ">
-<path d="M232.5 137h56.5"></path>
-<path d="M306 137h56.5"></path>
-<text x="297.5" y="142" class="comment">,</text>
-</g>
-<path d="M362.5 137a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
-</g>
-<path d="M380.5 101h10"></path>
-<path d="M390.5 101h10"></path>
+<g>
+<path d="M242.5 101h10"></path>
+<path d="M362.5 101h10"></path>
 <g class="terminal ">
-<path d="M400.5 101h0"></path>
-<path d="M419.5 101h0"></path>
-<rect2 x="400.5" y="90" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="410" y="105">)</text>
+<path d="M252.5 101h0"></path>
+<path d="M362.5 101h0"></path>
+<rect x="252.5" y="90" width="110" height="22" rx="10" ry="10"></rect>
+<text x="307.5" y="105">expression</text>
 </g>
 </g>
-<path d="M509 101a18 18 0 0 0 18 -18v-34a18 18 0 0 1 18 -18"></path>
+<path d="M372.5 101h0"></path>
+</g>
+<path d="M372.5 101h18"></path>
+<path d="M242.5 101a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g class="comment ">
+<path d="M242.5 137h56.5"></path>
+<path d="M316 137h56.5"></path>
+<text x="307.5" y="142" class="comment">,</text>
+</g>
+<path d="M372.5 137a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
+</g>
+<path d="M390.5 101h10"></path>
+<path d="M400.5 101h10"></path>
+<g class="terminal ">
+<path d="M410.5 101h0"></path>
+<path d="M439.5 101h0"></path>
+<rect2 x="410.5" y="90" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="425" y="105">)</text>
+</g>
+</g>
+<path d="M529 101a18 18 0 0 0 18 -18v-34a18 18 0 0 1 18 -18"></path>
 <path d="M50 31a18 18 0 0 1 18 18v96a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M86 163h51.5"></path>
-<path d="M457.5 163h51.5"></path>
+<path d="M477.5 163h51.5"></path>
 <g class="non-terminal ">
 <path d="M137.5 163h0"></path>
 <path d="M193.5 163h0"></path>
@@ -4579,53 +4579,53 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M203.5 163h10"></path>
 <g class="terminal ">
 <path d="M213.5 163h0"></path>
-<path d="M232.5 163h0"></path>
-<rect2 x="213.5" y="152" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="223" y="167">(</text>
+<path d="M242.5 163h0"></path>
+<rect2 x="213.5" y="152" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="228" y="167">(</text>
 </g>
-<path d="M232.5 163h10"></path>
 <path d="M242.5 163h10"></path>
+<path d="M252.5 163h10"></path>
 <g>
-<path d="M252.5 163h0"></path>
-<path d="M418.5 163h0"></path>
-<path d="M252.5 163h18"></path>
+<path d="M262.5 163h0"></path>
+<path d="M428.5 163h0"></path>
+<path d="M262.5 163h18"></path>
 <g>
-<path d="M270.5 163h0"></path>
-<g>
-<path d="M270.5 163h10"></path>
-<path d="M390.5 163h10"></path>
-<g class="terminal ">
 <path d="M280.5 163h0"></path>
-<path d="M390.5 163h0"></path>
-<rect x="280.5" y="152" width="110" height="22" rx="10" ry="10"></rect>
-<text x="335.5" y="167">expression</text>
-</g>
-</g>
-<path d="M400.5 163h0"></path>
-</g>
-<path d="M400.5 163h18"></path>
-<path d="M270.5 163a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
-<g class="comment ">
-<path d="M270.5 199h56.5"></path>
-<path d="M344 199h56.5"></path>
-<text x="335.5" y="204" class="comment">,</text>
-</g>
-<path d="M400.5 199a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
-</g>
-<path d="M418.5 163h10"></path>
-<path d="M428.5 163h10"></path>
+<g>
+<path d="M280.5 163h10"></path>
+<path d="M400.5 163h10"></path>
 <g class="terminal ">
-<path d="M438.5 163h0"></path>
-<path d="M457.5 163h0"></path>
-<rect2 x="438.5" y="152" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="448" y="167">)</text>
+<path d="M290.5 163h0"></path>
+<path d="M400.5 163h0"></path>
+<rect x="290.5" y="152" width="110" height="22" rx="10" ry="10"></rect>
+<text x="345.5" y="167">expression</text>
 </g>
 </g>
-<path d="M509 163a18 18 0 0 0 18 -18v-96a18 18 0 0 1 18 -18"></path>
+<path d="M410.5 163h0"></path>
+</g>
+<path d="M410.5 163h18"></path>
+<path d="M280.5 163a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g class="comment ">
+<path d="M280.5 199h56.5"></path>
+<path d="M354 199h56.5"></path>
+<text x="345.5" y="204" class="comment">,</text>
+</g>
+<path d="M410.5 199a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
+</g>
+<path d="M428.5 163h10"></path>
+<path d="M438.5 163h10"></path>
+<g class="terminal ">
+<path d="M448.5 163h0"></path>
+<path d="M477.5 163h0"></path>
+<rect2 x="448.5" y="152" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="463" y="167">)</text>
+</g>
+</g>
+<path d="M529 163a18 18 0 0 0 18 -18v-96a18 18 0 0 1 18 -18"></path>
 <path d="M50 31a18 18 0 0 1 18 18v158a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M86 225h42.5"></path>
-<path d="M466.5 225h42.5"></path>
+<path d="M486.5 225h42.5"></path>
 <g class="non-terminal ">
 <path d="M128.5 225h0"></path>
 <path d="M202.5 225h0"></path>
@@ -4636,53 +4636,53 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M212.5 225h10"></path>
 <g class="terminal ">
 <path d="M222.5 225h0"></path>
-<path d="M241.5 225h0"></path>
-<rect2 x="222.5" y="214" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="232" y="229">(</text>
+<path d="M251.5 225h0"></path>
+<rect2 x="222.5" y="214" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="237" y="229">(</text>
 </g>
-<path d="M241.5 225h10"></path>
 <path d="M251.5 225h10"></path>
+<path d="M261.5 225h10"></path>
 <g>
-<path d="M261.5 225h0"></path>
-<path d="M427.5 225h0"></path>
-<path d="M261.5 225h18"></path>
+<path d="M271.5 225h0"></path>
+<path d="M437.5 225h0"></path>
+<path d="M271.5 225h18"></path>
 <g>
-<path d="M279.5 225h0"></path>
-<g>
-<path d="M279.5 225h10"></path>
-<path d="M399.5 225h10"></path>
-<g class="terminal ">
 <path d="M289.5 225h0"></path>
-<path d="M399.5 225h0"></path>
-<rect x="289.5" y="214" width="110" height="22" rx="10" ry="10"></rect>
-<text x="344.5" y="229">expression</text>
-</g>
-</g>
-<path d="M409.5 225h0"></path>
-</g>
-<path d="M409.5 225h18"></path>
-<path d="M279.5 225a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
-<g class="comment ">
-<path d="M279.5 261h56.5"></path>
-<path d="M353 261h56.5"></path>
-<text x="344.5" y="266" class="comment">,</text>
-</g>
-<path d="M409.5 261a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
-</g>
-<path d="M427.5 225h10"></path>
-<path d="M437.5 225h10"></path>
+<g>
+<path d="M289.5 225h10"></path>
+<path d="M409.5 225h10"></path>
 <g class="terminal ">
-<path d="M447.5 225h0"></path>
-<path d="M466.5 225h0"></path>
-<rect2 x="447.5" y="214" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="457" y="229">)</text>
+<path d="M299.5 225h0"></path>
+<path d="M409.5 225h0"></path>
+<rect x="299.5" y="214" width="110" height="22" rx="10" ry="10"></rect>
+<text x="354.5" y="229">expression</text>
 </g>
 </g>
-<path d="M509 225a18 18 0 0 0 18 -18v-158a18 18 0 0 1 18 -18"></path>
+<path d="M419.5 225h0"></path>
+</g>
+<path d="M419.5 225h18"></path>
+<path d="M289.5 225a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g class="comment ">
+<path d="M289.5 261h56.5"></path>
+<path d="M363 261h56.5"></path>
+<text x="354.5" y="266" class="comment">,</text>
+</g>
+<path d="M419.5 261a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
+</g>
+<path d="M437.5 225h10"></path>
+<path d="M447.5 225h10"></path>
+<g class="terminal ">
+<path d="M457.5 225h0"></path>
+<path d="M486.5 225h0"></path>
+<rect2 x="457.5" y="214" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="472" y="229">)</text>
+</g>
+</g>
+<path d="M529 225a18 18 0 0 0 18 -18v-158a18 18 0 0 1 18 -18"></path>
 <path d="M50 31a18 18 0 0 1 18 18v220a18 18 0 0 0 18 18"></path>
 <g>
 <path d="M86 287h0"></path>
-<path d="M509 287h0"></path>
+<path d="M529 287h0"></path>
 <g class="non-terminal ">
 <path d="M86 287h0"></path>
 <path d="M178 287h0"></path>
@@ -4701,54 +4701,54 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <path d="M264 287h10"></path>
 <g class="terminal ">
 <path d="M274 287h0"></path>
-<path d="M293 287h0"></path>
-<rect2 x="274" y="276" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="283.5" y="291">(</text>
+<path d="M303 287h0"></path>
+<rect2 x="274" y="276" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="288.5" y="291">(</text>
 </g>
-<path d="M293 287h10"></path>
 <path d="M303 287h10"></path>
+<path d="M313 287h10"></path>
 <g>
-<path d="M313 287h0"></path>
-<path d="M470 287h0"></path>
-<path d="M313 287h18"></path>
+<path d="M323 287h0"></path>
+<path d="M480 287h0"></path>
+<path d="M323 287h18"></path>
 <g>
-<path d="M331 287h0"></path>
-<g>
-<path d="M331 287h10"></path>
-<path d="M442 287h10"></path>
-<g class="terminal ">
 <path d="M341 287h0"></path>
-<path d="M442 287h0"></path>
-<rect x="341" y="276" width="101" height="22" rx="10" ry="10"></rect>
-<text x="391.5" y="291">groupItem</text>
-</g>
-</g>
-<path d="M452 287h0"></path>
-</g>
-<path d="M452 287h18"></path>
-<path d="M331 287a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
-<g class="comment ">
-<path d="M331 323h52"></path>
-<path d="M400 323h52"></path>
-<text x="391.5" y="328" class="comment">,</text>
-</g>
-<path d="M452 323a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
-</g>
-<path d="M470 287h10"></path>
-<path d="M480 287h10"></path>
+<g>
+<path d="M341 287h10"></path>
+<path d="M452 287h10"></path>
 <g class="terminal ">
-<path d="M490 287h0"></path>
-<path d="M509 287h0"></path>
-<rect2 x="490" y="276" width="19" height="22" rx="10" ry="10"></rect2>
-<text x="499.5" y="291">)</text>
+<path d="M351 287h0"></path>
+<path d="M452 287h0"></path>
+<rect x="351" y="276" width="101" height="22" rx="10" ry="10"></rect>
+<text x="401.5" y="291">groupItem</text>
 </g>
 </g>
-<path d="M509 287a18 18 0 0 0 18 -18v-220a18 18 0 0 1 18 -18"></path>
+<path d="M462 287h0"></path>
 </g>
-<path d="M545 31h0"></path>
+<path d="M462 287h18"></path>
+<path d="M341 287a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
+<g class="comment ">
+<path d="M341 323h52"></path>
+<path d="M410 323h52"></path>
+<text x="401.5" y="328" class="comment">,</text>
 </g>
-<path d="M545 31h10"></path>
-<path d="M 555 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
+<path d="M462 323a18 18 0 0 0 18 -18v0a18 18 0 0 0 -18 -18"></path>
+</g>
+<path d="M480 287h10"></path>
+<path d="M490 287h10"></path>
+<g class="terminal ">
+<path d="M500 287h0"></path>
+<path d="M529 287h0"></path>
+<rect2 x="500" y="276" width="29" height="22" rx="10" ry="10"></rect2>
+<text x="514.5" y="291">)</text>
+</g>
+</g>
+<path d="M529 287a18 18 0 0 0 18 -18v-220a18 18 0 0 1 18 -18"></path>
+</g>
+<path d="M565 31h0"></path>
+</g>
+<path d="M565 31h10"></path>
+<path d="M 575 31 h 20 m -10 -10 v 20 m 10 -20 v 20"></path>
 </g>
 </svg>
 </html>
@@ -4951,12 +4951,12 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 </g>
 <path d="M894 56a18 18 0 0 1 18 18v0a18 18 0 0 1 -18 18h-826a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M68 128h403.5"></path>
-<path d="M490.5 128h403.5"></path>
+<path d="M68 128h398.5"></path>
+<path d="M495.5 128h398.5"></path>
 <g class="terminal ">
-<path d="M471.5 128h0"></path>
-<path d="M490.5 128h0"></path>
-<rect2 x="471.5" y="117" width="19" height="22" rx="10" ry="10"></rect2>
+<path d="M466.5 128h0"></path>
+<path d="M495.5 128h0"></path>
+<rect2 x="466.5" y="117" width="29" height="22" rx="10" ry="10"></rect2>
 <text x="481" y="132">(</text>
 </g>
 </g>
@@ -5264,12 +5264,12 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 </g>
 <path d="M894 410a18 18 0 0 1 18 18v129a18 18 0 0 1 -18 18h-826a18 18 0 0 0 -18 18v0a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M68 611h403.5"></path>
-<path d="M490.5 611h403.5"></path>
+<path d="M68 611h398.5"></path>
+<path d="M495.5 611h398.5"></path>
 <g class="terminal ">
-<path d="M471.5 611h0"></path>
-<path d="M490.5 611h0"></path>
-<rect2 x="471.5" y="600" width="19" height="22" rx="10" ry="10"></rect2>
+<path d="M466.5 611h0"></path>
+<path d="M495.5 611h0"></path>
+<rect2 x="466.5" y="600" width="29" height="22" rx="10" ry="10"></rect2>
 <text x="481" y="615">)</text>
 </g>
 </g>

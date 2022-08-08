@@ -73,6 +73,11 @@ export const defaultCSS = `
 		stroke-dasharray: 10 5;
 		fill: none;
 	}
+	rect2.group-box {
+		stroke: gray;
+		stroke-dasharray: 10 5;
+		fill: none;
+	}
 	path.diagram-text {
 		stroke-width: 1;
 		stroke: black;
@@ -1248,7 +1253,7 @@ export class Terminal2 extends FakeSVG {
 		this.href = href;
 		this.title = title;
 		this.cls = cls;
-		this.width = this.text.length * Options.CHAR_WIDTH + 10; /* Assume that each char is .5em, and that the em is 16px */
+		this.width = this.text.length * Options.CHAR_WIDTH + 20; /* Assume that each char is .5em, and that the em is 16px */
 		this.height = 0;
 		this.up = 11;
 		this.down = 11;
