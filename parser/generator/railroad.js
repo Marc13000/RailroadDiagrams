@@ -58,22 +58,12 @@ export const defaultCSS = `
 	g.non-terminal text {
 		/*font-style: italic;*/
 	}
-	rect2 {
-		stroke-width: 1;
-		stroke: black;
-		fill: hsl(118°, 57%, 91%);
-	}
 	rect {
 		stroke-width: 1;
 		stroke: black;
 		fill: hsl(173°, 35%, 100%);
 	}
 	rect.group-box {
-		stroke: gray;
-		stroke-dasharray: 10 5;
-		fill: none;
-	}
-	rect2.group-box {
 		stroke: gray;
 		stroke-dasharray: 10 5;
 		fill: none;
@@ -1270,7 +1260,7 @@ export class Terminal2 extends FakeSVG {
 		new Path(x+gaps[0]+this.width,y).h(gaps[1]).addTo(this);
 		x += gaps[0];
 
-		new FakeSVG('rect2', {x:x, y:y-11, width:this.width, height:this.up+this.down, rx:10, ry:10}).addTo(this);
+		new FakeSVG('rect', {x:x, y:y-11, width:this.width, height:this.up+this.down, rx:10, ry:10}).addTo(this);
 		var text = new FakeSVG('text', {x:x+this.width/2, y:y+4}, this.text);
 		if(this.href)
 			new FakeSVG('a', {'xlink:href': this.href}, [text]).addTo(this);

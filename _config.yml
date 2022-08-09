@@ -1,9 +1,9 @@
 # Config
 # ========================================================================================
 
-# name: Pipeline for Website
+name: Pipeline for Website
 
-# on: [push]
+on: [push]
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: node parser/parser.js
 
-# IMPORTANT: Set the URL of your site.
+# IMPORTANT: Set the URL of your site. 
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
 url:                   https://polypheny.org
