@@ -45,6 +45,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -169,6 +174,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
+     }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
      }
      svg.railroad-diagram rect {
        stroke-width: 2;
@@ -349,6 +359,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -520,6 +535,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -618,6 +638,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
+     }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
      }
      svg.railroad-diagram rect {
        stroke-width: 2;
@@ -809,6 +834,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
+     }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
      }
      svg.railroad-diagram rect {
        stroke-width: 2;
@@ -1696,6 +1726,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -1883,6 +1918,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -2068,6 +2108,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
+     }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
      }
      svg.railroad-diagram rect {
        stroke-width: 2;
@@ -2550,6 +2595,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -2741,6 +2791,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -2909,6 +2964,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
+     }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
      }
      svg.railroad-diagram rect {
        stroke-width: 2;
@@ -3299,6 +3359,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -3452,6 +3517,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
+     }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
      }
      svg.railroad-diagram rect {
        stroke-width: 2;
@@ -3686,6 +3756,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
+     }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
      }
      svg.railroad-diagram rect {
        stroke-width: 2;
@@ -4217,6 +4292,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -4342,6 +4422,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -4453,6 +4538,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
+     }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
      }
      svg.railroad-diagram rect {
        stroke-width: 2;
@@ -4791,6 +4881,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke: black;
       fill: #D8F4D7;
      }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
+     }
      svg.railroad-diagram rect {
        stroke-width: 2;
        stroke: black;
@@ -4891,6 +4986,11 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
+     }
+     svg.railroad-diagram rect2.group-box {
+      stroke: gray;
+      stroke-dasharray: 10 5;
+      fill: none;
      }
      svg.railroad-diagram rect {
        stroke-width: 2;
