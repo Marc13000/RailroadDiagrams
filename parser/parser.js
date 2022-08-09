@@ -45,7 +45,7 @@ function editFile(file) {
        /*font-style: italic;*/
      }
      svg.railroad-diagram rect2 {
-      stroke-width: 1;
+      stroke-width: 2;
       stroke: black;
       fill: #D8F4D7;
      }

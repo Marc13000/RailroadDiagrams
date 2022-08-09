@@ -1248,7 +1248,7 @@ funcs.Terminal = (...args)=>new Terminal(...args);
 
 export class Terminal2 extends FakeSVG {
 	constructor(text, {href, title, cls}={}) {
-		super('g', {'class': ['terminal', cls].join(" ")});
+		super('g', {'class': ['terminal2', cls].join(" ")});
 		this.text = ""+text;
 		this.href = href;
 		this.title = title;
@@ -1260,7 +1260,7 @@ export class Terminal2 extends FakeSVG {
 		this.needsSpace = true;
 		if(Options.DEBUG) {
 			this.attrs['data-updown'] = this.up + " " + this.height + " " + this.down;
-			this.attrs['data-type'] = "terminal";
+			this.attrs['data-type'] = "terminal2";
 		}
 	}
 	format(x, y, width) {
