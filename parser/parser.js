@@ -2,13 +2,13 @@ import fs from 'fs';
 import readLine from 'readline';
 import rr, { Diagram } from "./generator/railroad.js";
 
-fs.readdir('../documentation/PolySQL/', (err, files) => {
+fs.readdir('documentation/PolySQL/', (err, files) => {
   if (err) {
     return console.error(err);
   }
   console.log(files.includes("Syntax.md"));
   for (var i = 0; i < files.length; i++) {
-    var file = '../documentation/PolySQL/' + files[i];
+    var file = 'documentation/PolySQL/' + files[i];
     editFile(file);
   }
   // done
