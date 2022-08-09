@@ -40,7 +40,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -165,7 +165,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -344,7 +344,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -515,7 +515,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -614,7 +614,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -805,7 +805,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -1691,7 +1691,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -1878,7 +1878,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -2064,7 +2064,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -2545,7 +2545,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -2736,7 +2736,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -2905,7 +2905,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -3294,7 +3294,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -3448,7 +3448,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -3682,7 +3682,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -4212,7 +4212,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -4337,7 +4337,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -4449,7 +4449,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -4786,7 +4786,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
@@ -4887,7 +4887,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.non-terminal text {
        /*font-style: italic;*/
      }
-     svg.railroad-diagramrect2 {
+     svg.railroad-diagram rect2 {
       stroke-width: 1;
       stroke: black;
       fill: #D8F4D7;
