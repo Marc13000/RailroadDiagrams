@@ -1238,7 +1238,7 @@ funcs.Terminal = (...args)=>new Terminal(...args);
 
 export class Terminal2 extends FakeSVG {
 	constructor(text, {href, title, cls}={}) {
-		super('g', {'class': ['terminal2', cls].join(" ")});
+		super('g', {'class': ['terminal', cls].join(" ")});
 		this.text = ""+text;
 		this.href = href;
 		this.title = title;
@@ -1250,7 +1250,7 @@ export class Terminal2 extends FakeSVG {
 		this.needsSpace = true;
 		if(Options.DEBUG) {
 			this.attrs['data-updown'] = this.up + " " + this.height + " " + this.down;
-			this.attrs['data-type'] = "terminal2";
+			this.attrs['data-type'] = "terminal";
 		}
 	}
 	format(x, y, width) {
@@ -1260,7 +1260,7 @@ export class Terminal2 extends FakeSVG {
 		new Path(x+gaps[0]+this.width,y).h(gaps[1]).addTo(this);
 		x += gaps[0];
 
-		new FakeSVG('rect', {x:x, y:y-11, width:this.width, height:this.up+this.down, rx:10, ry:10}).addTo(this);
+		new FakeSVG('rect', {x:x, y:y-11, width:this.width, height:this.up+this.down, rx:10, ry:10, style:"fill: #D8F4D7; stroke: black; stroke-width: 2;"}).addTo(this);
 		var text = new FakeSVG('text', {x:x+this.width/2, y:y+4}, this.text);
 		if(this.href)
 			new FakeSVG('a', {'xlink:href': this.href}, [text]).addTo(this);
