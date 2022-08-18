@@ -14,7 +14,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -70,7 +69,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="246" height="166" viewBox="0 0 246 166">
 <g transform="translate(.5 .5)">
 <g>
@@ -146,7 +145,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -202,7 +200,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="476" height="239" viewBox="0 0 476 239">
 <g transform="translate(.5 .5)">
 <g>
@@ -333,7 +331,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -389,7 +386,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="506" height="239" viewBox="0 0 506 239">
 <g transform="translate(.5 .5)">
 <g>
@@ -512,7 +509,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -568,7 +564,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="409" height="62" viewBox="0 0 409 62">
 <g transform="translate(.5 .5)">
 <g>
@@ -618,7 +614,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -674,7 +669,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="734" height="183" viewBox="0 0 734 183">
 <g transform="translate(.5 .5)">
 <g>
@@ -816,7 +811,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -872,7 +866,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="908" height="1042" viewBox="0 0 908 1042">
 <g transform="translate(.5 .5)">
 <g>
@@ -1711,7 +1705,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -1767,7 +1760,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="476" height="239" viewBox="0 0 476 239">
 <g transform="translate(.5 .5)">
 <g>
@@ -1906,7 +1899,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -1962,7 +1954,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="734" height="123" viewBox="0 0 734 123">
 <g transform="translate(.5 .5)">
 <g>
@@ -2099,7 +2091,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -2155,7 +2146,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="884" height="702" viewBox="0 0 884 702">
 <g transform="translate(.5 .5)">
 <g>
@@ -2590,7 +2581,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -2646,7 +2636,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="476" height="252" viewBox="0 0 476 252">
 <g transform="translate(.5 .5)">
 <g>
@@ -2789,7 +2779,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -2845,7 +2834,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="643" height="135" viewBox="0 0 643 135">
 <g transform="translate(.5 .5)">
 <g>
@@ -2965,7 +2954,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -3021,7 +3009,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="1388" height="366" viewBox="0 0 1388 366">
 <g transform="translate(.5 .5)">
 <g>
@@ -3362,7 +3350,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -3418,7 +3405,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="485" height="132" viewBox="0 0 485 132">
 <g transform="translate(.5 .5)">
 <g>
@@ -3524,7 +3511,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -3580,7 +3566,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="828" height="276" viewBox="0 0 828 276">
 <g transform="translate(.5 .5)">
 <g>
@@ -3766,7 +3752,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -3822,7 +3807,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="1136" height="450" viewBox="0 0 1136 450">
 <g transform="translate(.5 .5)">
 <g>
@@ -4305,7 +4290,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -4361,7 +4345,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="495" height="87" viewBox="0 0 495 87">
 <g transform="translate(.5 .5)">
 <g>
@@ -4437,7 +4421,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -4493,7 +4476,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="380" height="96" viewBox="0 0 380 96">
 <g transform="translate(.5 .5)">
 <g>
@@ -4557,7 +4540,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -4613,7 +4595,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="615" height="370" viewBox="0 0 615 370">
 <g transform="translate(.5 .5)">
 <g>
@@ -4905,7 +4887,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -4961,7 +4942,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="282" height="98" viewBox="0 0 282 98">
 <g transform="translate(.5 .5)">
 <g>
@@ -5013,7 +4994,6 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
 <html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -5069,7 +5049,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 <svg class="railroad-diagram" width="962" height="654" viewBox="0 0 962 654">
 <g transform="translate(.5 .5)">
 <g>

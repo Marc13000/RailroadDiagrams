@@ -18,7 +18,6 @@ function editFile(file) {
   const css_var = `<html>
 <style>
      svg.railroad-diagram {
-      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
@@ -74,7 +73,7 @@ function editFile(file) {
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<div style="overflow: scroll;">
+<div style="overflow: auto;">
 `
   const data = fs.readFileSync(file, 'utf8');
   var lines = data.split("\n");
