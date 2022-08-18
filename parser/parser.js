@@ -158,7 +158,7 @@ function generate_diagram(bnf_code) {
           else {
             j++;
             s_temp += "rr.OneOrMore(";
-            s_end = ", rr.Comment(rr.Terminal2(','))";
+            s_end = ", rr.Terminal2(',')";
           }
           j++;
           var bnf_code_recurs = "";
