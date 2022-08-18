@@ -74,6 +74,7 @@ function editFile(file) {
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
+<div style="overflow: scroll;">
 `
   const data = fs.readFileSync(file, 'utf8');
   var lines = data.split("\n");
@@ -89,7 +90,7 @@ function editFile(file) {
       console.log(bnf_code.trim());
       const d = generate_diagram(bnf_code.trim() + "\n");
       var diag = eval("rr.Diagram(" + d + ")");
-      result = result.replace(bnf_code, css_var + diag.toString() + "</html>\n{:/}\n\n");
+      result = result.replace(bnf_code, css_var + diag.toString() + "</div></html>\n{:/}\n\n");
       result = result.replace("<!--- BNF end --->\n", "\n{% highlight sql %}\n");
       // const diagram = changeToDiagram(bnf_code);
       // result = result.replace(bnf_code, diagram);
@@ -101,7 +102,7 @@ function editFile(file) {
           console.log(bnf_code.trim());
           const d = generate_diagram(bnf_code.trim() + "\n");
           var diag = eval("rr.Diagram(" + d + ")");
-          result = result.replace(bnf_code, css_var + diag.toString() + "</html>\n{:/}\n\n");
+          result = result.replace(bnf_code, css_var + diag.toString() + "</div></html>\n{:/}\n\n");
         }
         result = result.replace(text, "### " + text + "\n{::nomarkdown}\n");
         console.log(text);
