@@ -9,6 +9,7 @@ This page gives an overview on creating, altering and dropping views and materia
 ## Views
 
 {% highlight sql %}
+
 <!--- BNF start --->    
 ### createViewStatement:
 {::nomarkdown}
@@ -665,6 +666,7 @@ This page gives an overview on creating, altering and dropping views and materia
 
 
 {% highlight sql %}
+
 {% endhighlight %}
 
 * `CREATE VIEW` creates a view of a query. Views have no data placements on a store but are references to an underlying table.
@@ -679,6 +681,9 @@ This page gives an overview on creating, altering and dropping views and materia
 ## Materialized Views
 
 {% highlight sql %}
+
+<!-- bnf start --->
+
 createMaterializedViewStatement:
     CREATE MATERIALIZED VIEW [ IF NOT EXISTS ] name
     [ '(' tableElement [, tableElement ]* ')' ]
@@ -695,6 +700,9 @@ alterStatement:
     | ALTER MATERIALIZED VIEW [ schemaName . ] viewName FRESHNESS MANUAL
     | ALTER MATERIALIZED VIEW [ schemaName . ] viewName ADD [UNIQUE] INDEX indexName ON ( columnName | '(' columnName [ , columnName ]* ')' ) [ USING indexMethod ] [ ON STORE storeUniqueName ]
     | ALTER MATERIALIZED VIEW [ schemaName . ] viewName DROP INDEX indexName
+
+<!-- bnf end --->
+
 {% endhighlight %}
 
 * `CREATE MATERIALIZED VIEW` creates a materialized view of a query.
