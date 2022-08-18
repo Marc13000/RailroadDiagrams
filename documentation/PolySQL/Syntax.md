@@ -3007,7 +3007,7 @@ This page describes the SQL dialect recognized by Polypheny-DB's default SQL par
      svg.railroad-diagram g.diagram-text:hover path.diagram-text {
      }
 </style>
-<svg class="railroad-diagram" width="1388" height="360" viewBox="0 0 1388 360">
+<svg class="railroad-diagram" width="1388" height="360" style="overflow-x: auto; overflow-y: auto; " viewBox="0 0 1388 360">
 <g transform="translate(.5 .5)">
 <g>
 <path d="M20 21v20m10 -20v20m-10 -10h20"></path>
