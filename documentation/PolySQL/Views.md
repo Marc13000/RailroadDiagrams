@@ -395,9 +395,7 @@ This page gives an overview on creating, altering and dropping views and materia
 </div></html>
 {:/}
 
-### ### alterStatement:
-{::nomarkdown}
-
+### alterStatement:
 {::nomarkdown}
 
 <html>
@@ -685,7 +683,6 @@ This page gives an overview on creating, altering and dropping views and materia
 {% highlight sql %}
 
 <!-- BNF start --->
-
 ### createMaterializedViewStatement:
 {::nomarkdown}
 
@@ -1278,7 +1275,9 @@ This page gives an overview on creating, altering and dropping views and materia
 </div></html>
 {:/}
 
-alterStatement:
+### alterStatement2:
+{::nomarkdown}
+
 <html>
 <style>
      svg.railroad-diagram {
