@@ -2,17 +2,41 @@ import fs from 'fs';
 import readLine from 'readline';
 import rr, { Diagram } from "./generator/railroad.js";
 
-fs.readdir('documentation/PolySQL/', (err, files) => {
-  if (err) {
-    return console.error(err);
-  }
-  console.log(files.includes("Syntax.md"));
-  for (var i = 0; i < files.length; i++) {
-    var file = 'documentation/PolySQL/' + files[i];
-    editFile(file);
-  }
-  // done
-});
+import { promisify } from 'util';
+import { resolve } from 'path';
+const readdir = promisify(fs.readdir);
+const stat = promisify(fs.stat);
+
+async function getFiles(dir) {
+  const subdirs = await readdir(dir);
+  const files = await Promise.all(subdirs.map(async (subdir) => {
+    const res = resolve(dir, subdir);
+    return (await stat(res)).isDirectory() ? getFiles(res) : res;
+  }));
+  return files.reduce((a, f) => a.concat(f), []);
+}
+
+getFiles("documentation/")
+  .then(files => {
+    console.log(files)
+    console.log(files.includes("/Users/marc13000/RailroadDiagrams/documentation/PolySQL/Syntax.md"));
+    for (var i = 0; i < files.length; i++) {
+      editFile(files[i]);
+    }
+  })
+  .catch(e => console.error(e));
+
+// fs.readdir('documentation/PolySQL/', (err, files) => {
+//   if (err) {
+//     return console.error(err);
+//   }
+//   console.log(files.includes("Syntax.md"));
+//   for (var i = 0; i < files.length; i++) {
+//     var file = 'documentation/PolySQL/' + files[i];
+//     editFile(file);
+//   }
+//   // done
+// });
 
 function editFile(file) {
   const css_var = `<html>
@@ -135,8 +159,8 @@ function generate_diagram(bnf_code) {
         if (choice_flag == 0) {
           s = "rr.Choice(0," + s;
         }
-        if(j!=0) {
-          s = s.substring(0, s.length -1) + "),rr.Sequence("
+        if (j != 0) {
+          s = s.substring(0, s.length - 1) + "),rr.Sequence("
         }
         choice_flag = 1;
         continue;
@@ -165,17 +189,17 @@ function generate_diagram(bnf_code) {
           var bnf_code_recurs = "";
           var ct = 0;
           while ((bnf_words[j] !== ")" && bnf_words[j] !== "}" && bnf_words[j] !== "]" && bnf_words[j] !== "]*") || ct !== 0) {
-            if (bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j] == "[" || (j < bnf_words.length - 1 && bnf_words[j+1].indexOf("[,") !== -1)) {
+            if (bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j] == "[" || (j < bnf_words.length - 1 && bnf_words[j + 1].indexOf("[,") !== -1)) {
               ct++;
             }
             if (bnf_words[j] == ")" || bnf_words[j] == "}" || bnf_words[j] == "]" || bnf_words[j] == "]*") {
-              if(ct > 0) {
+              if (ct > 0) {
                 ct--;
               }
             }
             bnf_code_recurs += bnf_words[j] + " ";
             j++;
-            if(j > bnf_words.length){
+            if (j > bnf_words.length) {
               i++;
               bnf_lines[i] = bnf_lines[i].trim();
               var bnf_words = bnf_lines[i].split(" ");
@@ -200,7 +224,7 @@ function generate_diagram(bnf_code) {
           if (bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
             s += "rr.NonTerminal('" + bnf_words[j];
           }
-          else if(bnf_words[j].length == 1) {
+          else if (bnf_words[j].length == 1) {
             s += "rr.Terminal2('" + bnf_words[j];
           }
           else {
