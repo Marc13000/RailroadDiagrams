@@ -18,6 +18,7 @@ function editFile(file) {
   const css_var = `<html>
 <style>
      svg.railroad-diagram {
+      overflow: auto;
      }
      svg.railroad-diagram path {
        stroke-width: 1.5;
