@@ -682,7 +682,7 @@ This page gives an overview on creating, altering and dropping views and materia
 
 {% highlight sql %}
 
-<!-- BNF start --->
+{% endhighlight %}
 ### createMaterializedViewStatement:
 {::nomarkdown}
 
@@ -2026,7 +2026,8 @@ This page gives an overview on creating, altering and dropping views and materia
 </div></html>
 {:/}
 
-<!-- BNF end --->
+
+{% highlight sql %}
 
 {% endhighlight %}
 
