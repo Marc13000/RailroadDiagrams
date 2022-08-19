@@ -1677,25 +1677,25 @@ values in filters).
 <path d="M269 67a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
 <path d="M78 31a18 18 0 0 1 18 18v34a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M114 101h67.5"></path>
-<path d="M201.5 101h67.5"></path>
-<g class="terminal ">
-<path d="M181.5 101h0"></path>
-<path d="M201.5 101h0"></path>
-<rect x="181.5" y="90" width="20" height="22" rx="10" ry="10" style="fill: #ECECEC; stroke: black; stroke-width: 2;"></rect>
-<text x="191.5" y="105"></text>
+<path d="M114 101h49.5"></path>
+<path d="M219.5 101h49.5"></path>
+<g class="non-terminal ">
+<path d="M163.5 101h0"></path>
+<path d="M219.5 101h0"></path>
+<rect x="163.5" y="90" width="56" height="22"></rect>
+<text x="191.5" y="105">"&#60;>"</text>
 </g>
 </g>
 <path d="M269 101a18 18 0 0 0 18 -18v-34a18 18 0 0 1 18 -18"></path>
 <path d="M78 31a18 18 0 0 1 18 18v68a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M114 135h63"></path>
-<path d="M206 135h63"></path>
-<g class="terminal ">
-<path d="M177 135h0"></path>
-<path d="M206 135h0"></path>
-<rect x="177" y="124" width="29" height="22" rx="10" ry="10" style="fill: #ECECEC; stroke: black; stroke-width: 2;"></rect>
-<text x="191.5" y="139">&#60;</text>
+<path d="M114 135h54"></path>
+<path d="M215 135h54"></path>
+<g class="non-terminal ">
+<path d="M168 135h0"></path>
+<path d="M215 135h0"></path>
+<rect x="168" y="124" width="47" height="22"></rect>
+<text x="191.5" y="139">"&#60;"</text>
 </g>
 </g>
 <path d="M269 135a18 18 0 0 0 18 -18v-68a18 18 0 0 1 18 -18"></path>
@@ -1713,13 +1713,13 @@ values in filters).
 <path d="M269 169a18 18 0 0 0 18 -18v-102a18 18 0 0 1 18 -18"></path>
 <path d="M78 31a18 18 0 0 1 18 18v136a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M114 203h67.5"></path>
-<path d="M201.5 203h67.5"></path>
-<g class="terminal ">
-<path d="M181.5 203h0"></path>
-<path d="M201.5 203h0"></path>
-<rect x="181.5" y="192" width="20" height="22" rx="10" ry="10" style="fill: #ECECEC; stroke: black; stroke-width: 2;"></rect>
-<text x="191.5" y="207"></text>
+<path d="M114 203h49.5"></path>
+<path d="M219.5 203h49.5"></path>
+<g class="non-terminal ">
+<path d="M163.5 203h0"></path>
+<path d="M219.5 203h0"></path>
+<rect x="163.5" y="192" width="56" height="22"></rect>
+<text x="191.5" y="207">"&#60;="</text>
 </g>
 </g>
 <path d="M269 203a18 18 0 0 0 18 -18v-136a18 18 0 0 1 18 -18"></path>
