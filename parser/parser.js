@@ -224,7 +224,11 @@ function generate_diagram(bnf_code) {
           if (bnf_words[j].charAt(0) == "'") {
             bnf_words[j] = bnf_words[j].substring(1, bnf_words[j].length - 1);
           }
-          if (bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
+          if (bnf_words[j].charAt(0) == "<") {
+            bnf_words[j] = bnf_words[j].substring(1, bnf_words[j].length - 1);
+            s += "rr.Terminal3('" + bnf_words[j];
+          }
+          else if (bnf_words[j].toUpperCase() == bnf_words[j] && bnf_words[j].length > 1) {
             s += "rr.NonTerminal('" + bnf_words[j];
           }
           else if (bnf_words[j].length == 1) {

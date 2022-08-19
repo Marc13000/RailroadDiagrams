@@ -1273,6 +1273,43 @@ export class Terminal2 extends FakeSVG {
 }
 funcs.Terminal2 = (...args)=>new Terminal2(...args);
 
+export class Terminal3 extends FakeSVG {
+	constructor(text, {href, title, cls}={}) {
+		super('g', {'class': ['terminal', cls].join(" ")});
+		this.text = ""+text;
+		this.href = href;
+		this.title = title;
+		this.cls = cls;
+		this.width = this.text.length * Options.CHAR_WIDTH + 20; /* Assume that each char is .5em, and that the em is 16px */
+		this.height = 0;
+		this.up = 11;
+		this.down = 11;
+		this.needsSpace = true;
+		if(Options.DEBUG) {
+			this.attrs['data-updown'] = this.up + " " + this.height + " " + this.down;
+			this.attrs['data-type'] = "terminal";
+		}
+	}
+	format(x, y, width) {
+		// Hook up the two sides if this is narrower than its stated width.
+		var gaps = determineGaps(width, this.width);
+		new Path(x,y).h(gaps[0]).addTo(this);
+		new Path(x+gaps[0]+this.width,y).h(gaps[1]).addTo(this);
+		x += gaps[0];
+
+		new FakeSVG('rect', {x:x, y:y-11, width:this.width, height:this.up+this.down, rx:10, ry:10, style:"fill: #ECECEC; stroke: black; stroke-width: 2;"}).addTo(this);
+		var text = new FakeSVG('text', {x:x+this.width/2, y:y+4}, this.text);
+		if(this.href)
+			new FakeSVG('a', {'xlink:href': this.href}, [text]).addTo(this);
+		else
+			text.addTo(this);
+		if(this.title)
+			new FakeSVG('title', {}, [this.title]).addTo(this);
+		return this;
+	}
+}
+funcs.Terminal3 = (...args)=>new Terminal3(...args);
+
 
 export class NonTerminal extends FakeSVG {
 	constructor(text, {href, title, cls=""}={}) {
