@@ -33,6 +33,7 @@ operators) but is case-sensitive when it comes to names and literals (such colum
 values in filters). 
 
 ```
+{% highlight sql %}
 
 {% endhighlight %}
 ### CQL Query:
@@ -1896,7 +1897,7 @@ ModifierName:
 
 ModifierValue:
     String value with or without double quotes.
-
+{% endhighlight %}
 ```
 
 ### Filters
