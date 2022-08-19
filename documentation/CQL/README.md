@@ -1653,25 +1653,25 @@ values in filters).
 <path d="M305 31h0"></path>
 <path d="M78 31h36"></path>
 <g>
-<path d="M114 31h63"></path>
-<path d="M206 31h63"></path>
-<g class="terminal ">
-<path d="M177 31h0"></path>
-<path d="M206 31h0"></path>
-<rect x="177" y="20" width="29" height="22" rx="10" ry="10" style="fill: #D8F4D7; stroke: black; stroke-width: 2;"></rect>
-<text x="191.5" y="35">=</text>
+<path d="M114 31h54"></path>
+<path d="M215 31h54"></path>
+<g class="non-terminal ">
+<path d="M168 31h0"></path>
+<path d="M215 31h0"></path>
+<rect x="168" y="20" width="47" height="22"></rect>
+<text x="191.5" y="35">"="</text>
 </g>
 </g>
 <path d="M269 31h36"></path>
 <path d="M78 31a18 18 0 0 1 18 18v0a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M114 67h58.5"></path>
-<path d="M210.5 67h58.5"></path>
+<path d="M114 67h49.5"></path>
+<path d="M219.5 67h49.5"></path>
 <g class="non-terminal ">
-<path d="M172.5 67h0"></path>
-<path d="M210.5 67h0"></path>
-<rect x="172.5" y="56" width="38" height="22"></rect>
-<text x="191.5" y="71">==</text>
+<path d="M163.5 67h0"></path>
+<path d="M219.5 67h0"></path>
+<rect x="163.5" y="56" width="56" height="22"></rect>
+<text x="191.5" y="71">"=="</text>
 </g>
 </g>
 <path d="M269 67a18 18 0 0 0 18 -18v0a18 18 0 0 1 18 -18"></path>
@@ -1725,13 +1725,13 @@ values in filters).
 <path d="M269 203a18 18 0 0 0 18 -18v-136a18 18 0 0 1 18 -18"></path>
 <path d="M78 31a18 18 0 0 1 18 18v170a18 18 0 0 0 18 18"></path>
 <g>
-<path d="M114 237h58.5"></path>
-<path d="M210.5 237h58.5"></path>
+<path d="M114 237h49.5"></path>
+<path d="M219.5 237h49.5"></path>
 <g class="non-terminal ">
-<path d="M172.5 237h0"></path>
-<path d="M210.5 237h0"></path>
-<rect x="172.5" y="226" width="38" height="22"></rect>
-<text x="191.5" y="241">>=</text>
+<path d="M163.5 237h0"></path>
+<path d="M219.5 237h0"></path>
+<rect x="163.5" y="226" width="56" height="22"></rect>
+<text x="191.5" y="241">">="</text>
 </g>
 </g>
 <path d="M269 237a18 18 0 0 0 18 -18v-170a18 18 0 0 1 18 -18"></path>
