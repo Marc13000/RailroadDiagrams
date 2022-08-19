@@ -60,11 +60,11 @@ Filter:
     Column ComparisonOp ( Column | Literal value with or without double quotes )
 
 BooleanOp:
-    (AND | OR | NOT | PROX)
+    ( AND | OR | NOT | PROX )
     Modifiers
 
 Combiner:
-    (AND | OR)
+    ( AND | OR )
     Modifiers
 
 Column:
@@ -78,14 +78,14 @@ Modifier:
     [ ComparisonOp ModifierValue ]
 
 ComparisonOp:
-    (= | == | <> | < | > | <= | >= | NamedComparator)
+    ( = | == | <> | < | > | <= | >= | NamedComparator )
     Modifiers
 
 NamedComparator:
     String containing only alphabets.
 
 Table:
-    SchemaName.TableName
+    SchemaName . TableName
 
 SchemaName, TableName, ColumnName:
     String containing only alphabets or underscores (_).
