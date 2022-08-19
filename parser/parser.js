@@ -188,11 +188,11 @@ function generate_diagram(bnf_code) {
           j++;
           var bnf_code_recurs = "";
           var ct = 0;
-          while ((bnf_words[j] !== ")" && bnf_words[j] !== "}" && bnf_words[j] !== "]" && bnf_words[j] !== "]*") || ct !== 0) {
+          while ((bnf_words[j] !== ")" && bnf_words[j] !== ")*" && bnf_words[j] !== "}" && bnf_words[j] !== "]" && bnf_words[j] !== "]*") || ct !== 0) {
             if (bnf_words[j] == "(" || bnf_words[j] == "{" || bnf_words[j] == "[" || (j < bnf_words.length - 1 && bnf_words[j + 1].indexOf("[,") !== -1)) {
               ct++;
             }
-            if (bnf_words[j] == ")" || bnf_words[j] == "}" || bnf_words[j] == "]" || bnf_words[j] == "]*") {
+            if (bnf_words[j] == ")" || bnf_words[j] == ")*" || bnf_words[j] == "}" || bnf_words[j] == "]" || bnf_words[j] == "]*") {
               if (ct > 0) {
                 ct--;
               }
@@ -207,6 +207,9 @@ function generate_diagram(bnf_code) {
               bnf_code_recurs += "\n";
             }
           }
+          if(bnf_words[j] == ")*") {
+            s_temp = "rr.OneOrMore(";
+          } 
           s += s_temp + generate_diagram(bnf_code_recurs);
           if (i == bnf_lines.length - 1 && j == bnf_words.length - 1) {
             recursed_flag = 1;
