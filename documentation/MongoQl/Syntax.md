@@ -14,44 +14,44 @@ query
 |   delete
 |   drop
 )
-| db. (
-    .getCollection( <name> )
-|   .createCollection( <name>, <options> )
-|   .createView( <view>, <source>, <pipeline>, <options> )
-|   .dropDatabase()
+| db (
+    .getCollection "(" <name> ")"
+|   .createCollection "(" <name> , <options> ")"
+|   .createView "(" <view> , <source> , <pipeline> , <options> ")"
+|   .dropDatabase "(" ")"
 )
 | use databaseName
 
 insert:
-.insert( <document>|<array> )
-|   .insertMany( <array> )
+.insert "(" <document> | <array> ")"
+|   .insertMany "(" <array> ")"
 
 update:
-.findAndModify( <filter> )
-|   .findOneAndReplace( <filter>, <replacement>, <options> )
-|   .findOneAndUpdate( <filter>, <replacement>, <options> )
-|   .replaceOne( <filter>, <replacement>, <options> )
-|   .update( <query>, <update>, <options> )
-|   .updateOne( <filter>, <update>, <options> )
-|   .updateMany( <filter>, <update>, <options> )
+.findAndModify "(" <filter> ")"
+|   .findOneAndReplace "(" <filter> , <replacement> , <options> ")"
+|   .findOneAndUpdate "(" <filter> , <replacement> , <options> ")"
+|   .replaceOne "(" <filter> , <replacement> , <options> ")"
+|   .update "(" <query> , <update> , <options> ")"
+|   .updateOne "(" <filter> , <update> , <options> ")"
+|   .updateMany "(" <filter> , <update> , <options> ")"
 
-|   .renameCollection( <target>, <dropTarget> )
+|   .renameCollection "(" <target> , <dropTarget> ")"
 
 delete:
-    .deleteOne( <filter> )
-|   .deleteMany( <filter> )
-|   .findOneAndDelete( <filter>, <options> )¶
+    .deleteOne "(" <filter> ")"
+|   .deleteMany "(" <filter> ")"
+|   .findOneAndDelete "(" <filter> , <options> ")"
 
 drop:
-.drop(<options>)
+.drop "(" <options> ")"
 
 query:
-.find( <filter>, <projection> )
-|   .aggregate( <pipeline>, <options> )
-|   .findOne( <filter>, <projection> )
-|   .count( <filter>, <options> )
-|   .countDocuments( <filter>, <options> )
-|   .estimatedDocumentCount( <options> )
+.find "(" <filter> , <projection> ")"
+|   .aggregate "(" <pipeline> , <options> ")"
+|   .findOne "(" <filter> , <projection> ")"
+|   .count "(" <filter> , <options> ")"
+|   .countDocuments "(" <filter> , <options> ")"
+|   .estimatedDocumentCount "(" <options> ")"
 
 filter: <document>
 projection: <document>
@@ -60,7 +60,7 @@ pipeline: <array>
 options: <document>
 target: <string>
 dropTarget: <boolean>
-update: <array>|<document>
+update: <array> | <document>
 name: <string>
 source: <string>
 view: <strin>
