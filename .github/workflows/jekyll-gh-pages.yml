@@ -22,21 +22,21 @@ concurrency:
 
 jobs:
  #run parser
-  build:
+  # build:
 
-    runs-on: ubuntu-latest
+  #   runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 15.x]
+  #   strategy:
+  #     matrix:
+  #       node-version: [12.x, 14.x, 15.x]
 
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: ../node parser/parser.js
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - name: Use Node.js ${{ matrix.node-version }}
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: ${{ matrix.node-version }}
+  #     - run: ../node parser/parser.js
   
   #build page
   build:
