@@ -16,7 +16,7 @@ async function getFiles(dir) {
   return files.reduce((a, f) => a.concat(f), []);
 }
 
-getFiles("../documentation/")
+getFiles("documentation/")
   .then(files => {
     console.log(files)
     console.log(files.includes("/Users/marc13000/RailroadDiagrams/documentation/PolySQL/Syntax.md"));
