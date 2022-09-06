@@ -33,6 +33,8 @@ operators) but is case-sensitive when it comes to names and literals (such colum
 values in filters). 
 
 <!--- BNF start --->
+{% highlight mql %}
+
 CQL Query:
     (
         Filters
@@ -95,6 +97,8 @@ ModifierName:
 
 ModifierValue:
     String value with or without double quotes.
+
+{% endhighlight %}
 <!--- BNF end --->
 
 ### Filters
