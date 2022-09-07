@@ -32,8 +32,9 @@ below. The parser is case-insensitive when it comes to keywords (such as modifie
 operators) but is case-sensitive when it comes to names and literals (such column names, table names or literal 
 values in filters). 
 
+{% highlight sql %}
+
 <!--- BNF start --->
-{% highlight mql %}
 
 CQL Query:
     (
@@ -98,9 +99,10 @@ ModifierName:
 ModifierValue:
     String value with or without double quotes.
 
-{% endhighlight %}
 <!--- BNF end --->
-//hi
+
+{% endhighlight %}
+
 ### Filters
 Filters are used to do comparisons on a column in the `Relation`. They are similar to SQL's WHERE clause.
 If `Relation` is specified, the column must be from the relation specified. Comparisons can be between literal
