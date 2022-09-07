@@ -121,6 +121,7 @@ function editFile(file) {
     }
     if (read_flag) {
       if (text.endsWith(":")) {
+        console.log(text);
         if (bnf_code !== "") {
           console.log(bnf_code.trim());
           const d = generate_diagram(bnf_code.trim() + "\n");

@@ -36,14 +36,8 @@ values in filters).
 
 <!--- BNF start --->
 
-CQL Query:
-    (
-        Filters
-    |
-        relation Relation
-    |
-        Filters relation Relation
-    )
+CQL Query:  
+    ( Filters | relation Relation | Filters relation Relation )
     [ sortby SortSpecification ]
     [ project Projection ]
 
