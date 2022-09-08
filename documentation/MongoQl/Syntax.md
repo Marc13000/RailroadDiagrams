@@ -7,6 +7,8 @@ This page describes the MongoDB Query Language dialect supported by Polypheny in
 
 {% highlight sql %}
 
+<!--- BNF start --->
+
 statement:
 db.collection (
 query
@@ -65,6 +67,8 @@ update: <array> | <document>
 name: <string>
 source: <string>
 view: <strin>
+
+<!--- BNF end --->
 
 {% endhighlight %}
 
