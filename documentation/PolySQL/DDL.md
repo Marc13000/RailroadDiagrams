@@ -56,6 +56,7 @@ dropViewStatement:
 truncateTableStatement:
       TRUNCATE TABLE [ schemaName . ] name
 <!--- BNF end --->
+
 alterStatement:
        ALTER SCHEMA schemaName RENAME TO newSchemaName  
      | ALTER SCHEMA schemaName OWNER TO userName  
