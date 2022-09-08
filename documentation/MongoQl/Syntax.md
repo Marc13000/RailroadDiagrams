@@ -5,7 +5,8 @@ title: MongoDB Query Language Syntax
 
 This page describes the MongoDB Query Language dialect supported by Polypheny in a [BNF](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form)-like form.
 
-{% highlight mql %}
+{% highlight sql %}
+
 statement:
 db.collection (
 query
