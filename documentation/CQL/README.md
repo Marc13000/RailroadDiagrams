@@ -33,9 +33,7 @@ operators) but is case-sensitive when it comes to names and literals (such colum
 values in filters). 
 
 {% highlight sql %}
-
 <!--- BNF start --->
-
 CQL Query:  
     ( Filters | relation Relation | Filters relation Relation )
     [ sortby SortSpecification ]
@@ -94,7 +92,6 @@ ModifierValue:
     String value with or without double quotes.
 
 <!--- BNF end --->
-
 {% endhighlight %}
 
 ### Filters
