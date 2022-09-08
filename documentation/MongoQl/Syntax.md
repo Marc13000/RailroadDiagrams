@@ -54,6 +54,8 @@ query:
 |   .countDocuments "(" <filter> , <options> ")"
 |   .estimatedDocumentCount "(" <options> ")"
 
+<!--- BNF end --->
+
 filter: <document>
 projection: <document>
 replacement: <document>
@@ -65,7 +67,7 @@ update: <array> | <document>
 name: <string>
 source: <string>
 view: <string>
-<!--- BNF end --->
+
 {% endhighlight %}
 
 <br>
