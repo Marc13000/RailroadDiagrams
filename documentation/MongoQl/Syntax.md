@@ -6,9 +6,7 @@ title: MongoDB Query Language Syntax
 This page describes the MongoDB Query Language dialect supported by Polypheny in a [BNF](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form)-like form.
 
 {% highlight sql %}
-
 <!--- BNF start --->
-
 statement:
 db.collection (
 query
@@ -66,13 +64,9 @@ dropTarget: <boolean>
 update: <array> | <document>
 name: <string>
 source: <string>
-view: <strin>
-
+view: <string>
 <!--- BNF end --->
-
 {% endhighlight %}
-
-
 
 <br>
 _Parts of this documentation are based on [MongoDB Reference](https://docs.mongodb.com/manual/reference)._
