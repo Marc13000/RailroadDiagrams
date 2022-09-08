@@ -1,3 +1,8 @@
+// parser for generating railroad diagrams
+// developed by jaiditya (marc13000 on github)
+
+// console.log's added as comments for future developers
+
 import fs from 'fs';
 import readLine from 'readline';
 import rr, { Diagram } from "./generator/railroad.js";
@@ -26,17 +31,19 @@ getFiles("documentation/")
   })
   .catch(e => console.error(e));
 
-// fs.readdir('documentation/PolySQL/', (err, files) => {
-//   if (err) {
-//     return console.error(err);
-//   }
-//   console.log(files.includes("Syntax.md"));
-//   for (var i = 0; i < files.length; i++) {
-//     var file = 'documentation/PolySQL/' + files[i];
-//     editFile(file);
-//   }
-//   // done
-// });
+// Sample code for better understanding file accessing by just changing one
+
+/* fs.readdir('documentation/PolySQL/', (err, files) => {
+  if (err) {
+    return console.error(err);
+  }
+  console.log(files.includes("Syntax.md"));
+  for (var i = 0; i < files.length; i++) {
+    var file = 'documentation/PolySQL/' + files[i];
+    editFile(file);
+  }
+  // done
+}); */
 
 function editFile(file) {
   const css_var = `<html>
@@ -115,8 +122,12 @@ function editFile(file) {
       var diag = eval("rr.Diagram(" + d + ")");
       result = result.replace(bnf_code, css_var + diag.toString() + "</div></html>\n{:/}\n\n");
       result = result.replace("<!--- BNF end --->\n", "\n{% highlight sql %}\n");
-      // const diagram = changeToDiagram(bnf_code);
-      // result = result.replace(bnf_code, diagram);
+      
+      //code sample for single diagram and checking
+
+      /* const diagram = changeToDiagram(bnf_code);
+      result = result.replace(bnf_code, diagram); */
+
       read_flag = false;
     }
     if (read_flag) {
