@@ -34,6 +34,7 @@ values in filters).
 
 {% highlight sql %}
 <!--- BNF start --->
+
 CQLQuery:  
     ( Filters | relation Relation | Filters relation Relation )
     [ sortby SortSpecification ]
