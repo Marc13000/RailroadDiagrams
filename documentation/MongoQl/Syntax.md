@@ -8,8 +8,8 @@ This page describes the MongoDB Query Language dialect supported by Polypheny in
 {% highlight sql %}
 <!--- BNF start --->
 statement:
-db.collection ( query |   insert |   update |   delete |   drop)
-| db ( .getCollection "(" <name> ")" |   .createCollection "(" <name> , <options> ")" |   .createView "(" <view> , <source> , <pipeline> , <options> ")" |   .dropDatabase "(" ")" )
+db.collection ( query | insert | update | delete | drop )
+| db ( .getCollection "(" <name> ")" | .createCollection "(" <name> , <options> ")" | .createView "(" <view> , <source> , <pipeline> , <options> ")" | .dropDatabase "(" ")" )
 | use databaseName
 
 insert:
