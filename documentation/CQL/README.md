@@ -34,7 +34,7 @@ values in filters).
 
 {% highlight sql %}
 <!--- BNF start --->
-CQL Query:  
+CQLQuery:  
     ( Filters | relation Relation | Filters relation Relation )
     [ sortby SortSpecification ]
     [ project Projection ]
